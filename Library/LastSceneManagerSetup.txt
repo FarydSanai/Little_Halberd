@@ -1,0 +1,5 @@
+sceneSetups:
+- path: Assets/Little_Halberd/Scenes/Main_Scene.unity
+  isLoaded: 1
+  isActive: 1
+  isSubScene: 0

@@ -1,0 +1,560 @@
+fileFormatVersion: 2
+guid: 2a18a92f2b358914ab944698013c8a02
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8389694206243954508
+    second: Golem_wood_Walk_0
+  - first:
+      213: 6619624974061874860
+    second: Golem_wood_Walk_1
+  - first:
+      213: 5002684687401245061
+    second: Golem_wood_Walk_2
+  - first:
+      213: 8246682621861749695
+    second: Golem_wood_Walk_3
+  - first:
+      213: 6359330646783305121
+    second: Golem_wood_Walk_4
+  - first:
+      213: 2109146217422064214
+    second: Golem_wood_Walk_5
+  - first:
+      213: 5897326166500195357
+    second: Golem_wood_Walk_6
+  - first:
+      213: 3530797540888928277
+    second: Golem_wood_Walk_7
+  - first:
+      213: 3834616119727826181
+    second: Golem_wood_Walk_8
+  - first:
+      213: -5667594010325098309
+    second: Golem_wood_Walk_9
+  - first:
+      213: -1371500214101817421
+    second: Golem_wood_Walk_10
+  - first:
+      213: -2104534501090622076
+    second: Golem_wood_Walk_11
+  - first:
+      213: -6528096535662555980
+    second: Golem_wood_Walk_12
+  - first:
+      213: -1349111539072124906
+    second: Golem_wood_Walk_13
+  - first:
+      213: 5026105333666987882
+    second: Golem_wood_Walk_14
+  - first:
+      213: 2237699140905725224
+    second: Golem_wood_Walk_15
+  - first:
+      213: 8289277121110522434
+    second: Golem_wood_Walk_16
+  - first:
+      213: -1509664308126383289
+    second: Golem_wood_Walk_17
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Golem_wood_Walk_0
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 1623
+        width: 462
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4fd2591e6e2e6470800000000000000
+      internalID: 8389694206243954508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golem_wood_Walk_1
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 1616
+        width: 445
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cae234577d1addb50800000000000000
+      internalID: 6619624974061874860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golem_wood_Walk_2
+      rect:
+        serializedVersion: 2
+        x: 1076
+        y: 1617
+        width: 426
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58956d3c73b1d6540800000000000000
+      internalID: 5002684687401245061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golem_wood_Walk_3
+      rect:
+        serializedVersion: 2
+        x: 1638
+        y: 1615
+        width: 406
+        height: 359
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb3e47bd62a127270800000000000000
+      internalID: 8246682621861749695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golem_wood_Walk_4
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 1234
+        width: 390
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a526c2b781e04850800000000000000
+      internalID: 6359330646783305121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golem_wood_Walk_5
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 1228
+        width: 386
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65a0dcc5f41354d10800000000000000
+      internalID: 2109146217422064214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golem_wood_Walk_6
+      rect:
+        serializedVersion: 2
+        x: 1111
+        y: 1216
+        width: 380
+        height: 359
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1c3cde27e287d150800000000000000
+      internalID: 5897326166500195357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golem_wood_Walk_7
+      rect:
+        serializedVersion: 2
+        x: 1630
+        y: 1217
+        width: 373
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 510e18e08a9eff030800000000000000
+      internalID: 3530797540888928277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golem_wood_Walk_8
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 833
+        width: 363
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5052d525b0b473530800000000000000
+      internalID: 3834616119727826181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golem_wood_Walk_9
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 828
+        width: 351
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb0e07b9649a851b0800000000000000
+      internalID: -5667594010325098309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golem_wood_Walk_10
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 815
+        width: 361
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b7c61162d377fce0800000000000000
+      internalID: -1371500214101817421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golem_wood_Walk_11
+      rect:
+        serializedVersion: 2
+        x: 1624
+        y: 809
+        width: 371
+        height: 359
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48580f485013bc2e0800000000000000
+      internalID: -2104534501090622076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golem_wood_Walk_12
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 435
+        width: 379
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bc0064c9ca8765a0800000000000000
+      internalID: -6528096535662555980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golem_wood_Walk_13
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 426
+        width: 385
+        height: 359
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 618b93ff33ef64de0800000000000000
+      internalID: -1349111539072124906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golem_wood_Walk_14
+      rect:
+        serializedVersion: 2
+        x: 1081
+        y: 422
+        width: 389
+        height: 357
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6fbae8eb2050c540800000000000000
+      internalID: 5026105333666987882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golem_wood_Walk_15
+      rect:
+        serializedVersion: 2
+        x: 1602
+        y: 422
+        width: 402
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82de1e74387ed0f10800000000000000
+      internalID: 2237699140905725224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golem_wood_Walk_16
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 33
+        width: 422
+        height: 359
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24ab0988f9d690370800000000000000
+      internalID: 8289277121110522434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golem_wood_Walk_17
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 26
+        width: 442
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7438a007f489c0be0800000000000000
+      internalID: -1509664308126383289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 033f894f4cd57f140bc9faf3809ea669
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

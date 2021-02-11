@@ -1,0 +1,13 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Golem_Grey_Animator_Override
+  m_Controller: {fileID: 9100000, guid: 17f9469b2c9a6524e84bb235a5410912, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: ee5212ef454132d4b8ea9ac8df9ef8e9, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 4e464c3cd7e50434ca033c30608e0789, type: 2}
