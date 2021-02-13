@@ -21,6 +21,9 @@ namespace LittleHalberd
         public BoxCollider2D boxCollider;
 
         private Rigidbody2D rigid;
+
+        //Temp
+        CharacterAttack attack;
         public Rigidbody2D RIGID_BODY
         {
             get
@@ -40,6 +43,8 @@ namespace LittleHalberd
         {
             boxCollider = GetComponent<BoxCollider2D>();
             subComponentProcessor = GetComponentInChildren<SubComponentProcessor>();
+            attack = GetComponent<CharacterAttack>();
+            
         }
         private void Update()
         {
