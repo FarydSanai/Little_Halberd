@@ -72,10 +72,11 @@
     <Compile Include="Assets\Little_Halberd\Scripts\CharacterAbilitySystem\CharacterAbilities\AbilitiesScripts\Jump.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\CharacterAbilitySystem\CharacterAbilities\AbilitiesScripts\LockTransition.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\CharacterAbilitySystem\CharacterAbilities\AbilitiesScripts\MoveForward.cs" />
+    <Compile Include="Assets\Little_Halberd\Scripts\CharacterAbilitySystem\CharacterAbilities\AbilitiesScripts\TakeDamage.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\CharacterAbilitySystem\CharacterAbilities\AbilitiesScripts\TransitionIndexer.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\CharacterAttack.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\CharacterControl\CharacterControl.cs" />
-    <Compile Include="Assets\Little_Halberd\Scripts\Enemies\EnemyControl.cs" />
+    <Compile Include="Assets\Little_Halberd\Scripts\Enemies\DamageDetector.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\Helpers\TransitionConditionChecker.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\LevelGenerationSystem\LevelGenerator.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\Managers\HashManager.cs" />
@@ -84,6 +85,8 @@
     <Compile Include="Assets\Little_Halberd\Scripts\ParallaxBackgroundSystem\ParallaxBackground.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\PlayerInputControl\PlayerInput.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\SubComponentSystem\SubComponent.cs" />
+    <Compile Include="Assets\Little_Halberd\Scripts\SubComponentSystem\SubComponentData\AttackData.cs" />
+    <Compile Include="Assets\Little_Halberd\Scripts\SubComponentSystem\SubComponentData\DamageData.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\SubComponentSystem\SubComponentData\GroundData.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\SubComponentSystem\SubComponentData\JumpData.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\SubComponentSystem\SubComponentData\MovingData.cs" />

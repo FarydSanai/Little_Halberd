@@ -4,26 +4,41 @@ using UnityEngine;
 
 namespace LittleHalberd
 {
-    public class CharacterAttack : MonoBehaviour
+    public class CharacterAttack : SubComponent
     {
-        private CharacterControl control;
+        public AttackData attackData;
 
         public float AttackRange = 0.5f;
         public float AttackDamage = 30;
 
         public Transform AttackPoint;
         public LayerMask EnemyLayers;
-        private void Awake()
+
+        private void Start()
         {
-            control = this.GetComponentInChildren<CharacterControl>(); 
+            attackData = new AttackData
+            {
+                AttackDamage = AttackDamage,
+                AttackRange = AttackRange,
+                AttackPoint = AttackPoint,
+                EnemyLayers = EnemyLayers,
+                Attack = Attack,
+            };
+            subComponentProcessor.attackData = attackData;
+            subComponentProcessor.ArrSubComponentns[(int)SubComponentType.CHARACTER_ATTACK] = this;
         }
-        private void Update()
+
+        public override void OnUpdate()
         {
             if (control.Attack)
             {
-                control.characterAnimator.SetTrigger("Att");
-                Attack();
+                control.characterAnimator.SetTrigger(HashManager.Instance.ArrTransitionParams[(int)TransitionParameter.Attack]);
+                attackData.Attack();
             }
+        }
+        public override void OnFixedUpdate()
+        {
+            throw new System.NotImplementedException();
         }
         private void Attack()
         {    
@@ -34,8 +49,7 @@ namespace LittleHalberd
                 {
                     continue;
                 }
-                enemyCol.GetComponent<EnemyControl>().GetDamage(AttackDamage);
-                //Debug.Log("Hit : " + enemyCol.name);
+                enemyCol.GetComponent<CharacterControl>().DAMAGE_DATA.TakeDamage(attackData.AttackDamage);
             }
         }
         private void OnDrawGizmosSelected()

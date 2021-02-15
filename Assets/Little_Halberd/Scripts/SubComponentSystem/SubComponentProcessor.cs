@@ -10,6 +10,8 @@ namespace LittleHalberd
         CHARACTER_MOVEMENT,
         CHARACTER_JUMP,
         CHARACTER_GROUND,
+        CHARACTER_ATTACK,
+        DAMAGE_DETECTOR,
 
         COUNT,
     }
@@ -22,6 +24,8 @@ namespace LittleHalberd
         public MovingData movingData;
         public JumpData jumpData;
         public GroundData groundData;
+        public AttackData attackData;
+        public DamageData damageData;
 
         private void Awake()
         {
@@ -38,6 +42,7 @@ namespace LittleHalberd
         public void UpdateSubComponents()
         {
             UpdateSubComponent(SubComponentType.MANUAL_INPUT);
+            UpdateSubComponent(SubComponentType.CHARACTER_ATTACK);
         }
 
         private void FixedUpdateSubComponent(SubComponentType type)

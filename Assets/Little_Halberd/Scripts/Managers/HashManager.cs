@@ -13,6 +13,8 @@ namespace LittleHalberd
         TransitionIndex,
         Grounded,
         LockTransition,
+        IsDead,
+        Damaged,
 
         COUNT,
     }

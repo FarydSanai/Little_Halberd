@@ -35,6 +35,8 @@ namespace LittleHalberd
                 return rigid;
             }
         }
+        public AttackData ATTACK_DATA => subComponentProcessor.attackData;
+        public DamageData DAMAGE_DATA => subComponentProcessor.damageData;
 
         [Header("SubComponents")]
         public SubComponentProcessor subComponentProcessor;
