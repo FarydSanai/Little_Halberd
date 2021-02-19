@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace LittleHalberd
 {
@@ -22,8 +20,6 @@ namespace LittleHalberd
 
         private Rigidbody2D rigid;
 
-        //Temp
-        CharacterAttack attack;
         public Rigidbody2D RIGID_BODY
         {
             get
@@ -35,6 +31,8 @@ namespace LittleHalberd
                 return rigid;
             }
         }
+        public MovingData MOVING_DATA => subComponentProcessor.movingData;
+        public GroundData GROUND_DATA => subComponentProcessor.groundData;
         public AttackData ATTACK_DATA => subComponentProcessor.attackData;
         public DamageData DAMAGE_DATA => subComponentProcessor.damageData;
 
@@ -45,7 +43,6 @@ namespace LittleHalberd
         {
             boxCollider = GetComponent<BoxCollider2D>();
             subComponentProcessor = GetComponentInChildren<SubComponentProcessor>();
-            attack = GetComponent<CharacterAttack>();
             
         }
         private void Update()

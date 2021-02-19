@@ -6,7 +6,6 @@ namespace LittleHalberd
 {
     public class DamageData
     {
-        //public CharacterControl attacker;
         public float CurrentHP;
         public bool isDead;
 

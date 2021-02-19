@@ -6,6 +6,7 @@ namespace LittleHalberd
 {
     public class LevelGenerator : MonoBehaviour
     {
+        private const string endPointObjName = "EndPoint";
         private float PLAYER_DISTANCE_SPAWN_LEVEL_PART = 10000f;
 
         [SerializeField] private CharacterControl control;
@@ -16,7 +17,7 @@ namespace LittleHalberd
 
         private void Awake()
         {
-            lastEndPosition = levelPartStart.Find("EndPoint").position;
+            lastEndPosition = levelPartStart.Find(endPointObjName).position;
 
             int startLevelPartsCount = 3;
 
@@ -39,7 +40,7 @@ namespace LittleHalberd
             int rand = Random.Range(0, levelPartList.Count);
             Transform levelPartTransform = SpawnLevelPart(levelPartList[rand], lastEndPosition);
 
-            lastEndPosition = levelPartTransform.Find("EndPoint").position;
+            lastEndPosition = levelPartTransform.Find(endPointObjName).position;
         }
         private Transform SpawnLevelPart(Transform levelPart, Vector3 spawnPosition)
         {
