@@ -17,7 +17,7 @@ namespace LittleHalberd
     }
     public class SubComponentProcessor : MonoBehaviour
     {
-        public SubComponent[] ArrSubComponentns;
+        public SubComponent[] ArrSubComponents;
 
         [NonSerialized] public CharacterControl control;
 
@@ -29,7 +29,7 @@ namespace LittleHalberd
 
         private void Awake()
         {
-            ArrSubComponentns = new SubComponent[(int)SubComponentType.COUNT];
+            ArrSubComponents = new SubComponent[(int)SubComponentType.COUNT];
             control = this.GetComponentInParent<CharacterControl>();
         }
 
@@ -47,16 +47,16 @@ namespace LittleHalberd
 
         private void FixedUpdateSubComponent(SubComponentType type)
         {
-            if (ArrSubComponentns[(int)type] != null)
+            if (ArrSubComponents[(int)type] != null)
             {
-                ArrSubComponentns[(int)type].OnFixedUpdate();
+                ArrSubComponents[(int)type].OnFixedUpdate();
             }
         }
         private void UpdateSubComponent(SubComponentType type)
         {
-            if (ArrSubComponentns[(int)type] != null)
+            if (ArrSubComponents[(int)type] != null)
             {
-                ArrSubComponentns[(int)type].OnUpdate();
+                ArrSubComponents[(int)type].OnUpdate();
             }
         }
     }

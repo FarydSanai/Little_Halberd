@@ -9,18 +9,15 @@ namespace LittleHalberd
     {
         [Header("Pathfinding")]
         public Transform Target;
-        public float ActivateDistance = 25f;
+        public float ActivateDistance = 600f;
+        public float DeactivateDistance = 2.5f;
         public float PathUpdateTimer = 0.5f;
 
         [Header("Physics")]
-        public float Speed = 200f;
-        public float NextPointDistance = 4f;
+        public float NextPointDistance = 8f;
         public float JumpNodeRequirement = 0.8f;
 
-        public float JumpModifier = 0.3f;
-        public float JumpCheckOffset = 0.1f;
-
-        [Header("Custom")]
+        [Header("Custom options")]
         public bool FollowEnabled = true;
         public bool JumpEnabled = true;
         public bool DirUpdateEnabled = true;
@@ -32,13 +29,15 @@ namespace LittleHalberd
         private Rigidbody2D rigid;
         private CharacterControl control;
 
+        private const string UpdatePathFunc = "UpdatePath";
+
         private void Start()
         {
             seeker = this.GetComponent<Seeker>();
             rigid = this.GetComponent<Rigidbody2D>();
             control = this.GetComponent<CharacterControl>();
 
-            InvokeRepeating("UpdatePath", 0f, PathUpdateTimer);
+            InvokeRepeating(UpdatePathFunc, 0f, PathUpdateTimer);
         }
         private void FixedUpdate()
         {
@@ -55,8 +54,7 @@ namespace LittleHalberd
             }
         }
         private void PathFollow()
-        {
-             
+        {             
             if (path == null)
             {
                 return;
@@ -68,25 +66,11 @@ namespace LittleHalberd
 
             IsGrounded = control.GROUND_DATA.IsGrounded();
 
-            //Direction
+            //Set direction
             Vector2 dir = ((Vector2)path.vectorPath[currentWayPoint] - rigid.position);
 
             //Movement
-            if (dir.x > 0.5f)
-            {
-                control.MoveRight = true;
-                control.MoveLeft = false;
-            }
-            else if (dir.x < -0.5f)
-            {
-                control.MoveLeft = true;
-                control.MoveRight = false;
-            }
-            else
-            {
-                control.MoveLeft = false;
-                control.MoveRight = false;
-            }
+            MoveToTarget(dir);
 
             //Jump
             if (JumpEnabled && IsGrounded)
@@ -102,25 +86,47 @@ namespace LittleHalberd
 
             }
 
-            float dist = Vector2.Distance(rigid.position, path.vectorPath[currentWayPoint]);
-            if (dist < NextPointDistance)
+            //Death
+            if (control.DAMAGE_DATA.isDead)
+            {
+                CancelInvoke(UpdatePathFunc);
+            }
+
+            Vector2 dist = rigid.position - (Vector2)path.vectorPath[currentWayPoint];
+            if (Vector2.SqrMagnitude(dist) < NextPointDistance)
             {
                 currentWayPoint++;
             }   
-
         }
-
         private bool TargetInDistance()
         {
-            return Vector3.Distance(rigid.position, Target.transform.position) < ActivateDistance;
+            Vector2 dist = rigid.position - (Vector2)Target.transform.position;
+            return Vector3.SqrMagnitude(dist) < ActivateDistance;
         }
-
         private void OnPathComplete(Path p)
         {
             if (!p.error)
             {
                 path = p;
                 currentWayPoint = 0;
+            }
+        }
+        private void MoveToTarget(Vector2 dir)
+        {
+            if (dir.x > DeactivateDistance)
+            {
+                control.MoveRight = true;
+                control.MoveLeft = false;
+            }
+            else if (dir.x < (-DeactivateDistance))
+            {
+                control.MoveLeft = true;
+                control.MoveRight = false;
+            }
+            else
+            {
+                control.MoveLeft = false;
+                control.MoveRight = false;
             }
         }
     }

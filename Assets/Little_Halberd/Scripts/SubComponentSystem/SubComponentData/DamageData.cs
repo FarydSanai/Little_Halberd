@@ -1,9 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-namespace LittleHalberd
+﻿namespace LittleHalberd
 {
+    [System.Serializable]
     public class DamageData
     {
         public float CurrentHP;

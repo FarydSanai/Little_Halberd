@@ -18,7 +18,7 @@ namespace LittleHalberd
             };
 
             subComponentProcessor.movingData = movingData;
-            subComponentProcessor.ArrSubComponentns[(int)SubComponentType.CHARACTER_MOVEMENT] = this;
+            subComponentProcessor.ArrSubComponents[(int)SubComponentType.CHARACTER_MOVEMENT] = this;
         }
         public override void OnFixedUpdate()
         {

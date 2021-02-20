@@ -76,10 +76,10 @@
     <Compile Include="Assets\Little_Halberd\Scripts\CharacterAbilitySystem\CharacterAbilities\AbilitiesScripts\TransitionIndexer.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\CharacterAttack.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\CharacterControl\CharacterControl.cs" />
-    <Compile Include="Assets\Little_Halberd\Scripts\Enemies\DamageDetector.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\Enemies\EnemyAI.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\Helpers\TransitionConditionChecker.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\LevelGenerationSystem\LevelGenerator.cs" />
+    <Compile Include="Assets\Little_Halberd\Scripts\Managers\CharacterManager.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\Managers\HashManager.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\Managers\Singleton.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\Managers\VirtualInputManager.cs" />
@@ -95,6 +95,7 @@
     <Compile Include="Assets\Little_Halberd\Scripts\SubComponentSystem\SubComponents\CharacterGround.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\SubComponentSystem\SubComponents\CharacterJump.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\SubComponentSystem\SubComponents\CharacterMovement.cs" />
+    <Compile Include="Assets\Little_Halberd\Scripts\SubComponentSystem\SubComponents\DamageDetector.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\SubComponentSystem\SubComponents\ManualInput.cs" />
     <None Include="Assets\2D Tree Set Free\Documentation\Readme.txt" />
     <Reference Include="UnityEngine">

@@ -18,7 +18,7 @@ namespace LittleHalberd
                 CharacterJump = CharJump,
             };
             subComponentProcessor.jumpData = jumpData;
-            subComponentProcessor.ArrSubComponentns[(int)SubComponentType.CHARACTER_JUMP] = this;
+            subComponentProcessor.ArrSubComponents[(int)SubComponentType.CHARACTER_JUMP] = this;
         }
         
         public override void OnFixedUpdate()

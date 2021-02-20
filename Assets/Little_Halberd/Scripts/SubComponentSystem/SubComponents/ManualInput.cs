@@ -8,7 +8,7 @@ namespace LittleHalberd
     {
         private void Start()
         {
-            subComponentProcessor.ArrSubComponentns[(int)SubComponentType.MANUAL_INPUT] = this;
+            subComponentProcessor.ArrSubComponents[(int)SubComponentType.MANUAL_INPUT] = this;
         }
         public override void OnFixedUpdate()
         {

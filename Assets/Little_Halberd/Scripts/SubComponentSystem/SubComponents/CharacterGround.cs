@@ -18,7 +18,7 @@ namespace LittleHalberd
                 IsGrounded = Grounded,
             };
             subComponentProcessor.groundData = groundData;
-            subComponentProcessor.ArrSubComponentns[(int)SubComponentType.CHARACTER_GROUND] = this;
+            subComponentProcessor.ArrSubComponents[(int)SubComponentType.CHARACTER_GROUND] = this;
         }
         public override void OnFixedUpdate()
         {

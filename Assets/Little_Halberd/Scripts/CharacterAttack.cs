@@ -25,7 +25,7 @@ namespace LittleHalberd
                 Attack = Attack,
             };
             subComponentProcessor.attackData = attackData;
-            subComponentProcessor.ArrSubComponentns[(int)SubComponentType.CHARACTER_ATTACK] = this;
+            subComponentProcessor.ArrSubComponents[(int)SubComponentType.CHARACTER_ATTACK] = this;
         }
 
         public override void OnUpdate()

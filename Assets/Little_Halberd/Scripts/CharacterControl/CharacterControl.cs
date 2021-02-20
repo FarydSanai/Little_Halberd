@@ -43,7 +43,8 @@ namespace LittleHalberd
         {
             boxCollider = GetComponent<BoxCollider2D>();
             subComponentProcessor = GetComponentInChildren<SubComponentProcessor>();
-            
+
+            RegisterCharacter();            
         }
         private void Update()
         {
@@ -65,6 +66,13 @@ namespace LittleHalberd
         public Vector3 GetPosition()
         {
             return this.gameObject.transform.position;
+        }
+        private void RegisterCharacter()
+        {
+            if (!CharacterManager.Instance.Characters.Contains(this))
+            {
+                CharacterManager.Instance.Characters.Add(this);
+            }
         }
     }
 }
