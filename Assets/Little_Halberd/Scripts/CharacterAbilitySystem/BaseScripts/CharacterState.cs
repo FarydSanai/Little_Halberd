@@ -11,6 +11,7 @@ namespace LittleHalberd
         public JumpData JUMP_DATA => control.subComponentProcessor.jumpData;
         public GroundData GROUND_DATA => control.subComponentProcessor.groundData;
         public DamageData DAMAGE_DATA => control.subComponentProcessor.damageData;
+        public AttackData ATTACK_DATA => control.subComponentProcessor.attackData;
 
         [Space(3f)]
         public CharacterAbility[] CharacterAbilityArr;

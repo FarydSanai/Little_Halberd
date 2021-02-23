@@ -141,7 +141,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3969291106429455568}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.99, y: -0.12, z: 0}
+  m_LocalPosition: {x: 1.89, y: -0.12, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3969291107571400170}
@@ -297,7 +297,7 @@ MonoBehaviour:
   AttackPoint: {fileID: 3969291106429455569}
   EnemyLayers:
     serializedVersion: 2
-    m_Bits: 512
+    m_Bits: 1024
 --- !u!1 &3969291107400622332
 GameObject:
   m_ObjectHideFlags: 0
@@ -426,7 +426,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 6
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: df7a4ffcdd819da469051c2f995c39bb, type: 2}
   m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 1
@@ -464,7 +464,7 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.7, y: -1.1}
+  m_Offset: {x: -0.7, y: -1.03}
   m_Size: {x: 1.5, y: 1}
   m_Direction: 0
 --- !u!114 &3969291107571400171
@@ -509,12 +509,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Target: {fileID: 0}
   ActivateDistance: 600
-  DeactivateDistance: 2.5
+  DeactivateDistance: 4
   PathUpdateTimer: 0.5
-  NextPointDistance: 10
-  JumpNodeRequirement: 1
+  MoveDirDist: 0.5
+  NextPointDistance: 1.8
+  JumpNodeRequirement: 3
+  FallDistance: 0
   FollowEnabled: 1
-  JumpEnabled: 1
   DirUpdateEnabled: 1
 --- !u!1 &3969291107572901756
 GameObject:

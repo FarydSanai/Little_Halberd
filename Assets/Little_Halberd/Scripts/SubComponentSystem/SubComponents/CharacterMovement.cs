@@ -24,10 +24,10 @@ namespace LittleHalberd
         {
             if (control.characterAnimator.GetBool(HashManager.Instance.ArrTransitionParams[(int)TransitionParameter.Move]))
             {
-                if (HasContactInAir())
-                {
-                    return;
-                }
+                //if (HasContactInAir())
+                //{
+                //    return;
+                //}
                 if (control.MoveLeft)
                 {
                     Move(-movingData.MovementSpeed, movingData.MovementSpeedGraph, movingData.StateNormalizedTime);

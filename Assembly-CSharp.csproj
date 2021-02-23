@@ -74,7 +74,6 @@
     <Compile Include="Assets\Little_Halberd\Scripts\CharacterAbilitySystem\CharacterAbilities\AbilitiesScripts\MoveForward.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\CharacterAbilitySystem\CharacterAbilities\AbilitiesScripts\TakeDamage.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\CharacterAbilitySystem\CharacterAbilities\AbilitiesScripts\TransitionIndexer.cs" />
-    <Compile Include="Assets\Little_Halberd\Scripts\CharacterAttack.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\CharacterControl\CharacterControl.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\Enemies\EnemyAI.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\Helpers\TransitionConditionChecker.cs" />
@@ -92,6 +91,7 @@
     <Compile Include="Assets\Little_Halberd\Scripts\SubComponentSystem\SubComponentData\JumpData.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\SubComponentSystem\SubComponentData\MovingData.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\SubComponentSystem\SubComponentProcessor.cs" />
+    <Compile Include="Assets\Little_Halberd\Scripts\SubComponentSystem\SubComponents\CharacterAttack.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\SubComponentSystem\SubComponents\CharacterGround.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\SubComponentSystem\SubComponents\CharacterJump.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\SubComponentSystem\SubComponents\CharacterMovement.cs" />

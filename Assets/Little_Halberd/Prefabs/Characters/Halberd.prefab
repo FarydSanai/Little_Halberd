@@ -43,6 +43,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95ebc28fca371c04eb7987eff443c9e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damageData:
+    CurrentHP: 0
+    isDead: 0
   CharacterMaxHP: 100
 --- !u!1 &3671905788331622311
 GameObject:
@@ -153,7 +156,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 6
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: df7a4ffcdd819da469051c2f995c39bb, type: 2}
   m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 1
@@ -394,7 +397,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7544775d13c7019458f761f42677c7ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ArrSubComponentns: []
+  ArrSubComponents: []
   movingData:
     MovementSpeed: 0
     MovementSpeedGraph:
@@ -408,6 +411,9 @@ MonoBehaviour:
     Jumped: 0
     JumpCancel: 0
     JumpForce: 0
+  damageData:
+    CurrentHP: 0
+    isDead: 0
 --- !u!1 &3671905789491773694
 GameObject:
   m_ObjectHideFlags: 0

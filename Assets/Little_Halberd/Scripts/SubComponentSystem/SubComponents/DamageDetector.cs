@@ -38,8 +38,13 @@ namespace LittleHalberd
 
             if(damageData.CurrentHP <= 0f)
             {
-                damageData.isDead = true;
+                ProcessDeath();
             }
+        }
+        private void ProcessDeath()
+        {
+            damageData.isDead = true;
+            control.gameObject.SetActive(false);
         }
     }
 }
