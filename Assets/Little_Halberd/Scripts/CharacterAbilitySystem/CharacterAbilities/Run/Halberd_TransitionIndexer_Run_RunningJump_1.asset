@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Halberd_TransitionIndexer_Run_RunningJump_1
   m_EditorClassIdentifier: 
   Index: 1
-  TransitionConditions: 000000000400000001000000
+  TransitionConditions: 000000000100000004000000

@@ -2,11 +2,22 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Pathfinding;
+using System.Linq;
 
 namespace LittleHalberd
 {
+    public enum AIState
+    {
+        PATROL_AREA,
+        CHASE_PLAYER,
+        ATTACK_PLAYER,
+    }
     public class EnemyAI : MonoBehaviour
     {
+
+        private const string UpdatePathFunc = "UpdatePath";
+        private const string GroundLayerName = "Ground";
+
         [Header("Pathfinding")]
         public Transform Target;
         public float ActivateDistance = 600f;
@@ -22,8 +33,15 @@ namespace LittleHalberd
         private CharacterControl targetControl;
 
         [Header("Custom options")]
+        public AIState AICurrentState;
         public bool FollowEnabled = true;
         public bool DirUpdateEnabled = true;
+
+        [Header("Patrol options")]
+        private List<ContactPoint2D> contacts = new List<ContactPoint2D>();
+        private bool changePatrolDir = true;
+        private Collider2D groundCollider;
+        private int GroundLayer;
 
         private Path path;
         private int currentWayPoint = 0;
@@ -32,7 +50,9 @@ namespace LittleHalberd
         private Rigidbody2D rigid;
         private CharacterControl control;
 
-        private const string UpdatePathFunc = "UpdatePath";
+
+
+
 
         private void Start()
         {
@@ -40,17 +60,31 @@ namespace LittleHalberd
             rigid = this.GetComponent<Rigidbody2D>();
             control = this.GetComponent<CharacterControl>();
             targetControl = Target.GetComponent<CharacterControl>();
+            AICurrentState = AIState.PATROL_AREA;
+            GroundLayer = LayerMask.NameToLayer(GroundLayerName);
 
-            InvokeRepeating(UpdatePathFunc, 0f, PathUpdateTimer);
-            
-
+            InvokeRepeating(UpdatePathFunc, 0f, PathUpdateTimer);            
         }
         private void FixedUpdate()
         {
-            if (TargetInDistance() && FollowEnabled)
+            switch (AICurrentState)
             {
-                PathFollow();
+                case AIState.PATROL_AREA:
+                    {
+                        PatrolArea();
+                    }
+                    break;
+                case AIState.CHASE_PLAYER:
+                    break;
+                case AIState.ATTACK_PLAYER:
+                    break;
+                default:
+                    break;
             }
+            //if (TargetInDistance() && FollowEnabled)
+            //{
+            //    PathFollow();
+            //}
         }
         private void UpdatePath()
         {
@@ -82,19 +116,7 @@ namespace LittleHalberd
             JumpPlatform(dir);
 
             //Attack
-            if (ReachedTarget())
-            {
-                control.Attack = true;
 
-                if (targetControl.DAMAGE_DATA.isDead)
-                {
-                    control.Attack = false;
-                }
-            }
-            else
-            {
-                control.Attack = false;
-            }
 
             //Death
             if (control.DAMAGE_DATA.isDead)
@@ -167,6 +189,61 @@ namespace LittleHalberd
             if (dir.y <= 0f)
             {
                 control.Jump = false;
+            }
+        }
+        private void AttackTarget()
+        {
+            if (ReachedTarget())
+            {
+                control.Attack = true;
+
+                if (targetControl.DAMAGE_DATA.isDead)
+                {
+                    control.Attack = false;
+                }
+            }
+            else
+            {
+                control.Attack = false;
+            }
+        }
+        private void PatrolArea()
+        {
+            int contactsNumber = rigid.GetContacts(contacts);
+
+            if (contactsNumber > 0)
+            {
+                if (groundCollider == null)
+                {
+                    groundCollider = contacts.Find(c => c.collider.gameObject.layer == GroundLayer).collider;
+                }
+
+                if (groundCollider != null)
+                {
+                    AIPatrolPlatform(groundCollider);
+                }
+            }
+        }
+        private void AIPatrolPlatform(Collider2D groundCollider) 
+        {
+            if (control.transform.position.x > groundCollider.bounds.min.x && changePatrolDir)
+            {
+                control.MoveLeft = true;
+                control.MoveRight = false;
+            }
+            else if (changePatrolDir)
+            {
+                changePatrolDir = false;
+            }
+
+            if (control.transform.position.x < groundCollider.bounds.max.x && !changePatrolDir)
+            {
+                control.MoveRight = true;
+                control.MoveLeft = false;
+            }
+            else if (!changePatrolDir)
+            {
+                changePatrolDir = true;
             }
         }
     }
