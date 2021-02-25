@@ -1,8 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using Pathfinding;
-using System.Linq;
 
 namespace LittleHalberd
 {
@@ -27,7 +25,7 @@ namespace LittleHalberd
 
         [Header("Follow options")]
         public float NextPointDistance = 1.8f;
-        public float JumpNodeRequirement = 0.8f;
+        public float JumpNodeRequireDist = 0.8f;
 
         [Header("Target components")]
         private CharacterControl targetControl;
@@ -45,14 +43,10 @@ namespace LittleHalberd
 
         private Path path;
         private int currentWayPoint = 0;
-        private bool IsGrounded = false;
+        private bool IsGrounded;
         private Seeker seeker;
         private Rigidbody2D rigid;
         private CharacterControl control;
-
-
-
-
 
         private void Start()
         {
@@ -72,25 +66,44 @@ namespace LittleHalberd
                 case AIState.PATROL_AREA:
                     {
                         PatrolArea();
+
+                        if (TargetInDistance() && FollowEnabled)
+                        {
+                            AICurrentState = AIState.CHASE_PLAYER;
+                        }
                     }
                     break;
                 case AIState.CHASE_PLAYER:
+                    {
+                        PathFollow();
+
+                        if (ReachedTarget())
+                        {
+                            AICurrentState = AIState.ATTACK_PLAYER;
+                        }
+                    }
                     break;
                 case AIState.ATTACK_PLAYER:
+                    {
+                        AttackTarget();
+                        if (!ReachedTarget())
+                        {
+                            AICurrentState = AIState.CHASE_PLAYER;
+                        }
+                    }
                     break;
                 default:
                     break;
             }
-            //if (TargetInDistance() && FollowEnabled)
-            //{
-            //    PathFollow();
-            //}
         }
         private void UpdatePath()
         {
-            if (TargetInDistance() && FollowEnabled && seeker.IsDone())
+            if (AICurrentState == AIState.CHASE_PLAYER)
             {
-                seeker.StartPath(rigid.position, Target.position, OnPathComplete);
+                if (FollowEnabled && seeker.IsDone())
+                {
+                    seeker.StartPath(rigid.position, Target.position, OnPathComplete);
+                }
             }
         }
         private void PathFollow()
@@ -105,6 +118,7 @@ namespace LittleHalberd
             }
 
             IsGrounded = control.GROUND_DATA.IsGrounded();
+            control.Attack = false;
 
             //Set direction
             Vector2 dir = ((Vector2)path.vectorPath[currentWayPoint] - rigid.position);
@@ -114,9 +128,6 @@ namespace LittleHalberd
 
             //Jump
             JumpPlatform(dir);
-
-            //Attack
-
 
             //Death
             if (control.DAMAGE_DATA.isDead)
@@ -179,7 +190,7 @@ namespace LittleHalberd
         }
         private void JumpPlatform(Vector2 dir)
         {
-            if (dir.y > JumpNodeRequirement)
+            if (dir.y > JumpNodeRequireDist)
             {
                 if (IsGrounded)
                 {
@@ -192,15 +203,10 @@ namespace LittleHalberd
             }
         }
         private void AttackTarget()
-        {
-            if (ReachedTarget())
+        {       
+            if (!targetControl.DAMAGE_DATA.isDead)
             {
                 control.Attack = true;
-
-                if (targetControl.DAMAGE_DATA.isDead)
-                {
-                    control.Attack = false;
-                }
             }
             else
             {
@@ -209,10 +215,10 @@ namespace LittleHalberd
         }
         private void PatrolArea()
         {
-            int contactsNumber = rigid.GetContacts(contacts);
-
-            if (contactsNumber > 0)
+            IsGrounded = control.GROUND_DATA.IsGrounded();
+            if (IsGrounded)
             {
+                int contactsNumber = rigid.GetContacts(contacts);
                 if (groundCollider == null)
                 {
                     groundCollider = contacts.Find(c => c.collider.gameObject.layer == GroundLayer).collider;

@@ -24,10 +24,6 @@ namespace LittleHalberd
         {
             if (control.characterAnimator.GetBool(HashManager.Instance.ArrTransitionParams[(int)TransitionParameter.Move]))
             {
-                //if (HasContactInAir())
-                //{
-                //    return;
-                //}
                 if (control.MoveLeft)
                 {
                     Move(-movingData.MovementSpeed, movingData.MovementSpeedGraph, movingData.StateNormalizedTime);
@@ -70,18 +66,6 @@ namespace LittleHalberd
             {
                 control.transform.rotation = Quaternion.Euler(0f, 0f, 0f);
             }
-        }
-        private bool HasContactInAir()
-        {
-            if (!subComponentProcessor.groundData.IsGrounded())
-            {
-                int cotactsList = control.RIGID_BODY.GetContacts(contacts);
-                if (cotactsList > 0)
-                {
-                    return true;
-                }
-            }
-            return false;
         }
     }
 }
