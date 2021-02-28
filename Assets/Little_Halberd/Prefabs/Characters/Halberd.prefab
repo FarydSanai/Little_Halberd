@@ -46,7 +46,7 @@ MonoBehaviour:
   damageData:
     CurrentHP: 0
     isDead: 0
-  CharacterMaxHP: 100
+  CharacterMaxHP: 10000
 --- !u!1 &3671905788331622311
 GameObject:
   m_ObjectHideFlags: 0
@@ -90,7 +90,7 @@ GameObject:
   - component: {fileID: 3671905788504750680}
   - component: {fileID: 3671905788504750683}
   - component: {fileID: 3671905788504750682}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Halberd
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -342,8 +342,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b46f6bb259b6d8647a9edb30182a283f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attackData:
+    AttackDamage: 0
+    AttackRange: 0
+    AttackTimer: 0
+    AttackTriggered: 0
+    AttackIsReset: 0
+    AttackPoint: {fileID: 0}
+    EnemyLayers:
+      serializedVersion: 2
+      m_Bits: 0
   AttackRange: 0.5
   AttackDamage: 30
+  AttackResetTime: 0
   AttackPoint: {fileID: 3671905788331622310}
   EnemyLayers:
     serializedVersion: 2
@@ -411,6 +422,16 @@ MonoBehaviour:
     Jumped: 0
     JumpCancel: 0
     JumpForce: 0
+  attackData:
+    AttackDamage: 0
+    AttackRange: 0
+    AttackTimer: 0
+    AttackTriggered: 0
+    AttackIsReset: 0
+    AttackPoint: {fileID: 0}
+    EnemyLayers:
+      serializedVersion: 2
+      m_Bits: 0
   damageData:
     CurrentHP: 0
     isDead: 0
