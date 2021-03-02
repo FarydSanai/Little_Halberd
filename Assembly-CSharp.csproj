@@ -84,8 +84,10 @@
     <Compile Include="Assets\Little_Halberd\Scripts\Managers\VirtualInputManager.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\ParallaxBackgroundSystem\ParallaxBackground.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\PlayerInputControl\PlayerInput.cs" />
+    <Compile Include="Assets\Little_Halberd\Scripts\PoolObjectSystem\GroundGenerator.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\PoolObjectSystem\IPooledObject.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\PoolObjectSystem\Pool.cs" />
+    <Compile Include="Assets\Little_Halberd\Scripts\PoolObjectSystem\PoolObjectInfo.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\PoolObjectSystem\PoolObjectLoader.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\PoolObjectSystem\PooledObjects\Ground.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\SubComponentSystem\SubComponent.cs" />

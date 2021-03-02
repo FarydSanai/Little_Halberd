@@ -10,8 +10,5 @@ namespace LittleHalberd
 
         [SerializeField]
         private ObjectType Type;
-
-
-
     }
 }

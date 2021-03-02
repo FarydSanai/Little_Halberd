@@ -11,7 +11,6 @@ namespace LittleHalberd
         public float AttackRange;
         public float AttackTimer;
 
-        public bool AttackTriggered;
         public bool AttackIsReset;
 
         public Transform AttackPoint;

@@ -23,7 +23,6 @@ namespace LittleHalberd
                 AttackRange = AttackRange,
                 AttackPoint = AttackPoint,
                 EnemyLayers = EnemyLayers,
-                AttackTriggered = false,
                 AttackIsReset = true,
                 AttackTimer = 0f,
                 Attack = Attack,
@@ -44,22 +43,25 @@ namespace LittleHalberd
         }
         private void ProcessAttack()
         {
-            if (attackData.AttackIsReset)
+            if (control.Attack)
             {
-                if (control.Attack && !attackData.AttackTriggered)
+                if (attackData.AttackIsReset)
                 {
                     control.characterAnimator.SetTrigger(HashManager.Instance.ArrTransitionParams[(int)TransitionParameter.Attack]);
                     attackData.Attack();
 
-                    attackData.AttackTimer = Time.time + AttackResetTime;
-                    attackData.AttackIsReset = false;
+                    if (AttackResetTime > 0f)
+                    {
+                        attackData.AttackTimer = Time.time + AttackResetTime;
+                        attackData.AttackIsReset = false;
+                    }
                 }
-            }
-            else
-            {
-                if (Time.time > attackData.AttackTimer)
+                else
                 {
-                    attackData.AttackIsReset = true;
+                    if (Time.time > attackData.AttackTimer)
+                    {
+                        attackData.AttackIsReset = true;
+                    }
                 }
             }
         }

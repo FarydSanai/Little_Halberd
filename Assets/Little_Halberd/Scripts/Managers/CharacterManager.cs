@@ -12,7 +12,6 @@ namespace LittleHalberd
         {
             foreach (CharacterControl control in Characters)
             {
-                Debug.Log(control.subComponentProcessor.ArrSubComponents);
                 if (control.subComponentProcessor.ArrSubComponents[(int)SubComponentType.MANUAL_INPUT] != null)
                 {
                     Debug.Log("Return control");

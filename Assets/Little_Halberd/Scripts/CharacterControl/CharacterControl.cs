@@ -65,7 +65,7 @@ namespace LittleHalberd
         }
         public Vector3 GetPosition()
         {
-            return this.gameObject.transform.position;
+            return this.transform.position;
         }
         private void RegisterCharacter()
         {

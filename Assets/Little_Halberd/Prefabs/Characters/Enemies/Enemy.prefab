@@ -62,6 +62,15 @@ MonoBehaviour:
     Jumped: 0
     JumpCancel: 0
     JumpForce: 0
+  attackData:
+    AttackDamage: 0
+    AttackRange: 0
+    AttackTimer: 0
+    AttackIsReset: 0
+    AttackPoint: {fileID: 0}
+    EnemyLayers:
+      serializedVersion: 2
+      m_Bits: 0
   damageData:
     CurrentHP: 0
     isDead: 0
@@ -292,8 +301,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b46f6bb259b6d8647a9edb30182a283f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attackData:
+    AttackDamage: 0
+    AttackRange: 0
+    AttackTimer: 0
+    AttackIsReset: 0
+    AttackPoint: {fileID: 0}
+    EnemyLayers:
+      serializedVersion: 2
+      m_Bits: 0
   AttackRange: 0.5
   AttackDamage: 30
+  AttackResetTime: 0.5
   AttackPoint: {fileID: 3969291106429455569}
   EnemyLayers:
     serializedVersion: 2
@@ -508,13 +527,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Target: {fileID: 0}
-  ActivateDistance: 600
+  ActivateDistance: 64
   DeactivateDistance: 4
   PathUpdateTimer: 0.5
   MoveDirDist: 0.5
   NextPointDistance: 1.8
-  JumpNodeRequirement: 3
-  FallDistance: 0
+  JumpNodeRequireDist: 0.8
+  AICurrentState: 0
   FollowEnabled: 1
   DirUpdateEnabled: 1
 --- !u!1 &3969291107572901756

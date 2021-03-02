@@ -18,13 +18,6 @@ namespace LittleHalberd
         private void Awake()
         {
             lastEndPosition = levelPartStart.Find(endPointObjName).position;
-
-            int startLevelPartsCount = 3;
-
-            for (int i = 0; i < startLevelPartsCount; i++)
-            {
-                SpawnLevelPart();
-            }
         }
         private void Update()
         {

@@ -10,20 +10,24 @@ namespace LittleHalberd
         LEVEL_PART,
         ENEMY,
     }
-    public class PoolObjectLoader : Singleton<PoolObjectLoader>
+    public class PoolObjectLoader : MonoBehaviour
     {
-        [Serializable]
-        public struct ObjectInfo
-        {
-            public ObjectType objectType;
-            public GameObject objectPrefab;
-            public int StartCount;
-        }
+        public static PoolObjectLoader Instance;
 
         [SerializeField]
-        private List<ObjectInfo> PoolObjectsInfo;
+        private List<PoolObjectInfo> PoolObjectsInfo;
 
         private Dictionary<ObjectType, Pool> PoolsDic;
+
+        private void Awake()
+        {
+            if (Instance == null)
+            {
+                Instance = this;
+            }
+
+            InitPool();
+        }
 
         private void InitPool()
         {
@@ -31,7 +35,7 @@ namespace LittleHalberd
 
             GameObject temp = new GameObject();
 
-            foreach (ObjectInfo objInfo in PoolObjectsInfo)
+            foreach (PoolObjectInfo objInfo in PoolObjectsInfo)
             {
                 GameObject objContainer = Instantiate(temp, transform, false);
                 objContainer.name = objInfo.objectType.ToString();
@@ -53,7 +57,7 @@ namespace LittleHalberd
             instObj.SetActive(false);
             return instObj;
         }
-        private GameObject GetObject(ObjectType type)
+        public GameObject GetObject(ObjectType type)
         {
             GameObject obj;
 
@@ -69,7 +73,7 @@ namespace LittleHalberd
 
             return obj;
         }
-        private void DestroyObject(GameObject obj)
+        public void DestroyObject(GameObject obj)
         {
             PoolsDic[obj.GetComponent<IPooledObject>().objectType].Objects.Enqueue(obj);
             obj.SetActive(false);
