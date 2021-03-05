@@ -7,7 +7,9 @@ namespace LittleHalberd
     public enum ObjectType
     {
         GROUND,
-        LEVEL_PART,
+        LEVEL_PART_1,
+        LEVEL_PART_2,
+        LEVEL_PART_3,
         ENEMY,
     }
     public class PoolObjectLoader : MonoBehaviour

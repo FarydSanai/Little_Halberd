@@ -2,11 +2,6 @@
 
 namespace LittleHalberd
 {
-    public enum MoveDirection
-    {
-        Right,
-        Left,
-    }
     public class CharacterControl : MonoBehaviour
     {
         public bool MoveRight;
@@ -35,6 +30,20 @@ namespace LittleHalberd
         public GroundData GROUND_DATA => subComponentProcessor.groundData;
         public AttackData ATTACK_DATA => subComponentProcessor.attackData;
         public DamageData DAMAGE_DATA => subComponentProcessor.damageData;
+        //public DamageData DAMAGE_DATA
+        //{
+        //    get
+        //    {
+        //        if (subComponentProcessor.damageData != null)
+        //        {
+        //            return subComponentProcessor.damageData;
+        //        }
+        //        else
+        //        {
+        //            return this.GetComponentInChildren<DamageDetector>().damageData;
+        //        }
+        //    }
+        //}
 
         [Header("SubComponents")]
         public SubComponentProcessor subComponentProcessor;
@@ -62,10 +71,6 @@ namespace LittleHalberd
             {
                 statesArr[i].control = this;
             }
-        }
-        public Vector3 GetPosition()
-        {
-            return this.transform.position;
         }
         private void RegisterCharacter()
         {

@@ -19,10 +19,10 @@ namespace LittleHalberd
         [Header("Pathfinding")]
         public Transform Target;
         public float ActivateDistance = 600f;
-        public float DeactivateDistance = 4f;
+        public float ReachedDist = 4f;
         public float PathUpdateTimer = 0.5f;
         public float MoveDirDist = 0.5f;
-
+        
         [Header("Follow options")]
         public float NextPointDistance = 1.8f;
         public float JumpNodeRequireDist = 0.8f;
@@ -57,6 +57,7 @@ namespace LittleHalberd
             AICurrentState = AIState.PATROL_AREA;
             GroundLayer = LayerMask.NameToLayer(GroundLayerName);
 
+
             InvokeRepeating(UpdatePathFunc, 0f, PathUpdateTimer);            
         }
         private void FixedUpdate()
@@ -76,7 +77,6 @@ namespace LittleHalberd
                 case AIState.CHASE_PLAYER:
                     {
                         PathFollow();
-
                         if (ReachedTarget())
                         {
                             AICurrentState = AIState.ATTACK_PLAYER;
@@ -130,10 +130,10 @@ namespace LittleHalberd
             JumpPlatform(dir);
 
             //Death
-            if (control.DAMAGE_DATA.isDead)
-            {
-                CancelInvoke(UpdatePathFunc);
-            }
+            //if (control.DAMAGE_DATA.isDead)
+            //{
+            //    CancelInvoke(UpdatePathFunc);
+            //}
 
             Vector2 dist = rigid.position - (Vector2)path.vectorPath[currentWayPoint];
 
@@ -144,7 +144,7 @@ namespace LittleHalberd
         }
         private bool TargetInDistance()
         {
-            Vector2 dist = rigid.position - (Vector2)Target.transform.position;
+            Vector2 dist = rigid.position - (Vector2)Target.position;
             return Vector3.SqrMagnitude(dist) < ActivateDistance;
         }
         private void OnPathComplete(Path p)
@@ -181,8 +181,8 @@ namespace LittleHalberd
         }
         private bool ReachedTarget()
         {
-            Vector2 distToTarget = rigid.position - (Vector2)Target.transform.position;
-            if (Vector2.SqrMagnitude(distToTarget) < DeactivateDistance)
+            Vector2 distToTarget = rigid.position - (Vector2)Target.position;
+            if (Vector2.SqrMagnitude(distToTarget) < ReachedDist)
             {
                 return true;
             }
@@ -197,7 +197,7 @@ namespace LittleHalberd
                     control.Jump = true;
                 }
             }
-            if (dir.y <= 0f)
+            else
             {
                 control.Jump = false;
             }

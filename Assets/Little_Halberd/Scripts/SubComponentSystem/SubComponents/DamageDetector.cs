@@ -19,7 +19,7 @@ namespace LittleHalberd
             };
 
             subComponentProcessor.damageData = damageData;
-            //subComponentProcessor.ArrSubComponentns[(int)SubComponentType.DAMAGE_DETECTOR] = this;
+            subComponentProcessor.ArrSubComponents[(int)SubComponentType.DAMAGE_DETECTOR] = this;
         }
 
         public override void OnUpdate()

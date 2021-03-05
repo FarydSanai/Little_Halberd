@@ -7,13 +7,14 @@ namespace LittleHalberd
     public class GroundGenerator : MonoBehaviour
     {
         private const string groundEndPoint = "GroundEndPoint";
-        private float GroundSpawnDistance = 1000f; 
+        private const float GroundSpawnDistance = 1000f; 
 
-        public Transform GroundStart;
-        public CharacterControl control;
-        public Vector3 lastGroundEndPoint;
+        [SerializeField] private Transform GroundStart;
+        [SerializeField] private CharacterControl control;
+        [SerializeField] private int MaxCountBeforeDestroy;
 
-        public List<Transform> GroundParts = new List<Transform>();
+        private Vector3 lastGroundEndPoint;
+        private List<Transform> GroundParts = new List<Transform>();
 
         private void Awake()
         {
@@ -23,13 +24,13 @@ namespace LittleHalberd
 
         private void Update()
         {
-            Vector3 dist = control.GetPosition() - lastGroundEndPoint;
+            Vector3 dist = control.transform.position - lastGroundEndPoint;
 
             if (Vector3.SqrMagnitude(dist) < GroundSpawnDistance)
             {
                 SpawnGround(lastGroundEndPoint);
 
-                if (GroundParts.Count >= 3)
+                if (GroundParts.Count >= MaxCountBeforeDestroy)
                 {
                     DestroyGround(GroundParts[0]);
                 }
