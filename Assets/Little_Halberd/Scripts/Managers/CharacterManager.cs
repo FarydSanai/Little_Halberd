@@ -23,5 +23,13 @@ namespace LittleHalberd
 
             return PlayableCharacter;
         }
+        public bool CharacterIsPlayable(CharacterControl control)
+        {
+            if (control.subComponentProcessor.ArrSubComponents[(int)SubComponentType.MANUAL_INPUT] != null)
+            {
+                return true;
+            }
+            return false;
+        }
     }
 }

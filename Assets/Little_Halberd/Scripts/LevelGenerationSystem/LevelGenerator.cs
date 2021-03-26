@@ -20,7 +20,6 @@ namespace LittleHalberd
         private void Awake()
         {
             lastEndPosition = levelPartStart.Find(endPointObjName).position;
-            Debug.Log(lastEndPosition);
         }
         private void Start()
         {

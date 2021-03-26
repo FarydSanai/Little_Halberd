@@ -175,7 +175,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 11
+  orthographic size: 12
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -199,7 +199,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 107241910}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -19.997513, y: 8.526512, z: -10}
+  m_LocalPosition: {x: -17.149744, y: 8.218199, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1915774334}
@@ -1915,7 +1915,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1268171566}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 50, y: 5.59, z: 0}
+  m_LocalPosition: {x: 60, y: 5.59, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6815686765414792006}
@@ -1969,18 +1969,18 @@ MonoBehaviour:
   m_LookaheadTime: 0
   m_LookaheadSmoothing: 0
   m_LookaheadIgnoreY: 0
-  m_XDamping: 7.9
+  m_XDamping: 10
   m_YDamping: 1
   m_ZDamping: 1
   m_TargetMovementOnly: 1
-  m_ScreenX: 0.3753881
-  m_ScreenY: 0.63302326
+  m_ScreenX: 0.33
+  m_ScreenY: 0.60909164
   m_CameraDistance: 10
-  m_DeadZoneWidth: 0.51
+  m_DeadZoneWidth: 0.6658503
   m_DeadZoneHeight: 0
   m_DeadZoneDepth: 0
   m_UnlimitedSoftZone: 0
-  m_SoftZoneWidth: 0.71
+  m_SoftZoneWidth: 0.92
   m_SoftZoneHeight: 0.64
   m_BiasX: 0
   m_BiasY: -0.10700002
@@ -2483,6 +2483,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Halberd
       objectReference: {fileID: 0}
+    - target: {fileID: 3671905788504750695, guid: bda1cd4d64d666747a19ae87e46e0fd7,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bda1cd4d64d666747a19ae87e46e0fd7, type: 3}
 --- !u!4 &1983934316 stripped
@@ -2530,7 +2535,7 @@ MonoBehaviour:
   m_Follow: {fileID: 1983934316}
   m_Lens:
     FieldOfView: 60
-    OrthographicSize: 11
+    OrthographicSize: 12
     NearClipPlane: 0.3
     FarClipPlane: 1000
     Dutch: 0
@@ -2551,7 +2556,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2024992287}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -19.997513, y: 8.526512, z: -10}
+  m_LocalPosition: {x: -17.149744, y: 8.218199, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1290000272}
