@@ -1,0 +1,560 @@
+fileFormatVersion: 2
+guid: 9d12d04a2c1d8bd40bb718cb72e1113f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5031948557109876319
+    second: Golem_Grey_Walk_0
+  - first:
+      213: -5897108821564158992
+    second: Golem_Grey_Walk_1
+  - first:
+      213: -609131534933374585
+    second: Golem_Grey_Walk_2
+  - first:
+      213: 697701459624863372
+    second: Golem_Grey_Walk_3
+  - first:
+      213: 3870101908387998349
+    second: Golem_Grey_Walk_4
+  - first:
+      213: -4769769296006670503
+    second: Golem_Grey_Walk_5
+  - first:
+      213: -2685666913656598498
+    second: Golem_Grey_Walk_6
+  - first:
+      213: 3556302417327225534
+    second: Golem_Grey_Walk_7
+  - first:
+      213: -1910750503460220641
+    second: Golem_Grey_Walk_8
+  - first:
+      213: 7475502670134390634
+    second: Golem_Grey_Walk_9
+  - first:
+      213: -3205883240623235045
+    second: Golem_Grey_Walk_10
+  - first:
+      213: 2454032463106596347
+    second: Golem_Grey_Walk_11
+  - first:
+      213: -987685034808660216
+    second: Golem_Grey_Walk_12
+  - first:
+      213: 6199184898199617167
+    second: Golem_Grey_Walk_13
+  - first:
+      213: -3992299423680884678
+    second: Golem_Grey_Walk_14
+  - first:
+      213: 7461209772299204273
+    second: Golem_Grey_Walk_15
+  - first:
+      213: -9032948600827152551
+    second: Golem_Grey_Walk_16
+  - first:
+      213: -1315210611226799007
+    second: Golem_Grey_Walk_17
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Golem_Grey_Walk_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 925
+        width: 463
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a92d6d927dea2ab0800000000000000
+      internalID: -5031948557109876319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golem_Grey_Walk_1
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 913
+        width: 446
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fb88d065c2492ea0800000000000000
+      internalID: -5897108821564158992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golem_Grey_Walk_2
+      rect:
+        serializedVersion: 2
+        x: 983
+        y: 917
+        width: 427
+        height: 363
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 789cec6a81eeb87f0800000000000000
+      internalID: -609131534933374585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golem_Grey_Walk_3
+      rect:
+        serializedVersion: 2
+        x: 1434
+        y: 925
+        width: 407
+        height: 362
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c86263ce7cbbea900800000000000000
+      internalID: 697701459624863372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golem_Grey_Walk_4
+      rect:
+        serializedVersion: 2
+        x: 1861
+        y: 922
+        width: 391
+        height: 363
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8a27065e2d55b530800000000000000
+      internalID: 3870101908387998349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golem_Grey_Walk_5
+      rect:
+        serializedVersion: 2
+        x: 2288
+        y: 920
+        width: 388
+        height: 364
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95715fab8106ecdb0800000000000000
+      internalID: -4769769296006670503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golem_Grey_Walk_6
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 487
+        width: 381
+        height: 365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e109a7adb289abad0800000000000000
+      internalID: -2685666913656598498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golem_Grey_Walk_7
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 491
+        width: 373
+        height: 364
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebaf6aad4368a5130800000000000000
+      internalID: 3556302417327225534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golem_Grey_Walk_8
+      rect:
+        serializedVersion: 2
+        x: 1013
+        y: 496
+        width: 362
+        height: 362
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f11dada6a86ab75e0800000000000000
+      internalID: -1910750503460220641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golem_Grey_Walk_9
+      rect:
+        serializedVersion: 2
+        x: 1477
+        y: 494
+        width: 351
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6f28d252125eb760800000000000000
+      internalID: 7475502670134390634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golem_Grey_Walk_10
+      rect:
+        serializedVersion: 2
+        x: 1899
+        y: 489
+        width: 361
+        height: 361
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b10264b9d2a6283d0800000000000000
+      internalID: -3205883240623235045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golem_Grey_Walk_11
+      rect:
+        serializedVersion: 2
+        x: 2308
+        y: 485
+        width: 371
+        height: 362
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfddebee5897e0220800000000000000
+      internalID: 2454032463106596347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golem_Grey_Walk_12
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 63
+        width: 379
+        height: 363
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80fa24e91b90b42f0800000000000000
+      internalID: -987685034808660216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golem_Grey_Walk_13
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 60
+        width: 386
+        height: 364
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8e772af1dde70650800000000000000
+      internalID: 6199184898199617167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golem_Grey_Walk_14
+      rect:
+        serializedVersion: 2
+        x: 909
+        y: 71
+        width: 390
+        height: 362
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a30118683d08898c0800000000000000
+      internalID: -3992299423680884678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golem_Grey_Walk_15
+      rect:
+        serializedVersion: 2
+        x: 1337
+        y: 53
+        width: 404
+        height: 366
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b63198b1ca8b8760800000000000000
+      internalID: 7461209772299204273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golem_Grey_Walk_16
+      rect:
+        serializedVersion: 2
+        x: 1782
+        y: 39
+        width: 423
+        height: 364
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 957f55d2b1584a280800000000000000
+      internalID: -9032948600827152551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golem_Grey_Walk_17
+      rect:
+        serializedVersion: 2
+        x: 2251
+        y: 42
+        width: 442
+        height: 361
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1649009daee6fbde0800000000000000
+      internalID: -1315210611226799007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: acd6ddc0b812c8d409a02ea196a5492d
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

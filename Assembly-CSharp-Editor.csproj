@@ -64,13 +64,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Spriter2UnityDX\Editor\AnimationBuilder.cs" />
-    <Compile Include="Assets\Spriter2UnityDX\Editor\CustomEditors.cs" />
-    <Compile Include="Assets\Spriter2UnityDX\Editor\PrefabBuilder.cs" />
-    <Compile Include="Assets\Spriter2UnityDX\Editor\S2USettings.cs" />
-    <Compile Include="Assets\Spriter2UnityDX\Editor\ScmlImportOptions.cs" />
-    <Compile Include="Assets\Spriter2UnityDX\Editor\ScmlPostProcessor.cs" />
-    <Compile Include="Assets\Spriter2UnityDX\Editor\ScmlSupport.cs" />
+    <Compile Include="Assets\Little_Halberd\Prefabs\GroundParts\Editor\SpriteChangerEditor.cs" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Unity_Installs/2019.4.18f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -271,6 +265,9 @@
     </Reference>
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/16.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
+    </Reference>
+    <Reference Include="Pathfinding.Ionic.Zip.Reduced">
+      <HintPath>C:/Unity_Projects/Little_Halberd/Assets/AstarPathfindingProject/Plugins/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>C:/Unity_Projects/Little_Halberd/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll</HintPath>
@@ -662,6 +659,9 @@
     <Reference Include="Unity.2D.Sprite.Editor">
       <HintPath>C:/Unity_Projects/Little_Halberd/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.2D.Tilemap.Editor">
+      <HintPath>C:/Unity_Projects/Little_Halberd/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="com.unity.cinemachine.editor">
       <HintPath>C:/Unity_Projects/Little_Halberd/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
     </Reference>
@@ -676,6 +676,18 @@
     <ProjectReference Include="Assembly-CSharp.csproj">
       <Project>{7546467F-51AC-ADC2-2885-300E148DFBF3}</Project>
       <Name>Assembly-CSharp</Name>
+    </ProjectReference>
+    <ProjectReference Include="AstarPathfindingProject.csproj">
+      <Project>{8EF746C6-9A92-7672-4D46-A6E603699CCE}</Project>
+      <Name>AstarPathfindingProject</Name>
+    </ProjectReference>
+    <ProjectReference Include="PackageToolsEditor.csproj">
+      <Project>{947B1303-8BE9-2868-1D91-67B4AAD15D5E}</Project>
+      <Name>PackageToolsEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="AstarPathfindingProjectEditor.csproj">
+      <Project>{EE99A63C-07DB-FCBB-0479-CA6D3E75BB1E}</Project>
+      <Name>AstarPathfindingProjectEditor</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -50,6 +50,7 @@ namespace LittleHalberd
 
         private void Start()
         {
+            Target = CharacterManager.Instance.GetPlayableCharacter().transform;
             seeker = this.GetComponent<Seeker>();
             rigid = this.GetComponent<Rigidbody2D>();
             control = this.GetComponent<CharacterControl>();
@@ -130,10 +131,10 @@ namespace LittleHalberd
             JumpPlatform(dir);
 
             //Death
-            //if (control.DAMAGE_DATA.isDead)
-            //{
-            //    CancelInvoke(UpdatePathFunc);
-            //}
+            if (control.DAMAGE_DATA.isDead)
+            {
+                CancelInvoke(UpdatePathFunc);
+            }
 
             Vector2 dist = rigid.position - (Vector2)path.vectorPath[currentWayPoint];
 
@@ -232,7 +233,7 @@ namespace LittleHalberd
         }
         private void AIPatrolPlatform(Collider2D groundCollider) 
         {
-            if (control.transform.position.x > groundCollider.bounds.min.x && changePatrolDir)
+            if (changePatrolDir && control.transform.position.x > groundCollider.bounds.min.x)
             {
                 control.MoveLeft = true;
                 control.MoveRight = false;
@@ -242,7 +243,7 @@ namespace LittleHalberd
                 changePatrolDir = false;
             }
 
-            if (control.transform.position.x < groundCollider.bounds.max.x && !changePatrolDir)
+            if (!changePatrolDir && control.transform.position.x < groundCollider.bounds.max.x)
             {
                 control.MoveRight = true;
                 control.MoveLeft = false;

@@ -11,13 +11,20 @@ namespace LittleHalberd
 
         [SerializeField] private CharacterControl control;
         [SerializeField] private Transform levelPartStart;
-        [SerializeField] private List<Transform> levelPartList = new List<Transform>(); 
+        [SerializeField] private List<Transform> levelPartList = new List<Transform>();
+        [SerializeField] private int MaxLevelPartsCount = 5;
 
         private Vector3 lastEndPosition;
+
 
         private void Awake()
         {
             lastEndPosition = levelPartStart.Find(endPointObjName).position;
+            Debug.Log(lastEndPosition);
+        }
+        private void Start()
+        {
+            StartCoroutine(_ScanGraphs());
         }
         private void Update()
         {
@@ -27,27 +34,38 @@ namespace LittleHalberd
                 SpawnLevelPart();
             }
 
-            if (levelPartList.Count >= 7)
+            if (levelPartList.Count >= MaxLevelPartsCount)
             {
                 PoolObjectLoader.Instance.DestroyObject(levelPartList[0].gameObject);
                 levelPartList.RemoveAt(0);
             }
         }
 
+        IEnumerator _ScanGraphs()
+        {
+            while(true)
+            {
+                AstarPath.active.Scan();
+                //Debug.Log("Scan graphs");
+                yield return new WaitForSeconds(3f);
+            }
+        }
+
         private void SpawnLevelPart()
         {
-            //int rand = Random.Range(0, levelPartList.Count);
-            Transform levelPartTransform = SpawnLevelPartCurrent();
+            int rand = Random.Range(0, PoolObjectLoader.Instance.LevelPartsInfo.Count);
 
-            lastEndPosition = levelPartTransform.Find(endPointObjName).position;
+            Transform levelPartTransform = SpawnLevelPart(PoolObjectLoader.Instance.LevelPartsInfo[rand].objectType);
+
+            //lastEndPosition = levelPartTransform.Find(endPointObjName).position;
+            lastEndPosition = levelPartTransform.position + new Vector3(50f, 0f, 0f);
 
             levelPartList.Add(levelPartTransform);
         }
-        private Transform SpawnLevelPartCurrent()
+        private Transform SpawnLevelPart(ObjectType levelPartType)
         {
-            //Transform levelPartTransform = Instantiate(levelPart, spawnPosition, Quaternion.identity);
-            Transform levelPartTransform = PoolObjectLoader.Instance.GetObject(ObjectType.LEVEL_PART_1).transform;
-            levelPartTransform.position = lastEndPosition + new Vector3(15f, 0f, 0f);
+            Transform levelPartTransform = PoolObjectLoader.Instance.GetObject(levelPartType).transform;
+            levelPartTransform.position = lastEndPosition;
 
             return levelPartTransform;
         }

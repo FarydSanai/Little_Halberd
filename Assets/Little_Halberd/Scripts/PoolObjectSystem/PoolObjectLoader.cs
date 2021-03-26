@@ -16,6 +16,8 @@ namespace LittleHalberd
     {
         public static PoolObjectLoader Instance;
 
+        public List<PoolObjectInfo> LevelPartsInfo;
+
         [SerializeField]
         private List<PoolObjectInfo> PoolObjectsInfo;
 
@@ -34,6 +36,7 @@ namespace LittleHalberd
         private void InitPool()
         {
             PoolsDic = new Dictionary<ObjectType, Pool>();
+            PoolObjectsInfo.AddRange(LevelPartsInfo);
 
             GameObject temp = new GameObject();
 

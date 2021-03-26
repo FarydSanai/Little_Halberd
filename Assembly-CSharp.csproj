@@ -64,6 +64,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Little_Halberd\Prefabs\GroundParts\SpriteChanger.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\CharacterAbilitySystem\BaseScripts\CharacterAbility.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\CharacterAbilitySystem\BaseScripts\CharacterState.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\CharacterAbilitySystem\CharacterAbilities\AbilitiesScripts\Attack.cs" />
@@ -78,7 +79,7 @@
     <Compile Include="Assets\Little_Halberd\Scripts\Enemies\EnemyAI.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\Helpers\TransitionConditionChecker.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\LevelGenerationSystem\LevelGenerator.cs" />
-    <Compile Include="Assets\Little_Halberd\Scripts\LevelGenerationSystem\LevelParticipate.cs" />
+    <Compile Include="Assets\Little_Halberd\Scripts\LevelGenerationSystem\LevelPart.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\Managers\CharacterManager.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\Managers\HashManager.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\Managers\Singleton.cs" />

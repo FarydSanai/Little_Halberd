@@ -7,18 +7,21 @@ namespace LittleHalberd
     public class CharacterManager : Singleton<CharacterManager>
     {
         public List<CharacterControl> Characters = new List<CharacterControl>();
-
+        public CharacterControl PlayableCharacter;
         public CharacterControl GetPlayableCharacter()
         {
-            foreach (CharacterControl control in Characters)
+            if (PlayableCharacter == null)
             {
-                if (control.subComponentProcessor.ArrSubComponents[(int)SubComponentType.MANUAL_INPUT] != null)
+                foreach (CharacterControl control in Characters)
                 {
-                    Debug.Log("Return control");
-                    return control;
+                    if (control.subComponentProcessor.ArrSubComponents[(int)SubComponentType.MANUAL_INPUT] != null)
+                    {
+                        return control;
+                    }
                 }
             }
-            return null;
+
+            return PlayableCharacter;
         }
     }
 }

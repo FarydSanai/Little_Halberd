@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Little_Halberd/Scenes/Main_Scene.unity
+- path: Assets/Little_Halberd/Scenes/Level_2.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

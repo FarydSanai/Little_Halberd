@@ -4,7 +4,8 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Node
+  - LVL_PT_1_NODE
+  - LVL_PT_2_NODE
   layers:
   - Default
   - TransparentFX

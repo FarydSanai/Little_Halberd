@@ -30,20 +30,6 @@ namespace LittleHalberd
         public GroundData GROUND_DATA => subComponentProcessor.groundData;
         public AttackData ATTACK_DATA => subComponentProcessor.attackData;
         public DamageData DAMAGE_DATA => subComponentProcessor.damageData;
-        //public DamageData DAMAGE_DATA
-        //{
-        //    get
-        //    {
-        //        if (subComponentProcessor.damageData != null)
-        //        {
-        //            return subComponentProcessor.damageData;
-        //        }
-        //        else
-        //        {
-        //            return this.GetComponentInChildren<DamageDetector>().damageData;
-        //        }
-        //    }
-        //}
 
         [Header("SubComponents")]
         public SubComponentProcessor subComponentProcessor;
@@ -77,6 +63,10 @@ namespace LittleHalberd
             if (!CharacterManager.Instance.Characters.Contains(this))
             {
                 CharacterManager.Instance.Characters.Add(this);
+            }
+            if (this.GetComponentInChildren<ManualInput>() != null)
+            {
+                CharacterManager.Instance.PlayableCharacter = this;
             }
         }
     }

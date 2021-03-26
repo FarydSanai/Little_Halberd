@@ -9,7 +9,7 @@ namespace LittleHalberd
     {
         public override void OnEnter(CharacterState characterState, Animator animator, AnimatorStateInfo stateInfo)
         {
-            //characterState.ATTACK_DATA.AttackTriggered = true;
+
         }
         public override void UpdateAbility(CharacterState characterState, Animator animator, AnimatorStateInfo stateInfo)
         {
@@ -17,7 +17,7 @@ namespace LittleHalberd
         }
         public override void OnExit(CharacterState characterState, Animator animator, AnimatorStateInfo stateInfo)
         {
-            //characterState.ATTACK_DATA.AttackTriggered = false;
+            
         }
     }
 }

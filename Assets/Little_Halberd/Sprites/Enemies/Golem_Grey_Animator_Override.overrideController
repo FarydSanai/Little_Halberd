@@ -7,7 +7,23 @@ AnimatorOverrideController:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Golem_Grey_Animator_Override
-  m_Controller: {fileID: 9100000, guid: 17f9469b2c9a6524e84bb235a5410912, type: 2}
+  m_Controller: {fileID: 9100000, guid: 92778a26e70809b47a45dd597172997b, type: 2}
   m_Clips:
-  - m_OriginalClip: {fileID: 7400000, guid: ee5212ef454132d4b8ea9ac8df9ef8e9, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 272a9abfb2bc8f240a713a42400b4379, type: 2}
     m_OverrideClip: {fileID: 7400000, guid: 4e464c3cd7e50434ca033c30608e0789, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 15c64a5f3c640e84395e96f3d6ae1a0d, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: ff8aa0052a991a142be1eb1ad8400f88, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: a4402cfaad0412342a42860cb77ac712, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: ff8aa0052a991a142be1eb1ad8400f88, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: ab078399786d570469ae6199d6fdd287, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: a8bb918713db38a49b2fe096d7b8f316, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: ac5598ee414583244918d41a53af5b76, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 8373e056a658bc841bc8cab322325c61, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: cd06c538e1a4c434ea7b671ebe548e3a, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 39596aa56f29c8042949cac510c9cf6e, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: f25fc8bd1a5bedf4895f6f1d472ecaa8, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 73667b203b5abab4cb822f79ace77dbc, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 83e3ad4ff695053488880d52583bfaa8, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 4e0c76444ab2d4b4f9e9df765e3c0056, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 78dc7f3db5595b04fb74f4d5e4b7624a, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: f198a5b01be0d7c4da0831c97b6e24d3, type: 2}
