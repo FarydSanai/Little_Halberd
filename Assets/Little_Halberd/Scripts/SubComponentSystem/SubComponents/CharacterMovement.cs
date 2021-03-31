@@ -26,11 +26,11 @@ namespace LittleHalberd
             {
                 if (control.MoveLeft)
                 {
-                    if (!CheckScreenLeftBound())
-                    {
-                        control.RIGID_BODY.velocity = new Vector2(0f, control.RIGID_BODY.velocity.y);
-                        return;
-                    }
+                    //if (!CheckScreenLeftBound())
+                    //{
+                    //    control.RIGID_BODY.velocity = new Vector2(0f, control.RIGID_BODY.velocity.y);
+                    //    return;
+                    //}
                     Move(-movingData.MovementSpeed, movingData.MovementSpeedGraph, movingData.StateNormalizedTime);
                 }
                 if (control.MoveRight)
@@ -72,20 +72,19 @@ namespace LittleHalberd
                 control.transform.rotation = Quaternion.Euler(0f, 0f, 0f);
             }
         }
-        private bool CheckScreenLeftBound()
-        {
-            if (CharacterManager.Instance.CharacterIsPlayable(control))
-            {
-                Vector3 pos = Camera.main.WorldToScreenPoint(control.transform.position);
-                //Debug.Log(pos);
-                if (pos.x <= 70f)
-                {
-                    movingData.MovementSpeed = 0f;
-                    return false;
-                }
-                return true;
-            }
-            return true;
-        }
+        //private bool CheckScreenLeftBound()
+        //{
+        //    if (CharacterManager.Instance.CharacterIsPlayable(control))
+        //    {
+        //        Vector3 pos = Camera.main.WorldToScreenPoint(control.transform.position);
+        //        //Debug.Log(pos);
+        //        if (pos.x <= 70f)
+        //        {
+        //            return false;
+        //        }
+        //        return true;
+        //    }
+        //    return true;
+        //}
     }
 }

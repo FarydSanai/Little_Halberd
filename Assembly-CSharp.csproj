@@ -64,6 +64,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Foliage2D\Example\Scripts\Camera2DFollow.cs" />
+    <Compile Include="Assets\Foliage2D\Example\Scripts\CloudMovement.cs" />
+    <Compile Include="Assets\Foliage2D\Example\Scripts\Foliage2D_Sprite.cs" />
+    <Compile Include="Assets\Foliage2D\Example\Scripts\Platformer2DUserControl.cs" />
+    <Compile Include="Assets\Foliage2D\Example\Scripts\PlatformerCharacter2D.cs" />
+    <Compile Include="Assets\Foliage2D\Scripts\Foliage2D.cs" />
+    <Compile Include="Assets\Foliage2D\Scripts\Foliage2D_Animation.cs" />
+    <Compile Include="Assets\Foliage2D\Scripts\Foliage2D_Mesh.cs" />
+    <Compile Include="Assets\Foliage2D\Scripts\Foliage2D_Path.cs" />
+    <Compile Include="Assets\Foliage2D\Scripts\Foliage2D_PrefabTracker.cs" />
     <Compile Include="Assets\Little_Halberd\Prefabs\GroundParts\SpriteChanger.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\CharacterAbilitySystem\BaseScripts\CharacterAbility.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\CharacterAbilitySystem\BaseScripts\CharacterState.cs" />
@@ -105,6 +115,8 @@
     <Compile Include="Assets\Little_Halberd\Scripts\SubComponentSystem\SubComponents\CharacterMovement.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\SubComponentSystem\SubComponents\DamageDetector.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\SubComponentSystem\SubComponents\ManualInput.cs" />
+    <None Include="Assets\Foliage2D\Docs\Log.txt" />
+    <None Include="Assets\Foliage2D\Example\Scenes\Parallax.txt" />
     <None Include="Assets\2D Tree Set Free\Documentation\Readme.txt" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Unity_Installs/2019.4.18f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>

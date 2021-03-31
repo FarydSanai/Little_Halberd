@@ -7,7 +7,7 @@ namespace LittleHalberd
     public class GroundGenerator : MonoBehaviour
     {
         private const string groundEndPoint = "GroundEndPoint";
-        private const float GroundSpawnDistance = 1000f; 
+        private const float GroundSpawnDistance = 1000f;
 
         [SerializeField] private Transform GroundStart;
         [SerializeField] private CharacterControl control;

@@ -64,6 +64,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Foliage2D\Editor\Foliage2D_AnimationEditor.cs" />
+    <Compile Include="Assets\Foliage2D\Editor\Foliage2D_Editor.cs" />
+    <Compile Include="Assets\Foliage2D\Editor\Foliage2D_Menu.cs" />
+    <Compile Include="Assets\Foliage2D\Editor\Foliage2D_PathEditor.cs" />
+    <Compile Include="Assets\Foliage2D\Example\Editor\Foliage2D_SpriteEditor.cs" />
     <Compile Include="Assets\Little_Halberd\Prefabs\GroundParts\Editor\SpriteChangerEditor.cs" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Unity_Installs/2019.4.18f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
