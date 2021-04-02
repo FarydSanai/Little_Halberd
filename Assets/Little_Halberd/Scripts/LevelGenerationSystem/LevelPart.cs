@@ -15,6 +15,5 @@ namespace LittleHalberd
         {
             AstarPath.active.Scan();
         }
-
     }
 }

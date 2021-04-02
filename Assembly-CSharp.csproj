@@ -87,6 +87,7 @@
     <Compile Include="Assets\Little_Halberd\Scripts\CharacterAbilitySystem\CharacterAbilities\AbilitiesScripts\TransitionIndexer.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\CharacterControl\CharacterControl.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\Enemies\EnemyAI.cs" />
+    <Compile Include="Assets\Little_Halberd\Scripts\EnemySpawnSystem\EnemySpawner.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\Helpers\TransitionConditionChecker.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\LevelGenerationSystem\LevelGenerator.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\LevelGenerationSystem\LevelPart.cs" />

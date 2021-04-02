@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Foliage;
 
 namespace LittleHalberd
 {
@@ -60,6 +61,7 @@ namespace LittleHalberd
             lastEndPosition = levelPartTransform.position + new Vector3(50f, 0f, 0f);
 
             levelPartList.Add(levelPartTransform);
+            levelPartTransform.gameObject.GetComponent<Foliage2D_Path>();
         }
         private Transform SpawnLevelPart(ObjectType levelPartType)
         {

@@ -7,16 +7,20 @@ namespace LittleHalberd
     public enum ObjectType
     {
         GROUND,
+
         LEVEL_PART_1,
         LEVEL_PART_2,
         LEVEL_PART_3,
-        ENEMY,
+        
+        GOLEM_GREY,
+        GOLEM_WOOD,
     }
     public class PoolObjectLoader : MonoBehaviour
     {
         public static PoolObjectLoader Instance;
 
         public List<PoolObjectInfo> LevelPartsInfo;
+        public List<PoolObjectInfo> EnemyTypeInfo;
 
         [SerializeField]
         private List<PoolObjectInfo> PoolObjectsInfo;
@@ -36,7 +40,9 @@ namespace LittleHalberd
         private void InitPool()
         {
             PoolsDic = new Dictionary<ObjectType, Pool>();
+
             PoolObjectsInfo.AddRange(LevelPartsInfo);
+            PoolObjectsInfo.AddRange(EnemyTypeInfo);
 
             GameObject temp = new GameObject();
 
