@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
+using LittleHalberd.EditorUI;
 
 namespace LittleHalberd
 {
@@ -20,7 +21,10 @@ namespace LittleHalberd
         public static PoolObjectLoader Instance;
 
         public List<PoolObjectInfo> LevelPartsInfo;
+        [ColorSpacer(30, 3, 300, 252, 0, 185)]
+
         public List<PoolObjectInfo> EnemyTypeInfo;
+        [ColorSpacer(30, 3, 300, 252, 248, 0)]
 
         [SerializeField]
         private List<PoolObjectInfo> PoolObjectsInfo;
@@ -41,8 +45,9 @@ namespace LittleHalberd
         {
             PoolsDic = new Dictionary<ObjectType, Pool>();
 
-            PoolObjectsInfo.AddRange(LevelPartsInfo);
             PoolObjectsInfo.AddRange(EnemyTypeInfo);
+            PoolObjectsInfo.AddRange(LevelPartsInfo);
+
 
             GameObject temp = new GameObject();
 

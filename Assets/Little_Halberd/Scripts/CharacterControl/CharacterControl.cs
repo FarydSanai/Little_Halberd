@@ -41,6 +41,10 @@ namespace LittleHalberd
 
             RegisterCharacter();            
         }
+        private void OnEnable()
+        {
+            InitCharacterStates(characterAnimator);
+        }
         private void Update()
         {
             subComponentProcessor.UpdateSubComponents();

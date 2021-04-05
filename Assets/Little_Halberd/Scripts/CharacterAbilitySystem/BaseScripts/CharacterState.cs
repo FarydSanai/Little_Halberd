@@ -5,7 +5,7 @@ namespace LittleHalberd
 {
     public class CharacterState : StateMachineBehaviour
     {
-        [NonSerialized] public CharacterControl control;
+        public CharacterControl control;
         public MovingData MOVING_DATA => control.subComponentProcessor.movingData;
         public JumpData JUMP_DATA => control.subComponentProcessor.jumpData;
         public GroundData GROUND_DATA => control.subComponentProcessor.groundData;
@@ -19,6 +19,10 @@ namespace LittleHalberd
             if (control == null)
             {
                 control = animator.transform.root.GetComponent<CharacterControl>();
+                if (control == null)
+                {
+                    Debug.Break();
+                }
                 control.InitCharacterStates(animator);
             }
 

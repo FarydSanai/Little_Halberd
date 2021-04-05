@@ -61,7 +61,7 @@ namespace LittleHalberd
             lastEndPosition = levelPartTransform.position + new Vector3(50f, 0f, 0f);
 
             levelPartList.Add(levelPartTransform);
-            levelPartTransform.gameObject.GetComponent<Foliage2D_Path>();
+            //levelPartTransform.gameObject.GetComponent<Foliage2D_Path>();
         }
         private Transform SpawnLevelPart(ObjectType levelPartType)
         {

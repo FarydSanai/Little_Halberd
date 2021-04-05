@@ -88,6 +88,7 @@
     <Compile Include="Assets\Little_Halberd\Scripts\CharacterControl\CharacterControl.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\Enemies\EnemyAI.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\EnemySpawnSystem\EnemySpawner.cs" />
+    <Compile Include="Assets\Little_Halberd\Scripts\Helpers\InspectorColorSpacer\ColorSpacer.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\Helpers\TransitionConditionChecker.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\LevelGenerationSystem\LevelGenerator.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\LevelGenerationSystem\LevelPart.cs" />
@@ -102,6 +103,7 @@
     <Compile Include="Assets\Little_Halberd\Scripts\PoolObjectSystem\Pool.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\PoolObjectSystem\PoolObjectInfo.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\PoolObjectSystem\PoolObjectLoader.cs" />
+    <Compile Include="Assets\Little_Halberd\Scripts\PoolObjectSystem\PooledObjects\EnemyPoolObj.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\PoolObjectSystem\PooledObjects\Ground.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\SubComponentSystem\SubComponent.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\SubComponentSystem\SubComponentData\AttackData.cs" />

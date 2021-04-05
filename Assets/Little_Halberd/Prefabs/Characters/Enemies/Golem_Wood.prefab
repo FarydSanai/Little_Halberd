@@ -379,6 +379,7 @@ GameObject:
   - component: {fileID: 3969291107571400174}
   - component: {fileID: 3969291107571400171}
   - component: {fileID: 3969291107571400180}
+  - component: {fileID: -6108204107148419160}
   m_Layer: 9
   m_Name: Golem_Wood
   m_TagString: Untagged
@@ -536,6 +537,19 @@ MonoBehaviour:
   AICurrentState: 0
   FollowEnabled: 1
   DirUpdateEnabled: 1
+--- !u!114 &-6108204107148419160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3969291107571400173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e5dd03c1a0f3ec4b8057a8e813429a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Type: 5
 --- !u!1 &3969291107572901756
 GameObject:
   m_ObjectHideFlags: 0
