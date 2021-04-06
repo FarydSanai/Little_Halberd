@@ -300,31 +300,31 @@ namespace Foliage
             }
         }
 
-        void OnTriggerEnter(Collider other)
-        {
-            if (!collider3DObject.Contains(other))
-            {
-                collider3DObject.Add(other);
+        //void OnTriggerEnter(Collider other)
+        //{
+        //    if (!collider3DObject.Contains(other))
+        //    {
+        //        collider3DObject.Add(other);
 
-                // We save the difference between the moving object when it entered the trigger 
-                // and the foliage object to a list so that we ca use it to determine when the 
-                // moving object has passed the middle point of the foliage object.
-                enterOffset.Add(other.transform.position.x - transform.position.x);
-            }
-        }
+        //        // We save the difference between the moving object when it entered the trigger 
+        //        // and the foliage object to a list so that we ca use it to determine when the 
+        //        // moving object has passed the middle point of the foliage object.
+        //        enterOffset.Add(other.transform.position.x - transform.position.x);
+        //    }
+        //}
 
-        void OnTriggerExit(Collider other)
-        {
-            // If a collider exited the foliage trigger, we don't need a reference to it anymore.
-            if (collider3DObject.Contains(other))
-            {
-                int index = collider3DObject.IndexOf(other);
-                collider3DObject.Remove(other);
-                enterOffset.RemoveAt(index);
-            }
+        //void OnTriggerExit(Collider other)
+        //{
+        //    // If a collider exited the foliage trigger, we don't need a reference to it anymore.
+        //    if (collider3DObject.Contains(other))
+        //    {
+        //        int index = collider3DObject.IndexOf(other);
+        //        collider3DObject.Remove(other);
+        //        enterOffset.RemoveAt(index);
+        //    }
 
-            isBending = false;
-        }
+        //    isBending = false;
+        //}
 
         void OnTriggerEnter2D(Collider2D other)
         {

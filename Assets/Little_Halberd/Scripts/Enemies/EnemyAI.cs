@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 using Pathfinding;
+using LittleHalberd.EditorUI;
 
 namespace LittleHalberd
 {
@@ -19,10 +20,10 @@ namespace LittleHalberd
         [Header("Pathfinding")]
         public Transform Target;
         public float ActivateDistance = 600f;
-        public float ReachedDist = 4f;
+        public float ReachedDist = 8f;
         public float PathUpdateTimer = 0.5f;
         public float MoveDirDist = 0.5f;
-        
+
         [Header("Follow options")]
         public float NextPointDistance = 1.8f;
         public float JumpNodeRequireDist = 0.8f;

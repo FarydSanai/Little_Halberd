@@ -1,0 +1,560 @@
+fileFormatVersion: 2
+guid: 646a4e1013ba22f489fcdb453da71b8d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5447904898514895008
+    second: Wraith_AttackCast_0
+  - first:
+      213: -7969183170267623426
+    second: Wraith_AttackCast_1
+  - first:
+      213: -9142532815182012546
+    second: Wraith_AttackCast_2
+  - first:
+      213: -540937492654274907
+    second: Wraith_AttackCast_3
+  - first:
+      213: -8921472662129493322
+    second: Wraith_AttackCast_4
+  - first:
+      213: -2693185043319575076
+    second: Wraith_AttackCast_5
+  - first:
+      213: -2077867135405555852
+    second: Wraith_AttackCast_6
+  - first:
+      213: 7927758166045117180
+    second: Wraith_AttackCast_7
+  - first:
+      213: -1384262248058718100
+    second: Wraith_AttackCast_8
+  - first:
+      213: -4496561304327669372
+    second: Wraith_AttackCast_9
+  - first:
+      213: -438963816953124815
+    second: Wraith_AttackCast_10
+  - first:
+      213: 3377183944991869074
+    second: Wraith_AttackCast_11
+  - first:
+      213: 4703566704067059116
+    second: Wraith_AttackCast_12
+  - first:
+      213: -974775768653352576
+    second: Wraith_AttackCast_13
+  - first:
+      213: 3070659301311682349
+    second: Wraith_AttackCast_14
+  - first:
+      213: -5086008723294819861
+    second: Wraith_AttackCast_15
+  - first:
+      213: -3429079301341029040
+    second: Wraith_AttackCast_16
+  - first:
+      213: 5312882577651792530
+    second: Wraith_AttackCast_17
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Wraith_AttackCast_0
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 851
+        width: 220
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a0471614a8da9b40800000000000000
+      internalID: 5447904898514895008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wraith_AttackCast_1
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 851
+        width: 219
+        height: 304
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eff4d221126c76190800000000000000
+      internalID: -7969183170267623426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wraith_AttackCast_2
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 830
+        width: 220
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7f59b308d23f1180800000000000000
+      internalID: -9142532815182012546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wraith_AttackCast_3
+      rect:
+        serializedVersion: 2
+        x: 1634
+        y: 832
+        width: 215
+        height: 296
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a6c6a867343e78f0800000000000000
+      internalID: -540937492654274907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wraith_AttackCast_4
+      rect:
+        serializedVersion: 2
+        x: 2124
+        y: 839
+        width: 223
+        height: 287
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bab96cb1ef803480800000000000000
+      internalID: -8921472662129493322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wraith_AttackCast_5
+      rect:
+        serializedVersion: 2
+        x: 2677
+        y: 826
+        width: 224
+        height: 282
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cddaa82e872ef9ad0800000000000000
+      internalID: -2693185043319575076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wraith_AttackCast_6
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 461
+        width: 224
+        height: 281
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47f71bf69dee923e0800000000000000
+      internalID: -2077867135405555852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wraith_AttackCast_7
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 467
+        width: 224
+        height: 281
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfa42588c0e050e60800000000000000
+      internalID: 7927758166045117180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wraith_AttackCast_8
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 461
+        width: 224
+        height: 281
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c68f97cc1dc1acce0800000000000000
+      internalID: -1384262248058718100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wraith_AttackCast_9
+      rect:
+        serializedVersion: 2
+        x: 1640
+        y: 461
+        width: 224
+        height: 281
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48938c841510991c0800000000000000
+      internalID: -4496561304327669372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wraith_AttackCast_10
+      rect:
+        serializedVersion: 2
+        x: 2153
+        y: 461
+        width: 224
+        height: 281
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1386245fbbc78e9f0800000000000000
+      internalID: -438963816953124815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wraith_AttackCast_11
+      rect:
+        serializedVersion: 2
+        x: 2660
+        y: 455
+        width: 223
+        height: 281
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2988466a7ea2ede20800000000000000
+      internalID: 3377183944991869074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wraith_AttackCast_12
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 98
+        width: 224
+        height: 281
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cad954d2ffc664140800000000000000
+      internalID: 4703566704067059116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wraith_AttackCast_13
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 84
+        width: 222
+        height: 287
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08132cd5a96e872f0800000000000000
+      internalID: -974775768653352576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wraith_AttackCast_14
+      rect:
+        serializedVersion: 2
+        x: 1126
+        y: 78
+        width: 220
+        height: 289
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d279ee09d5c2d9a20800000000000000
+      internalID: 3070659301311682349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wraith_AttackCast_15
+      rect:
+        serializedVersion: 2
+        x: 1645
+        y: 76
+        width: 217
+        height: 294
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be96973530eda69b0800000000000000
+      internalID: -5086008723294819861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wraith_AttackCast_16
+      rect:
+        serializedVersion: 2
+        x: 2185
+        y: 75
+        width: 215
+        height: 296
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05d5ce02b867960d0800000000000000
+      internalID: -3429079301341029040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wraith_AttackCast_17
+      rect:
+        serializedVersion: 2
+        x: 2674
+        y: 75
+        width: 218
+        height: 298
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29afb463e862bb940800000000000000
+      internalID: 5312882577651792530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 0512c84281ae20f469eb98bdbbc09786
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

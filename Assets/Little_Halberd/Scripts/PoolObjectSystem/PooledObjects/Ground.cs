@@ -10,5 +10,15 @@ namespace LittleHalberd
 
         [SerializeField]
         private ObjectType Type;
+        [SerializeField]
+        private bool HasFoliagePath;
+
+        private void Start()
+        {
+            if (HasFoliagePath)
+            {
+                FoliageMeshHelper.EnableMeshForGrassPath(this);
+            }
+        }
     }
 }

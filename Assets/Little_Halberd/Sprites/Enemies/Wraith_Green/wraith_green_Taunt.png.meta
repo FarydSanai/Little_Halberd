@@ -1,0 +1,560 @@
+fileFormatVersion: 2
+guid: 674c0e1ca1367654e9a07c7bb94e3bcd
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4356904801058885948
+    second: wraith_green_Taunt_0
+  - first:
+      213: 6462495286811089359
+    second: wraith_green_Taunt_1
+  - first:
+      213: -452536406965722109
+    second: wraith_green_Taunt_2
+  - first:
+      213: -7035314953804253289
+    second: wraith_green_Taunt_3
+  - first:
+      213: -4968686362335919322
+    second: wraith_green_Taunt_4
+  - first:
+      213: -2277368631492315091
+    second: wraith_green_Taunt_5
+  - first:
+      213: -6095203955285285310
+    second: wraith_green_Taunt_6
+  - first:
+      213: 3000093650152892202
+    second: wraith_green_Taunt_7
+  - first:
+      213: -1127097754332235254
+    second: wraith_green_Taunt_8
+  - first:
+      213: -8258718800144017826
+    second: wraith_green_Taunt_9
+  - first:
+      213: -507060103246232812
+    second: wraith_green_Taunt_10
+  - first:
+      213: 1361690016240125140
+    second: wraith_green_Taunt_11
+  - first:
+      213: 670445537214857425
+    second: wraith_green_Taunt_12
+  - first:
+      213: 1962340287881043053
+    second: wraith_green_Taunt_13
+  - first:
+      213: -8357130494986139655
+    second: wraith_green_Taunt_14
+  - first:
+      213: -3714638875027345944
+    second: wraith_green_Taunt_15
+  - first:
+      213: 8906614951603531813
+    second: wraith_green_Taunt_16
+  - first:
+      213: -4396285360410534409
+    second: wraith_green_Taunt_17
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: wraith_green_Taunt_0
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 1398
+        width: 214
+        height: 291
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c311f4b25d5d67c30800000000000000
+      internalID: 4356904801058885948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wraith_green_Taunt_1
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 1394
+        width: 215
+        height: 287
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc9d20d39356fa950800000000000000
+      internalID: 6462495286811089359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wraith_green_Taunt_2
+      rect:
+        serializedVersion: 2
+        x: 1065
+        y: 1398
+        width: 216
+        height: 284
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30460e6198448b9f0800000000000000
+      internalID: -452536406965722109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wraith_green_Taunt_3
+      rect:
+        serializedVersion: 2
+        x: 1471
+        y: 1419
+        width: 215
+        height: 283
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 797f08ff25a8d5e90800000000000000
+      internalID: -7035314953804253289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wraith_green_Taunt_4
+      rect:
+        serializedVersion: 2
+        x: 1855
+        y: 1434
+        width: 214
+        height: 283
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 623c3a4241eab0bb0800000000000000
+      internalID: -4968686362335919322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wraith_green_Taunt_5
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 956
+        width: 216
+        height: 284
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d287841bb492560e0800000000000000
+      internalID: -2277368631492315091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wraith_green_Taunt_6
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 975
+        width: 216
+        height: 282
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2462aa3eb4c796ba0800000000000000
+      internalID: -6095203955285285310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wraith_green_Taunt_7
+      rect:
+        serializedVersion: 2
+        x: 1068
+        y: 963
+        width: 215
+        height: 282
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a27a446974972a920800000000000000
+      internalID: 3000093650152892202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wraith_green_Taunt_8
+      rect:
+        serializedVersion: 2
+        x: 1477
+        y: 974
+        width: 214
+        height: 283
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0af2e5609ebb50f0800000000000000
+      internalID: -1127097754332235254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wraith_green_Taunt_9
+      rect:
+        serializedVersion: 2
+        x: 1858
+        y: 977
+        width: 215
+        height: 283
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5653910203236d80800000000000000
+      internalID: -8258718800144017826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wraith_green_Taunt_10
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 530
+        width: 216
+        height: 283
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4134c3ac58f86f8f0800000000000000
+      internalID: -507060103246232812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wraith_green_Taunt_11
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 585
+        width: 216
+        height: 282
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d44030fad1b5e210800000000000000
+      internalID: 1361690016240125140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wraith_green_Taunt_12
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 546
+        width: 215
+        height: 283
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d000f6f9a6ed4900800000000000000
+      internalID: 670445537214857425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wraith_green_Taunt_13
+      rect:
+        serializedVersion: 2
+        x: 1480
+        y: 546
+        width: 215
+        height: 283
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6c569b4812ab3b10800000000000000
+      internalID: 1962340287881043053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wraith_green_Taunt_14
+      rect:
+        serializedVersion: 2
+        x: 1870
+        y: 561
+        width: 215
+        height: 283
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f744c0c712850c80800000000000000
+      internalID: -8357130494986139655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wraith_green_Taunt_15
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 148
+        width: 215
+        height: 282
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ed6329cf93f27cc0800000000000000
+      internalID: -3714638875027345944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wraith_green_Taunt_16
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 139
+        width: 216
+        height: 284
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 520f285fb17aa9b70800000000000000
+      internalID: 8906614951603531813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wraith_green_Taunt_17
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 127
+        width: 216
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fdda79d1c14df2c0800000000000000
+      internalID: -4396285360410534409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 9e0f9ac954461d04ca2042204fbb4f55
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

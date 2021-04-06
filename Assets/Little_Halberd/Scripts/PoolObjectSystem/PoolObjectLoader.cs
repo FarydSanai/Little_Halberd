@@ -15,6 +15,12 @@ namespace LittleHalberd
         
         GOLEM_GREY,
         GOLEM_WOOD,
+        GOLEM_GREEN,
+        MINOTAUR,
+        REAPER_GREEN,
+        WRAITH_BLACK,
+        WRAITH_GREEN,
+
     }
     public class PoolObjectLoader : MonoBehaviour
     {

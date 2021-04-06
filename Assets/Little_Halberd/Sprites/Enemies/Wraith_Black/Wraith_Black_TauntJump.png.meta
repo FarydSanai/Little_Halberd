@@ -1,0 +1,560 @@
+fileFormatVersion: 2
+guid: 046c4e710f52c214b93bc5fca38ccbe2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7109262528575023867
+    second: Wraith_TauntJump_0
+  - first:
+      213: -8382751018978748507
+    second: Wraith_TauntJump_1
+  - first:
+      213: -7724454249732577490
+    second: Wraith_TauntJump_2
+  - first:
+      213: -9196288606583278244
+    second: Wraith_TauntJump_3
+  - first:
+      213: 8854887012458006846
+    second: Wraith_TauntJump_4
+  - first:
+      213: 3427942635456676665
+    second: Wraith_TauntJump_5
+  - first:
+      213: -1337771994338519360
+    second: Wraith_TauntJump_6
+  - first:
+      213: 3329418232491274863
+    second: Wraith_TauntJump_7
+  - first:
+      213: -2242913707922575597
+    second: Wraith_TauntJump_8
+  - first:
+      213: -9214311908244357721
+    second: Wraith_TauntJump_9
+  - first:
+      213: -5780259890313509201
+    second: Wraith_TauntJump_10
+  - first:
+      213: 8555091572818102847
+    second: Wraith_TauntJump_11
+  - first:
+      213: -6399969789936240139
+    second: Wraith_TauntJump_12
+  - first:
+      213: -1108801623929101159
+    second: Wraith_TauntJump_13
+  - first:
+      213: -6125407927149732156
+    second: Wraith_TauntJump_14
+  - first:
+      213: 4389424262405031810
+    second: Wraith_TauntJump_15
+  - first:
+      213: 1809272388631753188
+    second: Wraith_TauntJump_16
+  - first:
+      213: 6113479237936566603
+    second: Wraith_TauntJump_17
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Wraith_TauntJump_0
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 842
+        width: 220
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5055a419563d65d90800000000000000
+      internalID: -7109262528575023867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wraith_TauntJump_1
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 847
+        width: 220
+        height: 296
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a75a39ac5c7aab80800000000000000
+      internalID: -8382751018978748507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wraith_TauntJump_2
+      rect:
+        serializedVersion: 2
+        x: 1184
+        y: 848
+        width: 218
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e27eee829c93dc490800000000000000
+      internalID: -7724454249732577490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wraith_TauntJump_3
+      rect:
+        serializedVersion: 2
+        x: 1701
+        y: 836
+        width: 216
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c55b1a08c38306080800000000000000
+      internalID: -9196288606583278244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wraith_TauntJump_4
+      rect:
+        serializedVersion: 2
+        x: 2211
+        y: 824
+        width: 216
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3987c792d0e2ea70800000000000000
+      internalID: 8854887012458006846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wraith_TauntJump_5
+      rect:
+        serializedVersion: 2
+        x: 2736
+        y: 821
+        width: 216
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 933cfc83aaf729f20800000000000000
+      internalID: 3427942635456676665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wraith_TauntJump_6
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 461
+        width: 218
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c69cfe75774f6de0800000000000000
+      internalID: -1337771994338519360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wraith_TauntJump_7
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 458
+        width: 218
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f62f9501e38743e20800000000000000
+      internalID: 3329418232491274863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wraith_TauntJump_8
+      rect:
+        serializedVersion: 2
+        x: 1181
+        y: 446
+        width: 218
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31fab69bdd19fd0e0800000000000000
+      internalID: -2242913707922575597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wraith_TauntJump_9
+      rect:
+        serializedVersion: 2
+        x: 1722
+        y: 446
+        width: 218
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ad71739320302080800000000000000
+      internalID: -9214311908244357721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wraith_TauntJump_10
+      rect:
+        serializedVersion: 2
+        x: 2229
+        y: 446
+        width: 218
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa6cc60414468cfa0800000000000000
+      internalID: -5780259890313509201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wraith_TauntJump_11
+      rect:
+        serializedVersion: 2
+        x: 2777
+        y: 431
+        width: 218
+        height: 293
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3ac2ca657ac9b670800000000000000
+      internalID: 8555091572818102847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wraith_TauntJump_12
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 65
+        width: 218
+        height: 293
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f97e91726dbe27a0800000000000000
+      internalID: -6399969789936240139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wraith_TauntJump_13
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 54
+        width: 218
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99464573ccebc90f0800000000000000
+      internalID: -1108801623929101159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wraith_TauntJump_14
+      rect:
+        serializedVersion: 2
+        x: 1197
+        y: 36
+        width: 216
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ced0eda1fd2efaa0800000000000000
+      internalID: -6125407927149732156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wraith_TauntJump_15
+      rect:
+        serializedVersion: 2
+        x: 1758
+        y: 42
+        width: 217
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28702294c1e5aec30800000000000000
+      internalID: 4389424262405031810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wraith_TauntJump_16
+      rect:
+        serializedVersion: 2
+        x: 2256
+        y: 39
+        width: 218
+        height: 293
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e1715ac6a3db1910800000000000000
+      internalID: 1809272388631753188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wraith_TauntJump_17
+      rect:
+        serializedVersion: 2
+        x: 2769
+        y: 46
+        width: 218
+        height: 297
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b415feee9f077d450800000000000000
+      internalID: 6113479237936566603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 67b5fb2fd92fdbf47b3225558fbc8787
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

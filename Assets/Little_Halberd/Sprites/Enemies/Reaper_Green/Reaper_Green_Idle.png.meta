@@ -1,0 +1,560 @@
+fileFormatVersion: 2
+guid: 5d8187e4afab0344ebb00032d8267960
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7413541239749252649
+    second: Reaper_Green_Idle_0
+  - first:
+      213: 6201316790155133744
+    second: Reaper_Green_Idle_1
+  - first:
+      213: -7030188544224365291
+    second: Reaper_Green_Idle_2
+  - first:
+      213: 8470141095108882047
+    second: Reaper_Green_Idle_3
+  - first:
+      213: -3062214558915159536
+    second: Reaper_Green_Idle_4
+  - first:
+      213: -4808067584794882317
+    second: Reaper_Green_Idle_5
+  - first:
+      213: 3229108562581120236
+    second: Reaper_Green_Idle_6
+  - first:
+      213: -5895934601729496553
+    second: Reaper_Green_Idle_7
+  - first:
+      213: -4624637803758744855
+    second: Reaper_Green_Idle_8
+  - first:
+      213: -4954308803180188280
+    second: Reaper_Green_Idle_9
+  - first:
+      213: -6106944498834962601
+    second: Reaper_Green_Idle_10
+  - first:
+      213: -144535341417778170
+    second: Reaper_Green_Idle_11
+  - first:
+      213: 8282686226825966295
+    second: Reaper_Green_Idle_12
+  - first:
+      213: 1390738156756106226
+    second: Reaper_Green_Idle_13
+  - first:
+      213: 1291752211043650898
+    second: Reaper_Green_Idle_14
+  - first:
+      213: 3262283412615388443
+    second: Reaper_Green_Idle_15
+  - first:
+      213: 4396394325505169892
+    second: Reaper_Green_Idle_16
+  - first:
+      213: -6809372417750402666
+    second: Reaper_Green_Idle_17
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Reaper_Green_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 1327
+        width: 430
+        height: 576
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d96905658fcd1990800000000000000
+      internalID: -7413541239749252649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reaper_Green_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 1336
+        width: 432
+        height: 578
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 033ccd0c3c08f0650800000000000000
+      internalID: 6201316790155133744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reaper_Green_Idle_2
+      rect:
+        serializedVersion: 2
+        x: 1362
+        y: 1336
+        width: 431
+        height: 578
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5157c7d34c0cf6e90800000000000000
+      internalID: -7030188544224365291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reaper_Green_Idle_3
+      rect:
+        serializedVersion: 2
+        x: 1942
+        y: 1327
+        width: 431
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7e2763037cfb8570800000000000000
+      internalID: 8470141095108882047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reaper_Green_Idle_4
+      rect:
+        serializedVersion: 2
+        x: 2593
+        y: 1322
+        width: 430
+        height: 579
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01a15dd3514d085d0800000000000000
+      internalID: -3062214558915159536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reaper_Green_Idle_5
+      rect:
+        serializedVersion: 2
+        x: 3205
+        y: 1327
+        width: 431
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fe0b308100564db0800000000000000
+      internalID: -4808067584794882317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reaper_Green_Idle_6
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 677
+        width: 431
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce4e1dd012910dc20800000000000000
+      internalID: 3229108562581120236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reaper_Green_Idle_7
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 661
+        width: 432
+        height: 581
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71aaafcb7be6d2ea0800000000000000
+      internalID: -5895934601729496553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reaper_Green_Idle_8
+      rect:
+        serializedVersion: 2
+        x: 1399
+        y: 659
+        width: 432
+        height: 581
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ea0e1c7b6cf1dfb0800000000000000
+      internalID: -4624637803758744855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reaper_Green_Idle_9
+      rect:
+        serializedVersion: 2
+        x: 1968
+        y: 673
+        width: 434
+        height: 582
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88daade7462ce3bb0800000000000000
+      internalID: -4954308803180188280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reaper_Green_Idle_10
+      rect:
+        serializedVersion: 2
+        x: 2586
+        y: 677
+        width: 434
+        height: 581
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7578ae39556cf3ba0800000000000000
+      internalID: -6106944498834962601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reaper_Green_Idle_11
+      rect:
+        serializedVersion: 2
+        x: 3213
+        y: 679
+        width: 434
+        height: 581
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 604bd4d6fd18efdf0800000000000000
+      internalID: -144535341417778170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reaper_Green_Idle_12
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 23
+        width: 434
+        height: 579
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d27bff5d3302f270800000000000000
+      internalID: 8282686226825966295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reaper_Green_Idle_13
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 23
+        width: 433
+        height: 579
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fb77013cf4ec4310800000000000000
+      internalID: 1390738156756106226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reaper_Green_Idle_14
+      rect:
+        serializedVersion: 2
+        x: 1417
+        y: 25
+        width: 434
+        height: 579
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25d051dbac93de110800000000000000
+      internalID: 1291752211043650898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reaper_Green_Idle_15
+      rect:
+        serializedVersion: 2
+        x: 2023
+        y: 19
+        width: 433
+        height: 578
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1dd69dba75f54d20800000000000000
+      internalID: 3262283412615388443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reaper_Green_Idle_16
+      rect:
+        serializedVersion: 2
+        x: 2640
+        y: 28
+        width: 432
+        height: 578
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e957409851230d30800000000000000
+      internalID: 4396394325505169892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reaper_Green_Idle_17
+      rect:
+        serializedVersion: 2
+        x: 3240
+        y: 23
+        width: 432
+        height: 578
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 699f4a81ddf3081a0800000000000000
+      internalID: -6809372417750402666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: cb03397280dbe124fa43ddb63d1e73c2
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

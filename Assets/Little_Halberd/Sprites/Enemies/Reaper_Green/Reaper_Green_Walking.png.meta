@@ -1,0 +1,704 @@
+fileFormatVersion: 2
+guid: 111cffd48e0f3654b85c648335b089a2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8822731433945443159
+    second: Reaper_Green_Walking_0
+  - first:
+      213: 4249886082655380938
+    second: Reaper_Green_Walking_1
+  - first:
+      213: 4754973066343803372
+    second: Reaper_Green_Walking_2
+  - first:
+      213: 5512958802023188572
+    second: Reaper_Green_Walking_3
+  - first:
+      213: 5472620788396256010
+    second: Reaper_Green_Walking_4
+  - first:
+      213: 5121222350152258681
+    second: Reaper_Green_Walking_5
+  - first:
+      213: 7930339458457926168
+    second: Reaper_Green_Walking_6
+  - first:
+      213: 7178064176394457210
+    second: Reaper_Green_Walking_7
+  - first:
+      213: -7524434129210567181
+    second: Reaper_Green_Walking_8
+  - first:
+      213: -3934915929439602861
+    second: Reaper_Green_Walking_9
+  - first:
+      213: -923281918498104946
+    second: Reaper_Green_Walking_10
+  - first:
+      213: -4497970990234049769
+    second: Reaper_Green_Walking_11
+  - first:
+      213: -588487065352075954
+    second: Reaper_Green_Walking_12
+  - first:
+      213: -1690230806423328901
+    second: Reaper_Green_Walking_13
+  - first:
+      213: -1628706266595857718
+    second: Reaper_Green_Walking_14
+  - first:
+      213: 7025808250171491189
+    second: Reaper_Green_Walking_15
+  - first:
+      213: 7453540783871817845
+    second: Reaper_Green_Walking_16
+  - first:
+      213: -8268456834542933376
+    second: Reaper_Green_Walking_17
+  - first:
+      213: 1224573100805808076
+    second: Reaper_Green_Walking_18
+  - first:
+      213: -822154314769113265
+    second: Reaper_Green_Walking_19
+  - first:
+      213: -3037651153404167808
+    second: Reaper_Green_Walking_20
+  - first:
+      213: 3748979847912330204
+    second: Reaper_Green_Walking_21
+  - first:
+      213: 6414831543591678923
+    second: Reaper_Green_Walking_22
+  - first:
+      213: 8612699042469770590
+    second: Reaper_Green_Walking_23
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Reaper_Green_Walking_0
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 1958
+        width: 432
+        height: 581
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a45203718c5f8580800000000000000
+      internalID: -8822731433945443159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reaper_Green_Walking_1
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 1954
+        width: 431
+        height: 582
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac5ec8410e0aafa30800000000000000
+      internalID: 4249886082655380938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reaper_Green_Walking_2
+      rect:
+        serializedVersion: 2
+        x: 1347
+        y: 1951
+        width: 432
+        height: 583
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce9e8f79fce0df140800000000000000
+      internalID: 4754973066343803372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reaper_Green_Walking_3
+      rect:
+        serializedVersion: 2
+        x: 1958
+        y: 1952
+        width: 431
+        height: 584
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5884ff42d6f18c40800000000000000
+      internalID: 5512958802023188572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reaper_Green_Walking_4
+      rect:
+        serializedVersion: 2
+        x: 2577
+        y: 1958
+        width: 431
+        height: 583
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0be6c2ac97a2fb40800000000000000
+      internalID: 5472620788396256010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reaper_Green_Walking_5
+      rect:
+        serializedVersion: 2
+        x: 3184
+        y: 1954
+        width: 430
+        height: 584
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 974dd94189c321740800000000000000
+      internalID: 5121222350152258681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reaper_Green_Walking_6
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 1295
+        width: 432
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81af5a188b93e0e60800000000000000
+      internalID: 7930339458457926168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reaper_Green_Walking_7
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 1289
+        width: 431
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a70d2f0665b9d9360800000000000000
+      internalID: 7178064176394457210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reaper_Green_Walking_8
+      rect:
+        serializedVersion: 2
+        x: 1329
+        y: 1296
+        width: 432
+        height: 584
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f514909607d39790800000000000000
+      internalID: -7524434129210567181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reaper_Green_Walking_9
+      rect:
+        serializedVersion: 2
+        x: 1985
+        y: 1307
+        width: 430
+        height: 584
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 357f9bc6fce5469c0800000000000000
+      internalID: -3934915929439602861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reaper_Green_Walking_10
+      rect:
+        serializedVersion: 2
+        x: 2610
+        y: 1302
+        width: 431
+        height: 584
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e891164acf7df23f0800000000000000
+      internalID: -923281918498104946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reaper_Green_Walking_11
+      rect:
+        serializedVersion: 2
+        x: 3211
+        y: 1320
+        width: 432
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7136615373ff391c0800000000000000
+      internalID: -4497970990234049769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reaper_Green_Walking_12
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 666
+        width: 432
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4507cac12645d7f0800000000000000
+      internalID: -588487065352075954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reaper_Green_Walking_13
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 639
+        width: 431
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7727ba69081b88e0800000000000000
+      internalID: -1690230806423328901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reaper_Green_Walking_14
+      rect:
+        serializedVersion: 2
+        x: 1378
+        y: 648
+        width: 431
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acae910a74ca569e0800000000000000
+      internalID: -1628706266595857718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reaper_Green_Walking_15
+      rect:
+        serializedVersion: 2
+        x: 1983
+        y: 657
+        width: 432
+        height: 586
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5730b73116fa08160800000000000000
+      internalID: 7025808250171491189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reaper_Green_Walking_16
+      rect:
+        serializedVersion: 2
+        x: 2606
+        y: 662
+        width: 432
+        height: 587
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 578f0953adb407760800000000000000
+      internalID: 7453540783871817845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reaper_Green_Walking_17
+      rect:
+        serializedVersion: 2
+        x: 3198
+        y: 664
+        width: 430
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08aea60315a804d80800000000000000
+      internalID: -8268456834542933376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reaper_Green_Walking_18
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 32
+        width: 432
+        height: 587
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccf57034fbe8ef010800000000000000
+      internalID: 1224573100805808076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reaper_Green_Walking_19
+      rect:
+        serializedVersion: 2
+        x: 757
+        y: 21
+        width: 431
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4fd1a5b10f1794f0800000000000000
+      internalID: -822154314769113265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reaper_Green_Walking_20
+      rect:
+        serializedVersion: 2
+        x: 1376
+        y: 21
+        width: 432
+        height: 583
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 089f9c1ce5818d5d0800000000000000
+      internalID: -3037651153404167808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reaper_Green_Walking_21
+      rect:
+        serializedVersion: 2
+        x: 1999
+        y: 21
+        width: 430
+        height: 582
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd399e80f4d070430800000000000000
+      internalID: 3748979847912330204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reaper_Green_Walking_22
+      rect:
+        serializedVersion: 2
+        x: 2640
+        y: 19
+        width: 430
+        height: 583
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc3b0c93d4f060950800000000000000
+      internalID: 6414831543591678923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reaper_Green_Walking_23
+      rect:
+        serializedVersion: 2
+        x: 3226
+        y: 30
+        width: 430
+        height: 583
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e55f1c7a524768770800000000000000
+      internalID: 8612699042469770590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 47603bb6956240a408ba0df0cf6dacaf
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -21,21 +21,9 @@ namespace LittleHalberd
             //For dev only
             if (HasFoliagePath)
             {
-                EnableMeshForGrassPath();
+                FoliageMeshHelper.EnableMeshForGrassPath(this);
             }
             //-----------
-        }
-        private void EnableMeshForGrassPath()
-        {
-            Foliage2D_Path[] FoliagePathArr = this.GetComponentsInChildren<Foliage2D_Path>();
-            for (int i = 0; i < FoliagePathArr.Length; i++)
-            {
-                Foliage2D[] fol2dArr = FoliagePathArr[i].GetComponentsInChildren<Foliage2D>();
-                for (int j = 0; j < fol2dArr.Length; j++)
-                {
-                    fol2dArr[j].RebuildMesh();
-                }
-            }
         }
     }
 }
