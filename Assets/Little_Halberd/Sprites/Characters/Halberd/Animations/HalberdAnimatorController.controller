@@ -783,6 +783,8 @@ MonoBehaviour:
   control: {fileID: 0}
   CharacterAbilityArr:
   - {fileID: 11400000, guid: a995dc0dcac75b245a4ac14f442836df, type: 2}
+  - {fileID: 11400000, guid: a06da17428340d849824c50111e5b412, type: 2}
+  - {fileID: 11400000, guid: 15f5037970e70314590e25afa60e0def, type: 2}
 --- !u!1101 &2200600832972876636
 AnimatorStateTransition:
   m_ObjectHideFlags: 1

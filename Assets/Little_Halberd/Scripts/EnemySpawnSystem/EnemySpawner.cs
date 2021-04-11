@@ -1,19 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using LittleHalberd.EditorUI;
 
 namespace LittleHalberd
 {
+    [System.Serializable]
+    public struct PooledEnemy
+    {
+        public ObjectType EnemyType;
+        public int Count;
+    }
     public class EnemySpawner : MonoBehaviour
     {
-        [SerializeField] private List<ObjectType> SpawnEnemyTypes;
+        [SerializeField]
+        private List<PooledEnemy> SpawnEnemyTypes;
 
-        [ColorSpacer(30, 3, 300, 252, 248, 0)]
-
-        [SerializeField] private int EnemyMaxCount;
-
-        private int EnemyCurrentCount = 0;
         private Coroutine EnemySpawnRoutine;
         private void Start()
         {
@@ -28,15 +29,16 @@ namespace LittleHalberd
         }
         private IEnumerator _EnemySpawn()
         {
-            while (EnemyCurrentCount < EnemyMaxCount)
+            foreach (PooledEnemy enemy in SpawnEnemyTypes)
             {
-                int rand = Random.Range(0, SpawnEnemyTypes.Count);
+                for (int i = 0; i < enemy.Count; i++)
+                {
+                    yield return new WaitForSeconds(1.5f);
 
-                yield return new WaitForSeconds(1.5f);
-
-                SpawnEnemy(SpawnEnemyTypes[rand]);
-                EnemyCurrentCount++;
+                    SpawnEnemy(enemy.EnemyType);
+                }
             }
+
             StopCoroutine(EnemySpawnRoutine);
         }
         private void SpawnEnemy(ObjectType enemyType)
@@ -44,5 +46,6 @@ namespace LittleHalberd
             Transform enemy = PoolObjectLoader.Instance.GetObject(enemyType).transform;
             enemy.position = this.gameObject.transform.position;
         }
+
     }
 }

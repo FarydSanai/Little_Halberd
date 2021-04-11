@@ -26,8 +26,6 @@ namespace LittleHalberd
                 AttackIsReset = true,
                 AttackTimer = 0f,
                 Attack = Attack,
-
-
             };
             subComponentProcessor.attackData = attackData;
             subComponentProcessor.ArrSubComponents[(int)SubComponentType.CHARACTER_ATTACK] = this;
@@ -39,7 +37,7 @@ namespace LittleHalberd
         }
         public override void OnFixedUpdate()
         {
-            throw new System.NotImplementedException();
+            //throw new System.NotImplementedException();
         }
         private void ProcessAttack()
         {
@@ -66,15 +64,24 @@ namespace LittleHalberd
             }
         }
         private void Attack()
-        {    
+        {
             Collider2D[] enemyColliders = Physics2D.OverlapCircleAll(AttackPoint.position, AttackRange, EnemyLayers);
-            foreach (Collider2D enemyCol in enemyColliders)
+
+            //Temp
+            if (enemyColliders.Length > 0)
             {
-                if (enemyCol.GetType() == typeof(CapsuleCollider2D))
+                DamageData data = enemyColliders[0].GetComponent<CharacterControl>().DAMAGE_DATA;
+
+                data.TakeDamage(attackData.AttackDamage);
+
+                if (control.transform.right.x > 0f)
                 {
-                    continue;
+                    data.AttackerIsLeft = true;
                 }
-                enemyCol.GetComponent<CharacterControl>().DAMAGE_DATA.TakeDamage(attackData.AttackDamage);
+                else
+                {
+                    data.AttackerIsRight = true;
+                }
             }
         }
         private void OnDrawGizmosSelected()

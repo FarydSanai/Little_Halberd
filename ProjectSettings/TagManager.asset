@@ -6,6 +6,7 @@ TagManager:
   tags:
   - LVL_PT_1_NODE
   - LVL_PT_2_NODE
+  - LVL_1_PT_3
   layers:
   - Default
   - TransparentFX
@@ -19,7 +20,7 @@ TagManager:
   - Enemy
   - Player
   - PostProcessing
-  - 
+  - RopeBlock
   - 
   - 
   - 

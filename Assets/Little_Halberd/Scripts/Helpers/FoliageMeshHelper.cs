@@ -7,7 +7,7 @@ namespace LittleHalberd
     {
         public static void EnableMeshForGrassPath(MonoBehaviour monoBeh)
         {
-            Foliage2D_Path[] FoliagePathArr = monoBeh.GetComponentsInChildren<Foliage2D_Path>();
+            Foliage2D_Path[] FoliagePathArr = monoBeh.gameObject.GetComponentsInChildren<Foliage2D_Path>();
             for (int i = 0; i < FoliagePathArr.Length; i++)
             {
                 Foliage2D[] fol2dArr = FoliagePathArr[i].GetComponentsInChildren<Foliage2D>();

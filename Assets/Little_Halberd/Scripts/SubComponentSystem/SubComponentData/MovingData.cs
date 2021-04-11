@@ -10,5 +10,6 @@ namespace LittleHalberd
         public float MovementSpeed;
         public AnimationCurve MovementSpeedGraph;
         public float StateNormalizedTime;
+        public bool UncontrolledMoving;
     }
 }

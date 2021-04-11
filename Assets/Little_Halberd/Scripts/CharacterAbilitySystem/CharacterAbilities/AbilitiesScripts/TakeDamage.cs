@@ -9,7 +9,7 @@ namespace LittleHalberd
     {
         public override void OnEnter(CharacterState characterState, Animator animator, AnimatorStateInfo stateInfo)
         {
-            
+            characterState.DAMAGE_DATA.isDamaging = true;
         }
         public override void UpdateAbility(CharacterState characterState, Animator animator, AnimatorStateInfo stateInfo)
         {
@@ -20,7 +20,9 @@ namespace LittleHalberd
         }
         public override void OnExit(CharacterState characterState, Animator animator, AnimatorStateInfo stateInfo)
         {
-            
+            characterState.DAMAGE_DATA.isDamaging = false;
+            characterState.DAMAGE_DATA.AttackerIsRight = false;
+            characterState.DAMAGE_DATA.AttackerIsLeft = false;
         }
     }
 }

@@ -10,6 +10,7 @@ namespace LittleHalberd
         PATROL_AREA,
         CHASE_PLAYER,
         ATTACK_PLAYER,
+        IDLE_STATE,
     }
     public class EnemyAI : MonoBehaviour
     {
@@ -32,9 +33,8 @@ namespace LittleHalberd
         private CharacterControl targetControl;
 
         [Header("Custom options")]
-        public AIState AICurrentState;
-        public bool FollowEnabled = true;
-        public bool DirUpdateEnabled = true;
+        [SerializeField] private AIState InitialState = AIState.PATROL_AREA; 
+        [SerializeField] private bool FollowEnabled = true;
 
         [Header("Patrol options")]
         private List<ContactPoint2D> contacts = new List<ContactPoint2D>();
@@ -48,6 +48,7 @@ namespace LittleHalberd
         private Seeker seeker;
         private Rigidbody2D rigid;
         private CharacterControl control;
+        private AIState AICurrentState;
 
         private void Start()
         {
@@ -56,7 +57,7 @@ namespace LittleHalberd
             rigid = this.GetComponent<Rigidbody2D>();
             control = this.GetComponent<CharacterControl>();
             targetControl = Target.GetComponent<CharacterControl>();
-            AICurrentState = AIState.PATROL_AREA;
+            AICurrentState = InitialState;
             GroundLayer = LayerMask.NameToLayer(GroundLayerName);
 
 
@@ -66,6 +67,14 @@ namespace LittleHalberd
         {
             switch (AICurrentState)
             {
+                case AIState.IDLE_STATE:
+                    {
+                        if (TargetInDistance() && FollowEnabled)
+                        {
+                            AICurrentState = AIState.CHASE_PLAYER;
+                        }
+                    }
+                    break;
                 case AIState.PATROL_AREA:
                     {
                         PatrolArea();
@@ -223,7 +232,8 @@ namespace LittleHalberd
                 int contactsNumber = rigid.GetContacts(contacts);
                 if (groundCollider == null)
                 {
-                    groundCollider = contacts.Find(c => c.collider.gameObject.layer == GroundLayer).collider;
+                    groundCollider = contacts.Find(c =>
+                                                   c.collider.gameObject.layer == GroundLayer).collider;
                 }
 
                 if (groundCollider != null)

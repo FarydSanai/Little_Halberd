@@ -7,8 +7,8 @@ namespace LittleHalberd
 {
     public class LevelGenerator : MonoBehaviour
     {
-        private const string endPointObjName = "EndPoint";
-        private float PLAYER_DISTANCE_SPAWN_LEVEL_PART = 1000f;
+        public const string endPointObjName = "EndPoint";
+        private float PLAYER_DISTANCE_SPAWN_LEVEL_PART = 2000f;
 
         [SerializeField] private CharacterControl control;
         [SerializeField] private Transform levelPartStart;
@@ -16,7 +16,6 @@ namespace LittleHalberd
         [SerializeField] private int MaxLevelPartsCount = 5;
 
         private Vector3 lastEndPosition;
-
 
         private void Awake()
         {
@@ -57,11 +56,9 @@ namespace LittleHalberd
 
             Transform levelPartTransform = SpawnLevelPart(PoolObjectLoader.Instance.LevelPartsInfo[rand].objectType);
 
-            //lastEndPosition = levelPartTransform.Find(endPointObjName).position;
-            lastEndPosition = levelPartTransform.position + new Vector3(50f, 0f, 0f);
+            lastEndPosition = levelPartTransform.Find("EndPoint").position + new Vector3(25f, 0f, 0f);
 
             levelPartList.Add(levelPartTransform);
-            //levelPartTransform.gameObject.GetComponent<Foliage2D_Path>();
         }
         private Transform SpawnLevelPart(ObjectType levelPartType)
         {

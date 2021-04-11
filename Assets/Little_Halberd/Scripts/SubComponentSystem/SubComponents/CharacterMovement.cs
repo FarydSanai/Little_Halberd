@@ -15,6 +15,7 @@ namespace LittleHalberd
                 MovementSpeed = 0f,
                 MovementSpeedGraph = null,
                 StateNormalizedTime = 0f,
+                UncontrolledMoving = false,
             };
 
             subComponentProcessor.movingData = movingData;
@@ -24,18 +25,20 @@ namespace LittleHalberd
         {
             if (control.characterAnimator.GetBool(HashManager.Instance.ArrTransitionParams[(int)TransitionParameter.Move]))
             {
-                if (control.MoveLeft)
-                {
-                    //if (!CheckScreenLeftBound())
-                    //{
-                    //    control.RIGID_BODY.velocity = new Vector2(0f, control.RIGID_BODY.velocity.y);
-                    //    return;
-                    //}
-                    Move(-movingData.MovementSpeed, movingData.MovementSpeedGraph, movingData.StateNormalizedTime);
-                }
-                if (control.MoveRight)
+                if (movingData.UncontrolledMoving)
                 {
                     Move(movingData.MovementSpeed, movingData.MovementSpeedGraph, movingData.StateNormalizedTime);
+                }
+                else
+                {
+                    if (control.MoveLeft)
+                    {
+                        Move(-movingData.MovementSpeed, movingData.MovementSpeedGraph, movingData.StateNormalizedTime);
+                    }
+                    if (control.MoveRight)
+                    {
+                        Move(movingData.MovementSpeed, movingData.MovementSpeedGraph, movingData.StateNormalizedTime);
+                    }
                 }
             }
             else
@@ -46,16 +49,18 @@ namespace LittleHalberd
                 }
             }
         }
-
         public override void OnUpdate()
         {
-            throw new System.NotImplementedException();
+            //throw new System.NotImplementedException();
         }
         private void Move(float speed, AnimationCurve speedGraph, float stateNormalizedTime)
         {
             control.RIGID_BODY.velocity = new Vector2(speed * speedGraph.Evaluate(stateNormalizedTime),
                                                       control.RIGID_BODY.velocity.y);
-            SetDirection(speed);
+            if (!movingData.UncontrolledMoving)
+            {
+                SetDirection(speed);
+            }
         }
         private void SetDirection(float dir)
         {

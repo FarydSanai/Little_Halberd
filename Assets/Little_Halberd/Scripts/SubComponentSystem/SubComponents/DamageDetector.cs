@@ -16,6 +16,9 @@ namespace LittleHalberd
                 CurrentHP = CharacterMaxHP,
                 isDead = false,
                 TakeDamage = TakeDamage,
+                AttackerIsLeft = false,
+                AttackerIsRight = false,
+                isDamaging = false,
             };
 
             subComponentProcessor.damageData = damageData;
