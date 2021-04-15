@@ -184,6 +184,7 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
     StateNormalizedTime: 0
+    UncontrolledMoving: 0
 --- !u!1 &7969103721066457246
 GameObject:
   m_ObjectHideFlags: 0
@@ -242,6 +243,7 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
     StateNormalizedTime: 0
+    UncontrolledMoving: 0
   jumpData:
     Jumped: 0
     JumpCancel: 0
@@ -258,6 +260,9 @@ MonoBehaviour:
   damageData:
     CurrentHP: 0
     isDead: 0
+    AttackerIsLeft: 0
+    AttackerIsRight: 0
+    isDamaging: 0
 --- !u!1 &7969103721536283303
 GameObject:
   m_ObjectHideFlags: 0
@@ -475,9 +480,8 @@ MonoBehaviour:
   MoveDirDist: 0.5
   NextPointDistance: 1.8
   JumpNodeRequireDist: 0.8
-  AICurrentState: 0
+  InitialState: 0
   FollowEnabled: 1
-  DirUpdateEnabled: 1
 --- !u!114 &3586464405947870528
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -490,7 +494,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e5dd03c1a0f3ec4b8057a8e813429a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Type: 10
+  Type: 14
 --- !u!1 &7969103721571633535
 GameObject:
   m_ObjectHideFlags: 0
@@ -583,6 +587,9 @@ MonoBehaviour:
   damageData:
     CurrentHP: 0
     isDead: 0
+    AttackerIsLeft: 0
+    AttackerIsRight: 0
+    isDamaging: 0
   CharacterMaxHP: 100
 --- !u!1 &7969103722078889991
 GameObject:

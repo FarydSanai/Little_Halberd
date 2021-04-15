@@ -12,6 +12,10 @@ namespace LittleHalberd
         LEVEL_PART_1,
         LEVEL_PART_2,
         LEVEL_PART_3,
+        LEVEL_PART_4,
+        LEVEL_PART_5,
+        LEVEL_PART_6,
+        LEVEL_PART_7,
         
         GOLEM_GREY,
         GOLEM_WOOD,
