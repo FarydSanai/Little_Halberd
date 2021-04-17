@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using System.Collections.Generic;
 
 namespace LittleHalberd
 {
@@ -20,7 +18,6 @@ namespace LittleHalberd
                     }
                 }
             }
-
             return PlayableCharacter;
         }
         public bool CharacterIsPlayable(CharacterControl control)

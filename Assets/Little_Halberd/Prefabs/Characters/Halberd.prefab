@@ -46,6 +46,9 @@ MonoBehaviour:
   damageData:
     CurrentHP: 0
     isDead: 0
+    AttackerIsLeft: 0
+    AttackerIsRight: 0
+    isDamaging: 0
   CharacterMaxHP: 10000
 --- !u!1 &3671905788331622311
 GameObject:
@@ -346,7 +349,6 @@ MonoBehaviour:
     AttackDamage: 0
     AttackRange: 0
     AttackTimer: 0
-    AttackTriggered: 0
     AttackIsReset: 0
     AttackPoint: {fileID: 0}
     EnemyLayers:
@@ -418,6 +420,7 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
     StateNormalizedTime: 0
+    UncontrolledMoving: 0
   jumpData:
     Jumped: 0
     JumpCancel: 0
@@ -426,7 +429,6 @@ MonoBehaviour:
     AttackDamage: 0
     AttackRange: 0
     AttackTimer: 0
-    AttackTriggered: 0
     AttackIsReset: 0
     AttackPoint: {fileID: 0}
     EnemyLayers:
@@ -435,6 +437,9 @@ MonoBehaviour:
   damageData:
     CurrentHP: 0
     isDead: 0
+    AttackerIsLeft: 0
+    AttackerIsRight: 0
+    isDamaging: 0
 --- !u!1 &3671905789491773694
 GameObject:
   m_ObjectHideFlags: 0
@@ -577,6 +582,7 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
     StateNormalizedTime: 0
+    UncontrolledMoving: 0
 --- !u!1 &3671905789787081030
 GameObject:
   m_ObjectHideFlags: 0
@@ -622,4 +628,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   layerMask:
     serializedVersion: 2
-    m_Bits: 768
+    m_Bits: 4864

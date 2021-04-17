@@ -7,11 +7,15 @@ namespace LittleHalberd
 {
     public class MovePlatform : MonoBehaviour
     {
+        [Header("Travel Path")]
         public Transform WayPointsParent;
 
-        public float travelTimeBetweenPoints = 5f;
-        public float endPointStallTime = 3f;
-        public float midPointStallTime = 1f;
+        [Header("Move options")]
+        [SerializeField] private float travelTimeBetweenPoints = 5f;
+        [SerializeField] private float endPointStallTime = 3f;
+        [SerializeField] private float midPointStallTime = 1f;
+        [Range(0.05f, 0f)]
+        [SerializeField] public float MoveSpeed = 0.01f;
 
         bool movingForward = true;
 
@@ -23,6 +27,8 @@ namespace LittleHalberd
         private float StoppingDistThres = 0.0025f;
         private float t = 0f;
         private float dwellTimer = 0f;
+
+        private Transform characterTransformParent;
 
         private Vector3 StartPoint;
         private Vector3 TargetPoint;
@@ -51,7 +57,7 @@ namespace LittleHalberd
             transform.position = StartPoint;
 
         }
-        private void Update()
+        private void FixedUpdate()
         {
             if (Vector3.SqrMagnitude(TargetPoint - this.transform.position) <= StoppingDistThres)
             {
@@ -90,12 +96,22 @@ namespace LittleHalberd
 
                 return;
             }
-
-            t += (Time.deltaTime / travelTimeBetweenPoints);
-
+            t += MoveSpeed;
             transform.position = Vector3.Lerp(StartPoint, TargetPoint, t);
         }
 
+        private void OnTriggerEnter2D(Collider2D other)
+        {
+            if (other.transform.GetComponent<CharacterControl>() ==
+                CharacterManager.Instance.GetPlayableCharacter())
+            {
+                other.transform.parent = this.transform;
+            }
+        }
+        private void OnTriggerExit2D(Collider2D other)
+        {
+            other.transform.parent = null;
+        }
         private bool IsAtEndPoint()
         {
             if (CurrentPointIndex == 0 ||
