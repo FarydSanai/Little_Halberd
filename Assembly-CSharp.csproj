@@ -86,6 +86,7 @@
     <Compile Include="Assets\Little_Halberd\Scripts\CharacterAbilitySystem\CharacterAbilities\AbilitiesScripts\TakeDamage.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\CharacterAbilitySystem\CharacterAbilities\AbilitiesScripts\TransitionIndexer.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\CharacterControl\CharacterControl.cs" />
+    <Compile Include="Assets\Little_Halberd\Scripts\DoorPortalSystem\PortalObj.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\EnemyAI\EnemyAI.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\EnemySpawnSystem\EnemySpawner.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\GroundGenerationSystem\GroundGenerator.cs" />

@@ -10,14 +10,14 @@ namespace LittleHalberd
         [SerializeField] private bool infiniteHorizontal;
         [SerializeField] private bool infiniteVertical;
 
-        private Transform cameraTransform;
+        [SerializeField] private Transform cameraTransform;
         private Vector3 lastCameraPosition;
         private float textureUnitSizeX;
         private float textureUnitSizeY;
 
         void Start()
         {
-            cameraTransform = Camera.main.transform;
+            //cameraTransform = Camera.main.transform;
             lastCameraPosition = cameraTransform.position;
 
             Sprite sprite = this.GetComponent<SpriteRenderer>().sprite;

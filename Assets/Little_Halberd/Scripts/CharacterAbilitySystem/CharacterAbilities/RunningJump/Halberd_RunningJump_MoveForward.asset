@@ -12,33 +12,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 330e879e1e44de441a440c8ab713b599, type: 3}
   m_Name: Halberd_RunningJump_MoveForward
   m_EditorClassIdentifier: 
-  Speed: 25
+  Speed: 20
   SpeedGraph:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
       time: 0
       value: 1
-      inSlope: -0.05271207
-      outSlope: -0.05271207
+      inSlope: -0.028759494
+      outSlope: -0.028759494
       tangentMode: 34
       weightedMode: 0
       inWeight: 0
       outWeight: 0.33333334
     - serializedVersion: 3
-      time: 0.7432286
-      value: 0.9608229
-      inSlope: -0.07438166
-      outSlope: -0.07438166
+      time: 0.4131114
+      value: 0.9881191
+      inSlope: -0.056996252
+      outSlope: -0.056996252
       tangentMode: 0
       weightedMode: 0
       inWeight: 0.13584794
-      outWeight: 0.25852045
+      outWeight: 0.1484967
     - serializedVersion: 3
       time: 1
       value: 0.8
-      inSlope: -0.62632704
-      outSlope: -0.62632704
+      inSlope: -0.32053632
+      outSlope: -0.32053632
       tangentMode: 34
       weightedMode: 0
       inWeight: 0.33333334
@@ -46,3 +46,4 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  UncontrolledMoving: 0

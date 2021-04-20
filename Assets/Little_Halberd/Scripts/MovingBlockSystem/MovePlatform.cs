@@ -11,31 +11,48 @@ namespace LittleHalberd
         public Transform WayPointsParent;
 
         [Header("Move options")]
-        [SerializeField] private float travelTimeBetweenPoints = 5f;
+        //[SerializeField] private float travelTimeBetweenPoints = 5f;
         [SerializeField] private float endPointStallTime = 3f;
         [SerializeField] private float midPointStallTime = 1f;
+
         [Range(0.05f, 0f)]
-        [SerializeField] public float MoveSpeed = 0.01f;
+        [SerializeField] private float MoveSpeed = 0.01f;
 
-        bool movingForward = true;
+        [SerializeField] private bool LoopTrack = false;
+        [SerializeField] private bool StopAtEndPointOnLoop = false;
 
-        public bool LoopTrack = false;
-        public bool StopAtEndPointOnLoop = false;
-
-        public int CurrentPointIndex = 0;
-
-        private float StoppingDistThres = 0.0025f;
-        private float t = 0f;
-        private float dwellTimer = 0f;
-
-        private Transform characterTransformParent;
-
+        private bool movingForward = true;
+        private int CurrentPointIndex = 0;
         private Vector3 StartPoint;
         private Vector3 TargetPoint;
-
         private List<Vector3> wayPoints = new List<Vector3>();
 
+        //Calculate options
+        private const float StoppingDistThres = 0.0025f;
+        private float LerpValue = 0f;
+        private float dwellTimer = 0f;
+
         private void Start()
+        {
+            InitMoveOptions();
+        }
+        private void FixedUpdate()
+        {
+            CalculateMoving();
+        }
+        private void OnTriggerEnter2D(Collider2D other)
+        {
+            if (other.transform.GetComponent<CharacterControl>() ==
+                CharacterManager.Instance.GetPlayableCharacter())
+            {
+                other.transform.parent = this.transform;
+            }
+        }
+        private void OnTriggerExit2D(Collider2D other)
+        {
+            other.transform.parent = null;
+        }
+        private void InitMoveOptions()
         {
             for (int i = 0; i < WayPointsParent.childCount; i++)
             {
@@ -55,9 +72,8 @@ namespace LittleHalberd
             TargetPoint = GetWayPoint();
 
             transform.position = StartPoint;
-
         }
-        private void FixedUpdate()
+        private void CalculateMoving()
         {
             if (Vector3.SqrMagnitude(TargetPoint - this.transform.position) <= StoppingDistThres)
             {
@@ -90,27 +106,15 @@ namespace LittleHalberd
                     SetNextWayPointIndex();
                     TargetPoint = GetWayPoint();
 
-                    t = 0f;
+                    LerpValue = 0f;
                     dwellTimer = 0f;
                 }
 
                 return;
             }
-            t += MoveSpeed;
-            transform.position = Vector3.Lerp(StartPoint, TargetPoint, t);
-        }
 
-        private void OnTriggerEnter2D(Collider2D other)
-        {
-            if (other.transform.GetComponent<CharacterControl>() ==
-                CharacterManager.Instance.GetPlayableCharacter())
-            {
-                other.transform.parent = this.transform;
-            }
-        }
-        private void OnTriggerExit2D(Collider2D other)
-        {
-            other.transform.parent = null;
+            LerpValue += MoveSpeed;
+            transform.position = Vector3.Lerp(StartPoint, TargetPoint, LerpValue);
         }
         private bool IsAtEndPoint()
         {
@@ -121,7 +125,6 @@ namespace LittleHalberd
             }
             return false;
         }
-
         private Vector3 GetWayPoint()
         {
             return wayPoints[CurrentPointIndex];

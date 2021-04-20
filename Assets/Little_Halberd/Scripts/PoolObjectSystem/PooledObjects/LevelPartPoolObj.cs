@@ -14,8 +14,11 @@ namespace LittleHalberd
         [SerializeField]
         private bool HasFoliagePath;
 
+        private Transform EndPointTransform;
+
         private void Start()
         {
+            EndPointTransform = this.transform.Find("EndPoint");
             AstarPath.active.Scan();
 
             //For dev only
