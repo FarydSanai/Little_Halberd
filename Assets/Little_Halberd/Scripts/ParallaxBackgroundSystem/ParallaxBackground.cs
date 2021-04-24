@@ -48,7 +48,7 @@ namespace LittleHalberd
 
             if (infiniteVertical)
             {
-                if (Mathf.Abs(cameraTransform.position.y - this.transform.position.y) >= textureUnitSizeY + 20f)
+                if (Mathf.Abs(cameraTransform.position.y - this.transform.position.y) >= textureUnitSizeY + 10f)
                 {
                     float offsetPositionY = (cameraTransform.position.y - this.transform.position.y) % textureUnitSizeY;
                     this.transform.position = new Vector3(this.transform.position.x,

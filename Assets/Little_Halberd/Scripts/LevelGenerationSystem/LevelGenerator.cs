@@ -16,10 +16,12 @@ namespace LittleHalberd
         [SerializeField] private int MaxLevelPartsCount = 5;
 
         private Vector3 lastEndPosition;
+        public int LevelPartCounter;
 
         private void Awake()
         {
             lastEndPosition = levelPartStart.Find(endPointObjName).position;
+            LevelPartCounter = 0;
         }
         private void Start()
         {
@@ -52,13 +54,18 @@ namespace LittleHalberd
 
         private void SpawnLevelPart()
         {
-            int rand = Random.Range(0, PoolObjectLoader.Instance.LevelPartsInfo.Count);
+            //int rand = Random.Range(0, PoolObjectLoader.Instance.LevelPartsInfo.Count);
+            if (PoolObjectLoader.Instance.LevelPartsInfo.Count > LevelPartCounter)
+            {
+                Transform levelPartTransform = SpawnLevelPart(
+                                               PoolObjectLoader.Instance.LevelPartsInfo[LevelPartCounter].objectType
+                                               );
+                LevelPartCounter++;
 
-            Transform levelPartTransform = SpawnLevelPart(PoolObjectLoader.Instance.LevelPartsInfo[rand].objectType);
+                lastEndPosition = levelPartTransform.Find("EndPoint").position + new Vector3(25f, 0f, 0f);
 
-            lastEndPosition = levelPartTransform.Find("EndPoint").position + new Vector3(25f, 0f, 0f);
-
-            levelPartList.Add(levelPartTransform);
+                levelPartList.Add(levelPartTransform);
+            }
         }
         private Transform SpawnLevelPart(ObjectType levelPartType)
         {

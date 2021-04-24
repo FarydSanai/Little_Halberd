@@ -6,8 +6,9 @@ namespace LittleHalberd
 {
     public class PortalObj : MonoBehaviour
     {
-        public PortalObj TargetPortal;
-        public bool ResetPortal = true;
+        [SerializeField] private PortalObj TargetPortal;
+
+        private bool ResetPortal = true;
         private void OnTriggerEnter2D(Collider2D other)
         {
             if (TargetPortal != null && TargetPortal != this)

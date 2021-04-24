@@ -50,6 +50,8 @@ namespace LittleHalberd
         private CharacterControl control;
         private AIState AICurrentState;
 
+        public delegate void AIBehaviour();
+        private AIBehaviour ProcessAIBehaviour;
         private void Start()
         {
             Target = CharacterManager.Instance.GetPlayableCharacter().transform;
@@ -60,10 +62,15 @@ namespace LittleHalberd
             AICurrentState = InitialState;
             GroundLayer = LayerMask.NameToLayer(GroundLayerName);
 
+            InvokeRepeating(UpdatePathFunc, 0f, PathUpdateTimer);
 
-            InvokeRepeating(UpdatePathFunc, 0f, PathUpdateTimer);            
+            ProcessAIBehaviour = MeleeMobBehaviour;
         }
         private void FixedUpdate()
+        {
+            ProcessAIBehaviour();
+        }
+        private void MeleeMobBehaviour()
         {
             switch (AICurrentState)
             {
