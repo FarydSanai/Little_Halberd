@@ -208,6 +208,11 @@ namespace LittleHalberd
         }
         private void JumpPlatform(Vector2 dir)
         {
+            if (ReachedTarget())
+            {
+                control.Jump = false;
+                return;
+            }
             if (dir.y > JumpNodeRequireDist)
             {
                 if (IsGrounded)
@@ -265,6 +270,7 @@ namespace LittleHalberd
             {
                 control.MoveRight = true;
                 control.MoveLeft = false;
+                return;
             }
             else if (!changePatrolDir)
             {

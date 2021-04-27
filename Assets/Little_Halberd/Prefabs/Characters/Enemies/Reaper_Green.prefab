@@ -52,7 +52,7 @@ MonoBehaviour:
     EnemyLayers:
       serializedVersion: 2
       m_Bits: 0
-  AttackRange: 0.5
+  AttackRange: 1.5
   AttackDamage: 30
   AttackResetTime: 0.5
   AttackPoint: {fileID: 4835668749263859561}
@@ -137,7 +137,7 @@ Transform:
   m_GameObject: {fileID: 4835668748258303573}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
+  m_LocalScale: {x: 1.2, y: 1.2, z: 1}
   m_Children:
   - {fileID: 4835668749278612718}
   - {fileID: 4835668748863196926}
@@ -225,9 +225,9 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.18, y: -2}
-  m_Size: {x: 1.5, y: 1}
-  m_Direction: 0
+  m_Offset: {x: 0.18, y: -2.25}
+  m_Size: {x: 2, y: 1}
+  m_Direction: 1
 --- !u!114 &4835668748258303571
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -542,7 +542,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4835668749263859560}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.95, y: -0.55, z: 0}
+  m_LocalPosition: {x: 3.14, y: -0.55, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4835668748258303570}

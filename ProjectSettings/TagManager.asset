@@ -8,6 +8,7 @@ TagManager:
   - LVL_PT_2_NODE
   - LVL_1_PT_3
   - LVL_1_PT_4
+  - LVL_1_PT_7
   layers:
   - Default
   - TransparentFX
