@@ -114,6 +114,10 @@ namespace LittleHalberd
                     break;
             }
         }
+        private void RangeMobBehavoiur()
+        {
+
+        }
         private void UpdatePath()
         {
             if (AICurrentState == AIState.CHASE_PLAYER)

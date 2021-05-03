@@ -93,11 +93,13 @@
     <Compile Include="Assets\Little_Halberd\Scripts\CharacterAbilitySystem\CharacterAbilities\AbilitiesScripts\Jump.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\CharacterAbilitySystem\CharacterAbilities\AbilitiesScripts\LockTransition.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\CharacterAbilitySystem\CharacterAbilities\AbilitiesScripts\MoveForward.cs" />
+    <Compile Include="Assets\Little_Halberd\Scripts\CharacterAbilitySystem\CharacterAbilities\AbilitiesScripts\RangeAttackAbility.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\CharacterAbilitySystem\CharacterAbilities\AbilitiesScripts\TakeDamage.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\CharacterAbilitySystem\CharacterAbilities\AbilitiesScripts\TransitionIndexer.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\CharacterControl\CharacterControl.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\DoorPortalSystem\PortalObj.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\EnemyAI\EnemyAI.cs" />
+    <Compile Include="Assets\Little_Halberd\Scripts\EnemyAI\RangeAttackSubSystem\Projectile.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\EnemySpawnSystem\EnemySpawner.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\GroundGenerationSystem\GroundGenerator.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\Helpers\FoliageMeshHelper.cs" />
@@ -124,6 +126,7 @@
     <Compile Include="Assets\Little_Halberd\Scripts\SubComponentSystem\SubComponentData\GroundData.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\SubComponentSystem\SubComponentData\JumpData.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\SubComponentSystem\SubComponentData\MovingData.cs" />
+    <Compile Include="Assets\Little_Halberd\Scripts\SubComponentSystem\SubComponentData\RangeAttackData.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\SubComponentSystem\SubComponentProcessor.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\SubComponentSystem\SubComponents\CharacterAttack.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\SubComponentSystem\SubComponents\CharacterGround.cs" />
@@ -131,6 +134,7 @@
     <Compile Include="Assets\Little_Halberd\Scripts\SubComponentSystem\SubComponents\CharacterMovement.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\SubComponentSystem\SubComponents\DamageDetector.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\SubComponentSystem\SubComponents\ManualInput.cs" />
+    <Compile Include="Assets\Little_Halberd\Scripts\SubComponentSystem\SubComponents\RangeAttackSubComp.cs" />
     <None Include="Assets\JMO Assets\Cartoon FX\Shaders\CFX3 Multiply Color.shader" />
     <None Include="Assets\JMO Assets\Cartoon FX\CartoonFX Free.txt" />
     <None Include="Assets\JMO Assets\Cartoon FX Easy Editor\CartoonFX Easy Editor Readme.txt" />

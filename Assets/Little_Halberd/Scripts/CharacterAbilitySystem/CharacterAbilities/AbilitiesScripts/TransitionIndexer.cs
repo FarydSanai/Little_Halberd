@@ -11,6 +11,7 @@ namespace LittleHalberd
         Attack,
         NotMoving,
         Run,
+        RangeAttack,
     }
     [CreateAssetMenu(fileName = "New ability", menuName = "LittleHalberd/Ability/TransitionIndexer")]
     public class TransitionIndexer : CharacterAbility

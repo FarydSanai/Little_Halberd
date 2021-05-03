@@ -15,6 +15,7 @@ namespace LittleHalberd
         LockTransition,
         IsDead,
         Damaged,
+        RangeAttack,
 
         COUNT,
     }

@@ -5,12 +5,14 @@ namespace LittleHalberd
 {
     public class CharacterState : StateMachineBehaviour
     {
+        [HideInInspector]
         public CharacterControl control;
         public MovingData MOVING_DATA => control.subComponentProcessor.movingData;
         public JumpData JUMP_DATA => control.subComponentProcessor.jumpData;
         public GroundData GROUND_DATA => control.subComponentProcessor.groundData;
         public DamageData DAMAGE_DATA => control.subComponentProcessor.damageData;
         public AttackData ATTACK_DATA => control.subComponentProcessor.attackData;
+        public RangeAttackData RANGE_ATTACK_DATA => control.subComponentProcessor.rangeAttackData;
 
         [Space(3f)]
         public CharacterAbility[] CharacterAbilityArr;

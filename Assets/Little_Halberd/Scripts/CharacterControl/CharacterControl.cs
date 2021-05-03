@@ -9,6 +9,7 @@ namespace LittleHalberd
         public bool Run;
         public bool Jump;
         public bool Attack;
+        public bool RangeAttack;
 
         public Animator characterAnimator;
         public BoxCollider2D boxCollider;

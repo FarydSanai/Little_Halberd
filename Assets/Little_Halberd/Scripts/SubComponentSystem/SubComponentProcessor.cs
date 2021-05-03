@@ -12,6 +12,7 @@ namespace LittleHalberd
         CHARACTER_GROUND,
         CHARACTER_ATTACK,
         DAMAGE_DETECTOR,
+        RANGE_ATTACK,
 
         COUNT,
     }
@@ -19,20 +20,20 @@ namespace LittleHalberd
     {
         public SubComponent[] ArrSubComponents;
 
-        [NonSerialized] public CharacterControl control;
+        [HideInInspector] public CharacterControl control;
 
         public MovingData movingData;
         public JumpData jumpData;
         public GroundData groundData;
         public AttackData attackData;
         public DamageData damageData;
+        public RangeAttackData rangeAttackData;
 
         private void Awake()
         {
             ArrSubComponents = new SubComponent[(int)SubComponentType.COUNT];
             control = this.GetComponentInParent<CharacterControl>();
         }
-
 
         public void FixedUpdateSubComponents()
         {
@@ -43,6 +44,7 @@ namespace LittleHalberd
         {
             UpdateSubComponent(SubComponentType.MANUAL_INPUT);
             UpdateSubComponent(SubComponentType.CHARACTER_ATTACK);
+            UpdateSubComponent(SubComponentType.RANGE_ATTACK);
         }
 
         private void FixedUpdateSubComponent(SubComponentType type)

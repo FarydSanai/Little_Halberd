@@ -46,13 +46,12 @@ namespace LittleHalberd
 
         public override void OnUpdate()
         {
-            throw new System.NotImplementedException();
+            //throw new System.NotImplementedException();
         }
 
         private void CharJump(float force)
         {
-            control.RIGID_BODY.velocity = (new Vector2(control.RIGID_BODY.velocity.x * 0.05f, 1f) * force);
-            //control.RIGID_BODY.AddForce(new Vector2(control.RIGID_BODY.velocity.x * 0.05f, 1f) * force);
+            control.RIGID_BODY.velocity = new Vector2(control.RIGID_BODY.velocity.x * 0.05f, 1f) * force;
         }
 
     }

@@ -59,6 +59,14 @@ namespace LittleHalberd
                             }
                         }
                         break;
+                    case TransitionConditionType.RangeAttack:
+                        {
+                            if (!control.RangeAttack)
+                            {
+                                return false;
+                            }
+                        }
+                        break;
                 }
             }
             return true;
