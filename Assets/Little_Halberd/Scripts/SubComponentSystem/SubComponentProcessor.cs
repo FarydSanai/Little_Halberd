@@ -44,7 +44,7 @@ namespace LittleHalberd
         {
             UpdateSubComponent(SubComponentType.MANUAL_INPUT);
             UpdateSubComponent(SubComponentType.CHARACTER_ATTACK);
-            UpdateSubComponent(SubComponentType.RANGE_ATTACK);
+            //UpdateSubComponent(SubComponentType.RANGE_ATTACK);
         }
 
         private void FixedUpdateSubComponent(SubComponentType type)

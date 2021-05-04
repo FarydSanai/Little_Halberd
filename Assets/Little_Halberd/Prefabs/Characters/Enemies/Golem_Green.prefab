@@ -49,6 +49,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ArrSubComponents: []
+  control: {fileID: 0}
   movingData:
     MovementSpeed: 0
     MovementSpeedGraph:
@@ -78,6 +79,14 @@ MonoBehaviour:
     AttackerIsLeft: 0
     AttackerIsRight: 0
     isDamaging: 0
+  rangeAttackData:
+    Acceleration: 0
+    AngleInDegrees: 0
+    Target: {fileID: 0}
+    SpawnPoint: {fileID: 0}
+    ProjectilePrefab: {fileID: 0}
+    TimeBtwAttacks: 0
+    StartTimeBtwAttacks: 0
 --- !u!1 &4740725343183506433
 GameObject:
   m_ObjectHideFlags: 0
@@ -523,6 +532,7 @@ MonoBehaviour:
   Run: 0
   Jump: 0
   Attack: 0
+  RangeAttack: 0
   characterAnimator: {fileID: 4740725343727095626}
   boxCollider: {fileID: 0}
   subComponentProcessor: {fileID: 0}
@@ -589,8 +599,9 @@ MonoBehaviour:
   MoveDirDist: 0.5
   NextPointDistance: 1.8
   JumpNodeRequireDist: 0.8
-  InitialState: 0
+  InitialState: 3
   FollowEnabled: 1
+  EnemyType: 0
 --- !u!114 &2204564148463782021
 MonoBehaviour:
   m_ObjectHideFlags: 0

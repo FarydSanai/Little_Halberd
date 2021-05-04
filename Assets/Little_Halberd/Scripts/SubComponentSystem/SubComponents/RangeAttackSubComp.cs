@@ -7,6 +7,10 @@ namespace LittleHalberd
     public class RangeAttackSubComp : SubComponent
     {
         public RangeAttackData RangeAttackData;
+
+        //Temp
+        //Equals Sqrt(Projectile's RigidBody.gravityScale)
+        public float GravityMultiplier = 1.4f;
         private void Start()
         {
             RangeAttackData = new RangeAttackData
@@ -27,14 +31,6 @@ namespace LittleHalberd
         }
         public override void OnUpdate()
         {
-            if (RangeAttackReset())
-            {
-                control.RangeAttack = true;
-            }
-            else
-            {
-                control.RangeAttack = false;
-            }
         }
 
         public override void OnFixedUpdate()
@@ -43,6 +39,10 @@ namespace LittleHalberd
         }
         private void AimTarget()
         {
+            if (RangeAttackData.Target == null)
+            {
+                return;
+            }
             Vector2 dir = (Vector2)RangeAttackData.Target.position - (Vector2)control.transform.position;
             
             if (dir.x < 0f)
@@ -69,15 +69,14 @@ namespace LittleHalberd
         {
             Vector2 dir = (Vector2)RangeAttackData.Target.position - (Vector2)RangeAttackData.SpawnPoint.position;
 
-            float x = dir.x;
+            float x = dir.magnitude;
             float y = dir.y;
             float AngleInRad = RangeAttackData.AngleInDegrees * Mathf.Deg2Rad;
 
             float v2 = (RangeAttackData.Acceleration * x * x) / (2 * (y - Mathf.Tan(AngleInRad) * x) *
                                       Mathf.Pow(Mathf.Cos(AngleInRad), 2));
 
-            float v = Mathf.Sqrt(Mathf.Abs(v2)) *
-                      RangeAttackData.ProjectilePrefab.GetComponent<Projectile>().GravitiMultimplier;
+            float v = Mathf.Sqrt(Mathf.Abs(v2)) * GravityMultiplier;
 
             return v;
         }

@@ -31,6 +31,7 @@ namespace LittleHalberd
         public GroundData GROUND_DATA => subComponentProcessor.groundData;
         public AttackData ATTACK_DATA => subComponentProcessor.attackData;
         public DamageData DAMAGE_DATA => subComponentProcessor.damageData;
+        public RangeAttackData RANGE_ATTACK_DATA => subComponentProcessor.rangeAttackData;
 
         [Header("SubComponents")]
         public SubComponentProcessor subComponentProcessor;

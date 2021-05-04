@@ -5,6 +5,12 @@ using LittleHalberd.EditorUI;
 
 namespace LittleHalberd
 {
+    public enum EnemyType
+    {
+        MELEE,
+        RANGE,
+        BOSS,
+    }
     public enum AIState
     {
         PATROL_AREA,
@@ -35,6 +41,7 @@ namespace LittleHalberd
         [Header("Custom options")]
         [SerializeField] private AIState InitialState = AIState.PATROL_AREA; 
         [SerializeField] private bool FollowEnabled = true;
+        [SerializeField] private EnemyType EnemyType = EnemyType.MELEE;
 
         [Header("Patrol options")]
         private List<ContactPoint2D> contacts = new List<ContactPoint2D>();
@@ -64,7 +71,7 @@ namespace LittleHalberd
 
             InvokeRepeating(UpdatePathFunc, 0f, PathUpdateTimer);
 
-            ProcessAIBehaviour = MeleeMobBehaviour;
+            InitAIBehaviour(EnemyType);
         }
         private void FixedUpdate()
         {
@@ -116,7 +123,44 @@ namespace LittleHalberd
         }
         private void RangeMobBehavoiur()
         {
-
+            switch (AICurrentState)
+            {
+                case AIState.IDLE_STATE:
+                    {
+                        if (control.RANGE_ATTACK_DATA.RangeAttackReset())
+                        {
+                            control.RangeAttack = true;
+                        }
+                        else
+                        {
+                            control.RangeAttack = false;
+                        }
+                        control.RANGE_ATTACK_DATA.AimTarget();
+                    }
+                    break;
+                default:
+                    break;
+            }
+        }
+        private void InitAIBehaviour(EnemyType enemyType)
+        {
+            switch (enemyType)
+            {
+                case EnemyType.MELEE:
+                    {
+                        ProcessAIBehaviour = MeleeMobBehaviour;
+                    }
+                    break;
+                case EnemyType.RANGE:
+                    {
+                        ProcessAIBehaviour = RangeMobBehavoiur;
+                    }
+                    break;
+                case EnemyType.BOSS:
+                    break;
+                default:
+                    break;
+            }
         }
         private void UpdatePath()
         {
