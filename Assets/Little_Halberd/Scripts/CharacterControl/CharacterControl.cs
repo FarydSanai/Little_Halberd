@@ -11,9 +11,10 @@ namespace LittleHalberd
         public bool Attack;
         public bool RangeAttack;
 
+        public float CharacterMaxHP;
+
         public Animator characterAnimator;
         public BoxCollider2D boxCollider;
-
         private Rigidbody2D rigid;
 
         public Rigidbody2D RIGID_BODY
@@ -32,14 +33,15 @@ namespace LittleHalberd
         public AttackData ATTACK_DATA => subComponentProcessor.attackData;
         public DamageData DAMAGE_DATA => subComponentProcessor.damageData;
         public RangeAttackData RANGE_ATTACK_DATA => subComponentProcessor.rangeAttackData;
+        public HealthBarData HEALTH_BAR_DATA => subComponentProcessor.healthBarData;
 
         [Header("SubComponents")]
         public SubComponentProcessor subComponentProcessor;
 
         private void Awake()
         {
-            boxCollider = GetComponent<BoxCollider2D>();
-            subComponentProcessor = GetComponentInChildren<SubComponentProcessor>();
+            boxCollider = this.GetComponent<BoxCollider2D>();
+            subComponentProcessor = this.GetComponentInChildren<SubComponentProcessor>();
 
             RegisterCharacter();            
         }

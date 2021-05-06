@@ -7,13 +7,12 @@ namespace LittleHalberd
     public class DamageDetector : SubComponent
     {
         public DamageData damageData;
-        public float CharacterMaxHP;
 
         private void Start()
         {
             damageData = new DamageData
             {
-                CurrentHP = CharacterMaxHP,
+                CurrentHP = control.CharacterMaxHP,
                 isDead = false,
                 TakeDamage = TakeDamage,
                 AttackerIsLeft = false,
@@ -37,6 +36,7 @@ namespace LittleHalberd
         public void TakeDamage(float damage)
         {
             damageData.CurrentHP -= damage;
+            subComponentProcessor.healthBarData.ChangeHealthBar(damage);
             control.characterAnimator.SetTrigger(HashManager.Instance.ArrTransitionParams[(int)TransitionParameter.Damaged]);
 
             if(damageData.CurrentHP <= 0f)
