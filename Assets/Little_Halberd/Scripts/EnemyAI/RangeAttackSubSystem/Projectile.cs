@@ -10,7 +10,8 @@ namespace LittleHalberd
         {
             if (other.gameObject.GetComponent<EnemyAI>() == null)
             {
-                Destroy(this.gameObject);
+                //Destroy(this.gameObject);
+                PoolObjectLoader.Instance.DestroyObject(this.gameObject);
             }
         }
     }

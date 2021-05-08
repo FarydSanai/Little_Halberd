@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
-using LittleHalberd.EditorUI;
+using LittleHalberd.InspectorUI;
 
 namespace LittleHalberd
 {
@@ -25,16 +25,18 @@ namespace LittleHalberd
         WRAITH_BLACK,
         WRAITH_GREEN,
 
+        PUMPKIN_BOMB,
+
     }
     public class PoolObjectLoader : MonoBehaviour
     {
         public static PoolObjectLoader Instance;
 
         public List<PoolObjectInfo> LevelPartsInfo;
-        //[ColorSpacer(30, 3, 300, 252, 0, 185)]
+        [ColorSpacer(30, 3, 300, 252, 0, 185)]
 
         public List<PoolObjectInfo> EnemyTypeInfo;
-        //[ColorSpacer(30, 3, 300, 252, 248, 0)]
+        [ColorSpacer(30, 3, 300, 252, 248, 0)]
 
         [SerializeField]
         private List<PoolObjectInfo> PoolObjectsInfo;
@@ -95,6 +97,25 @@ namespace LittleHalberd
             {
                 obj = InstantiateObject(type, PoolsDic[type].Container);
             }
+            obj.SetActive(true);
+
+            return obj;
+        }
+        public GameObject GetObject(ObjectType type, Vector3 spawnPos, Quaternion startRot)
+        {
+            GameObject obj;
+
+            if (PoolsDic[type].Objects.Count > 0)
+            {
+                obj = PoolsDic[type].Objects.Dequeue();
+            }
+            else
+            {
+                obj = InstantiateObject(type, PoolsDic[type].Container);
+            }
+
+            obj.transform.position = spawnPos;
+            obj.transform.rotation = startRot;
             obj.SetActive(true);
 
             return obj;

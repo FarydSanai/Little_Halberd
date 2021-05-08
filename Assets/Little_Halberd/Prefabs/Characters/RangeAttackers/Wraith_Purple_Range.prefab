@@ -453,7 +453,7 @@ MonoBehaviour:
   Jump: 0
   Attack: 0
   RangeAttack: 0
-  CharacterMaxHP: 0
+  CharacterMaxHP: 500
   characterAnimator: {fileID: 7354658715851403602}
   boxCollider: {fileID: 0}
   subComponentProcessor: {fileID: 0}
@@ -514,7 +514,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Target: {fileID: 0}
-  ActivateDistance: 64
+  ActivateDistance: 1600
   ReachedDist: 8
   PathUpdateTimer: 0.5
   MoveDirDist: 0.5
@@ -1560,12 +1560,12 @@ PrefabInstance:
     - target: {fileID: 5314159982257969449, guid: ed3f493b27ec0f5438f59b24d588198e,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.96
+      value: -1.37
       objectReference: {fileID: 0}
     - target: {fileID: 5314159982257969449, guid: ed3f493b27ec0f5438f59b24d588198e,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 1.71
+      value: 2.05
       objectReference: {fileID: 0}
     - target: {fileID: 5314159982257969449, guid: ed3f493b27ec0f5438f59b24d588198e,
         type: 3}

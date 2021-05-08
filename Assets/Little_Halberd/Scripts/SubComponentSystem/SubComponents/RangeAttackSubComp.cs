@@ -57,13 +57,18 @@ namespace LittleHalberd
         }
         private void ProcessRangeAttack()
         {
-            GameObject obj = Instantiate(
-                                RangeAttackData.ProjectilePrefab,
-                                RangeAttackData.SpawnPoint.position,
-                                Quaternion.identity);
+            //GameObject obj = Instantiate(
+            //                    RangeAttackData.ProjectilePrefab,
+            //                    RangeAttackData.SpawnPoint.position,
+            //                    Quaternion.identity);
+
+            GameObject obj = PoolObjectLoader.Instance.GetObject(ObjectType.PUMPKIN_BOMB,
+                                                                 RangeAttackData.SpawnPoint.position,
+                                                                 Quaternion.identity);
 
             float speed = CalculateBallistic();
             obj.GetComponent<Rigidbody2D>().velocity = RangeAttackData.SpawnPoint.right * speed;
+            obj.GetComponent<Rigidbody2D>().AddTorque(50f);
         }
         private float CalculateBallistic()
         {

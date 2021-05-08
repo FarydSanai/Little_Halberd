@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 using Pathfinding;
-using LittleHalberd.EditorUI;
 
 namespace LittleHalberd
 {
@@ -26,7 +25,7 @@ namespace LittleHalberd
 
         [Header("Pathfinding")]
         public Transform Target;
-        public float ActivateDistance = 600f;
+        public float ActivateDistance;
         public float ReachedDist = 8f;
         public float PathUpdateTimer = 0.5f;
         public float MoveDirDist = 0.5f;
@@ -127,6 +126,18 @@ namespace LittleHalberd
             {
                 case AIState.IDLE_STATE:
                     {
+                        if (TargetInDistance())
+                        {
+                            AICurrentState = AIState.ATTACK_PLAYER;
+                        }
+                    }
+                    break;
+                case AIState.ATTACK_PLAYER:
+                    {
+                        if (!TargetInDistance())
+                        {
+                            AICurrentState = AIState.IDLE_STATE;
+                        }
                         if (control.RANGE_ATTACK_DATA.RangeAttackReset())
                         {
                             control.RangeAttack = true;

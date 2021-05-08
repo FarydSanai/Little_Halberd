@@ -12,9 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d86c9aa8632146c4fa54ad4241fd5391, type: 3}
   m_Name: RangeAttack
   m_EditorClassIdentifier: 
-  Target: {fileID: 0}
-  SpawnPoint: {fileID: 0}
   AngleInDegrees: 45
-  ProjectilePrefab: {fileID: 5972319346861357257, guid: 14b3e26ab6073db4f9d67573991a0070,
+  ProjectilePrefab: {fileID: 8223477992111047813, guid: 99b545da7d4ed9f459f9a1193a075709,
     type: 3}
   StartTimeBtwAttacks: 1.5
