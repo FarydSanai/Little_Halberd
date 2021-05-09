@@ -84,6 +84,7 @@
     <Compile Include="Assets\JMO Assets\Cartoon FX\Scripts\CFX_AutoRotate.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX\Scripts\CFX_LightFlicker.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX\Scripts\CFX_LightIntensityFade.cs" />
+    <Compile Include="Assets\Little_Halberd\Game_Components\LevelDividingPost\DividingPost.cs" />
     <Compile Include="Assets\Little_Halberd\Prefabs\GroundParts\SpriteChanger.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\CharacterControl\CharacterControl.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\DoorPortalSystem\PortalObj.cs" />

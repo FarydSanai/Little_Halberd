@@ -179,14 +179,14 @@ MonoBehaviour:
   Gradient:
     serializedVersion: 2
     key0: {r: 1, g: 0, b: 0, a: 1}
-    key1: {r: 1, g: 0.93129766, b: 0, a: 1}
-    key2: {r: 0, g: 1, b: 0.011921406, a: 0}
+    key1: {r: 0.7830189, g: 0.72774696, b: 0, a: 1}
+    key2: {r: 0.029859383, g: 0.5754717, b: 0.036278382, a: 0}
     key3: {r: 0, g: 1, b: 0.011921406, a: 0}
     key4: {r: 0, g: 0, b: 0, a: 0}
     key5: {r: 0, g: 0, b: 0, a: 0}
     key6: {r: 0, g: 0, b: 0, a: 0}
     key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 15420
+    ctime0: 17733
     ctime1: 45489
     ctime2: 65535
     ctime3: 65535
@@ -274,7 +274,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -0.96, y: 1.71}
+  m_AnchoredPosition: {x: -0.95999146, y: 1.7099915}
   m_SizeDelta: {x: 1321.25, y: 421.25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &5314159982257969448
