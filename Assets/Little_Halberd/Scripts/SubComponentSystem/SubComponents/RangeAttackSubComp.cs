@@ -57,11 +57,6 @@ namespace LittleHalberd
         }
         private void ProcessRangeAttack()
         {
-            //GameObject obj = Instantiate(
-            //                    RangeAttackData.ProjectilePrefab,
-            //                    RangeAttackData.SpawnPoint.position,
-            //                    Quaternion.identity);
-
             GameObject obj = PoolObjectLoader.Instance.GetObject(ObjectType.PUMPKIN_BOMB,
                                                                  RangeAttackData.SpawnPoint.position,
                                                                  Quaternion.identity);
@@ -94,7 +89,7 @@ namespace LittleHalberd
             }
             else
             {
-                RangeAttackData.TimeBtwAttacks -= Time.deltaTime;
+                RangeAttackData.TimeBtwAttacks -= Time.fixedDeltaTime;
                 return false;
             }
         }

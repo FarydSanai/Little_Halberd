@@ -38,6 +38,9 @@ namespace LittleHalberd
         public List<PoolObjectInfo> EnemyTypeInfo;
         [ColorSpacer(30, 3, 300, 252, 248, 0)]
 
+        public List<PoolObjectInfo> VFX_Type;
+        [ColorSpacer(30, 3, 300, 252, 0, 0)]
+
         [SerializeField]
         private List<PoolObjectInfo> PoolObjectsInfo;
 

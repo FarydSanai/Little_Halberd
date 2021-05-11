@@ -1,5 +1,116 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1281310066317364993
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4007118979105167968}
+  - component: {fileID: 5586224365129264462}
+  m_Layer: 0
+  m_Name: CharacterAIPathfinder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4007118979105167968
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1281310066317364993}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6132226062609975580}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5586224365129264462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1281310066317364993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef892628eaf5a724ba3b24661380e6dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ActivateDistance: 64
+  ReachedDistance: 4
+  PathUpdateTimer: 0.5
+  MoveDirDistance: 0.5
+  pathfinderData:
+    Target: {fileID: 0}
+    ActivateDistance: 0
+    ReachedDist: 0
+    PathUpdateTimer: 0
+    MoveDirDist: 0
+    currentWayPoint: 0
+    seeker: {fileID: 0}
+--- !u!1 &4307167930332116731
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3768961221604758017}
+  - component: {fileID: 1129506026817510528}
+  m_Layer: 0
+  m_Name: CharacterAI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3768961221604758017
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4307167930332116731}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6132226062609975580}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1129506026817510528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4307167930332116731}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3665b75f83ddaa4a9424b91904f8e53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NextPointDistance: 1.8
+  JumpNodeRequireDist: 0.8
+  InitialState: 3
+  FollowEnabled: 1
+  EnemyType: 0
+  characterAIData:
+    NextPointDistance: 0
+    JumpNodeRequireDist: 0
+    EnemyType: 0
+    InitialState: 0
+    AICurrentState: 0
+    FollowEnabled: 0
+    targetControl: {fileID: 0}
 --- !u!1 &6132226062209525898
 GameObject:
   m_ObjectHideFlags: 0
@@ -166,6 +277,8 @@ Transform:
   - {fileID: 6132226063896086919}
   - {fileID: 6132226063176516775}
   - {fileID: 7732896540686838168}
+  - {fileID: 4007118979105167968}
+  - {fileID: 3768961221604758017}
   m_Father: {fileID: 6132226063349356976}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -252,6 +365,22 @@ MonoBehaviour:
       m_NumColorKeys: 2
       m_NumAlphaKeys: 2
     HealthImage: {fileID: 0}
+  pathfinderData:
+    Target: {fileID: 0}
+    ActivateDistance: 0
+    ReachedDist: 0
+    PathUpdateTimer: 0
+    MoveDirDist: 0
+    currentWayPoint: 0
+    seeker: {fileID: 0}
+  characterAIData:
+    NextPointDistance: 0
+    JumpNodeRequireDist: 0
+    EnemyType: 0
+    InitialState: 0
+    AICurrentState: 0
+    FollowEnabled: 0
+    targetControl: {fileID: 0}
 --- !u!1 &6132226062868498501
 GameObject:
   m_ObjectHideFlags: 0
@@ -415,7 +544,6 @@ GameObject:
   - component: {fileID: 6132226063349356981}
   - component: {fileID: 6132226063349356980}
   - component: {fileID: 6132226063349356977}
-  - component: {fileID: 6132226063349356974}
   - component: {fileID: -8482436570187526975}
   m_Layer: 9
   m_Name: Golem_Grey
@@ -554,28 +682,6 @@ MonoBehaviour:
   tagPenalties: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   graphMask:
     value: -1
---- !u!114 &6132226063349356974
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6132226063349356983}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5453c8ff27c403c449640655dd65009e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Target: {fileID: 0}
-  ActivateDistance: 64
-  ReachedDist: 4
-  PathUpdateTimer: 0.5
-  MoveDirDist: 0.5
-  NextPointDistance: 1.8
-  JumpNodeRequireDist: 0.8
-  InitialState: 3
-  FollowEnabled: 1
-  EnemyType: 0
 --- !u!114 &-8482436570187526975
 MonoBehaviour:
   m_ObjectHideFlags: 0

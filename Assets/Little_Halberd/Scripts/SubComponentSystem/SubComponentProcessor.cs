@@ -14,6 +14,8 @@ namespace LittleHalberd
         DAMAGE_DETECTOR,
         RANGE_ATTACK,
         HEALTH_BAR,
+        CHARACTER_AI_PATHFINDER,
+        CHARACTER_AI,
 
         COUNT,
     }
@@ -30,6 +32,8 @@ namespace LittleHalberd
         public DamageData damageData;
         public RangeAttackData rangeAttackData;
         public HealthBarData healthBarData;
+        public PathfinderData pathfinderData;
+        public CharacterAIData characterAIData;
 
         private void Awake()
         {
@@ -41,6 +45,7 @@ namespace LittleHalberd
         {
             FixedUpdateSubComponent(SubComponentType.CHARACTER_MOVEMENT);
             FixedUpdateSubComponent(SubComponentType.CHARACTER_JUMP);
+            FixedUpdateSubComponent(SubComponentType.CHARACTER_AI);
         }
         public void UpdateSubComponents()
         {

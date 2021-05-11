@@ -34,6 +34,8 @@ Transform:
   - {fileID: 3969291107024989661}
   - {fileID: 3969291107400622333}
   - {fileID: 7703893005035406263}
+  - {fileID: 610489579912513153}
+  - {fileID: 8796365782528388660}
   m_Father: {fileID: 3969291107571400170}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -120,6 +122,22 @@ MonoBehaviour:
       m_NumColorKeys: 2
       m_NumAlphaKeys: 2
     HealthImage: {fileID: 0}
+  pathfinderData:
+    Target: {fileID: 0}
+    ActivateDistance: 0
+    ReachedDist: 0
+    PathUpdateTimer: 0
+    MoveDirDist: 0
+    currentWayPoint: 0
+    seeker: {fileID: 0}
+  characterAIData:
+    NextPointDistance: 0
+    JumpNodeRequireDist: 0
+    EnemyType: 0
+    InitialState: 0
+    AICurrentState: 0
+    FollowEnabled: 0
+    targetControl: {fileID: 0}
 --- !u!1 &3969291105997368351
 GameObject:
   m_ObjectHideFlags: 0
@@ -427,7 +445,6 @@ GameObject:
   - component: {fileID: 3969291107571400175}
   - component: {fileID: 3969291107571400174}
   - component: {fileID: 3969291107571400171}
-  - component: {fileID: 3969291107571400180}
   - component: {fileID: -6108204107148419160}
   m_Layer: 9
   m_Name: Golem_Wood
@@ -566,28 +583,6 @@ MonoBehaviour:
   tagPenalties: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   graphMask:
     value: -1
---- !u!114 &3969291107571400180
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3969291107571400173}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5453c8ff27c403c449640655dd65009e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Target: {fileID: 0}
-  ActivateDistance: 64
-  ReachedDist: 4
-  PathUpdateTimer: 0.5
-  MoveDirDist: 0.5
-  NextPointDistance: 1.8
-  JumpNodeRequireDist: 0.8
-  InitialState: 3
-  FollowEnabled: 1
-  EnemyType: 0
 --- !u!114 &-6108204107148419160
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -694,6 +689,117 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 256
+--- !u!1 &5743900993375144148
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8796365782528388660}
+  - component: {fileID: 5758970634126943713}
+  m_Layer: 0
+  m_Name: CharacterAI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8796365782528388660
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5743900993375144148}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 3969291105760898374}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5758970634126943713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5743900993375144148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3665b75f83ddaa4a9424b91904f8e53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NextPointDistance: 1.8
+  JumpNodeRequireDist: 0.8
+  InitialState: 3
+  FollowEnabled: 1
+  EnemyType: 0
+  characterAIData:
+    NextPointDistance: 0
+    JumpNodeRequireDist: 0
+    EnemyType: 0
+    InitialState: 0
+    AICurrentState: 0
+    FollowEnabled: 0
+    targetControl: {fileID: 0}
+--- !u!1 &6740137431509274822
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 610489579912513153}
+  - component: {fileID: 2441171333753428966}
+  m_Layer: 0
+  m_Name: CharacterAIPathfinder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &610489579912513153
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6740137431509274822}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 3969291105760898374}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2441171333753428966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6740137431509274822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef892628eaf5a724ba3b24661380e6dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ActivateDistance: 64
+  ReachedDistance: 4
+  PathUpdateTimer: 0.5
+  MoveDirDistance: 0.5
+  pathfinderData:
+    Target: {fileID: 0}
+    ActivateDistance: 0
+    ReachedDist: 0
+    PathUpdateTimer: 0
+    MoveDirDist: 0
+    currentWayPoint: 0
+    seeker: {fileID: 0}
 --- !u!1001 &2546233111106394782
 PrefabInstance:
   m_ObjectHideFlags: 0

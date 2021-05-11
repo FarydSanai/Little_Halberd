@@ -34,6 +34,7 @@ namespace LittleHalberd
         public DamageData DAMAGE_DATA => subComponentProcessor.damageData;
         public RangeAttackData RANGE_ATTACK_DATA => subComponentProcessor.rangeAttackData;
         public HealthBarData HEALTH_BAR_DATA => subComponentProcessor.healthBarData;
+        public PathfinderData PATHFINDER_DATA => subComponentProcessor.pathfinderData;
 
         [Header("SubComponents")]
         public SubComponentProcessor subComponentProcessor;

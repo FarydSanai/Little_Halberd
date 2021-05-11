@@ -6,10 +6,16 @@ namespace LittleHalberd
 {
     public class DividingPost : MonoBehaviour
     {
-        [SerializeField] private GameObject ClosedBlock; 
+        [SerializeField] private GameObject ClosedBlock;
+        [SerializeField] private bool ClosedFromStart;
         private void Start()
         {
             FoliageMeshHelper.EnableMeshForGrassPath(this);
+
+            if (ClosedFromStart)
+            {
+                ClosedBlock.SetActive(true);
+            }
         }
 
         private IEnumerator OnTriggerExit2D(Collider2D other)
@@ -22,7 +28,7 @@ namespace LittleHalberd
         }
         private void OnTriggerStay2D(Collider2D other)
         {
-            other.gameObject.GetComponent<Rigidbody2D>().velocity = Vector2.right * 5000f;
+            other.gameObject.GetComponent<Rigidbody2D>().AddForce(Vector2.right * 500f);
         }
     }
 }

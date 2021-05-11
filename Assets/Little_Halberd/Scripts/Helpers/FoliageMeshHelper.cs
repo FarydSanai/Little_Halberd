@@ -17,5 +17,9 @@ namespace LittleHalberd
                 }
             }
         }
+        public static void EnableMeshForSingleObj(MonoBehaviour monoBeh)
+        {
+
+        }
     }
 }

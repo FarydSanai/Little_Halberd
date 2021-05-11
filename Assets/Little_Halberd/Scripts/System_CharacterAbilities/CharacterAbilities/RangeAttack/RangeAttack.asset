@@ -15,4 +15,4 @@ MonoBehaviour:
   AngleInDegrees: 45
   ProjectilePrefab: {fileID: 8223477992111047813, guid: 99b545da7d4ed9f459f9a1193a075709,
     type: 3}
-  StartTimeBtwAttacks: 1.5
+  StartTimeBtwAttacks: 2
