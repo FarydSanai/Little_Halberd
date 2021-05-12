@@ -120,6 +120,8 @@
     <Compile Include="Assets\Little_Halberd\Scripts\SubComponentSystem\SubComponentData\MovingData.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\SubComponentSystem\SubComponentData\PathfinderData.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\SubComponentSystem\SubComponentData\RangeAttackData.cs" />
+    <Compile Include="Assets\Little_Halberd\Scripts\SubComponentSystem\SubComponentHelpers\IPatrolPlatform.cs" />
+    <Compile Include="Assets\Little_Halberd\Scripts\SubComponentSystem\SubComponentHelpers\PatrolPlatform.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\SubComponentSystem\SubComponentProcessor.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\SubComponentSystem\SubComponents\CharacterAIPathfinder.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\SubComponentSystem\SubComponents\CharacterAttack.cs" />

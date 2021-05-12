@@ -32,10 +32,7 @@ namespace LittleHalberd
 
             subComponentProcessor.pathfinderData = pathfinderData;
 
-            pathfinderData.UpdatePathRoutine = 
-                StartCoroutine(UpdatePath(subComponentProcessor.characterAIData.AICurrentState,
-                                          subComponentProcessor.characterAIData.FollowEnabled,
-                                          control.PATHFINDER_DATA.PathUpdateTimer));
+            pathfinderData.UpdatePathRoutine = StartCoroutine(UpdatePath(PathUpdateTimer));
 
         }
         public override void OnFixedUpdate()
@@ -45,12 +42,12 @@ namespace LittleHalberd
         public override void OnUpdate()
         {     
         }
-        private IEnumerator UpdatePath(AIState aiCurrentState, bool followEnabled, float updateDelay)
+        private IEnumerator UpdatePath(float updateDelay)
         {
             while(true)
             {
-
-                if (followEnabled && pathfinderData.seeker.IsDone())
+                if (subComponentProcessor.characterAIData.FollowEnabled &&
+                    pathfinderData.seeker.IsDone())
                 {
                     pathfinderData.seeker.StartPath(control.RIGID_BODY.position,
                                                     pathfinderData.Target.position, OnPathComplete);

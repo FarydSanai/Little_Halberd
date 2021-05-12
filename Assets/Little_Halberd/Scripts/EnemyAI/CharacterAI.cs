@@ -19,8 +19,6 @@ namespace LittleHalberd
     }
     public class CharacterAI : SubComponent
     {
-        private const string GroundLayerName = "Ground";
-
         [Header("Follow options")]
         public float NextPointDistance;
         public float JumpNodeRequireDist;
@@ -32,17 +30,13 @@ namespace LittleHalberd
         [SerializeField]
         private EnemyType EnemyType = EnemyType.MELEE;
 
-        [Header("Patrol options")]
-        private List<ContactPoint2D> contacts = new List<ContactPoint2D>();
-        private bool changePatrolDir = true;
-        private Collider2D groundCollider;
-        private int GroundLayer;
-        private bool IsGrounded;
+        [Header("Patrol platform")]
+        private IPatrolPlatform patrolPlatform;
 
         public CharacterAIData characterAIData;
         private void Start()
         {
-            GroundLayer = LayerMask.NameToLayer(GroundLayerName);
+            patrolPlatform = new PatrolPlatform(control);
 
             characterAIData = new CharacterAIData
             {
@@ -74,7 +68,7 @@ namespace LittleHalberd
                     break;
                 case AIState.PATROL_AREA:
                     {
-                        PatrolArea();
+                        patrolPlatform.PatrolArea();
 
                         if (TargetInDistance() && FollowEnabled)
                         {
@@ -106,6 +100,9 @@ namespace LittleHalberd
         }
         private void RangeMobBehavoiur()
         {
+            //temp
+            StopCoroutine(subComponentProcessor.pathfinderData.UpdatePathRoutine);
+
             switch (characterAIData.AICurrentState)
             {
                 case AIState.IDLE_STATE:
@@ -168,7 +165,7 @@ namespace LittleHalberd
                 return;
             }
 
-            IsGrounded = control.GROUND_DATA.IsGrounded();
+            //IsGrounded = control.GROUND_DATA.IsGrounded();
             control.Attack = false;
 
             //Set direction
@@ -243,7 +240,7 @@ namespace LittleHalberd
             }
             if (dir.y > JumpNodeRequireDist)
             {
-                if (IsGrounded)
+                if (control.GROUND_DATA.IsGrounded())
                 {
                     control.Jump = true;
                 }
@@ -264,48 +261,6 @@ namespace LittleHalberd
                 control.Attack = false;
             }
         }
-        private void PatrolArea()
-        {
-            IsGrounded = control.GROUND_DATA.IsGrounded();
-            if (IsGrounded)
-            {
-                int contactsNumber = control.RIGID_BODY.GetContacts(contacts);
-                if (groundCollider == null)
-                {
-                    groundCollider = contacts.Find(c =>
-                                                   c.collider.gameObject.layer == GroundLayer).collider;
-                }
-
-                if (groundCollider != null)
-                {
-                    AIPatrolPlatform(groundCollider);
-                }
-            }
-        }
-        private void AIPatrolPlatform(Collider2D groundCollider) 
-        {
-            if (changePatrolDir && control.transform.position.x > groundCollider.bounds.min.x)
-            {
-                control.MoveLeft = true;
-                control.MoveRight = false;
-            }
-            else if (changePatrolDir)
-            {
-                changePatrolDir = false;
-            }
-
-            if (!changePatrolDir && control.transform.position.x < groundCollider.bounds.max.x)
-            {
-                control.MoveRight = true;
-                control.MoveLeft = false;
-                return;
-            }
-            else if (!changePatrolDir)
-            {
-                changePatrolDir = true;
-            }
-        }
-
         public override void OnUpdate()
         {
             //throw new System.NotImplementedException();
