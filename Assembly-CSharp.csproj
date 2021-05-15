@@ -85,6 +85,7 @@
     <Compile Include="Assets\JMO Assets\Cartoon FX\Scripts\CFX_LightFlicker.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX\Scripts\CFX_LightIntensityFade.cs" />
     <Compile Include="Assets\Little_Halberd\Game_Components\LevelDividingPost\DividingPost.cs" />
+    <Compile Include="Assets\Little_Halberd\Game_Components\Pumpkin_Bomb\ProjectilePoolObj.cs" />
     <Compile Include="Assets\Little_Halberd\Prefabs\AnimatedTrees\AnimatedTree.cs" />
     <Compile Include="Assets\Little_Halberd\Prefabs\GroundParts\SpriteChanger.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\CharacterControl\CharacterControl.cs" />
@@ -97,6 +98,7 @@
     <Compile Include="Assets\Little_Halberd\Scripts\Helpers\TransitionConditionChecker.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\LevelGenerationSystem\LevelGenerator.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\Managers\CharacterManager.cs" />
+    <Compile Include="Assets\Little_Halberd\Scripts\Managers\CustomLayers.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\Managers\HashManager.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\Managers\Singleton.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\Managers\VirtualInputManager.cs" />
@@ -135,6 +137,7 @@
     <Compile Include="Assets\Little_Halberd\Scripts\System_CharacterAbilities\BaseScripts\CharacterAbility.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\System_CharacterAbilities\BaseScripts\CharacterState.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\System_CharacterAbilities\CharacterAbilities\AbilitiesScripts\Attack.cs" />
+    <Compile Include="Assets\Little_Halberd\Scripts\System_CharacterAbilities\CharacterAbilities\AbilitiesScripts\Death.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\System_CharacterAbilities\CharacterAbilities\AbilitiesScripts\GroundDetector.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\System_CharacterAbilities\CharacterAbilities\AbilitiesScripts\Idle.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\System_CharacterAbilities\CharacterAbilities\AbilitiesScripts\Jump.cs" />
@@ -144,7 +147,6 @@
     <Compile Include="Assets\Little_Halberd\Scripts\System_CharacterAbilities\CharacterAbilities\AbilitiesScripts\TakeDamage.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\System_CharacterAbilities\CharacterAbilities\AbilitiesScripts\TransitionIndexer.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\System_EnemySpawn\EnemySpawner.cs" />
-    <Compile Include="Assets\Little_Halberd\Sprites\Pumpkin_Bomb\ProjectilePoolObj.cs" />
     <None Include="Assets\JMO Assets\Cartoon FX\Shaders\CFX3 Multiply Color.shader" />
     <None Include="Assets\JMO Assets\Cartoon FX\CartoonFX Free.txt" />
     <None Include="Assets\JMO Assets\Cartoon FX Easy Editor\CartoonFX Easy Editor Readme.txt" />

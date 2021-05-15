@@ -362,7 +362,6 @@ GameObject:
   - component: {fileID: 2376540185838183686}
   - component: {fileID: 2376540185838183687}
   - component: {fileID: 2376540185838183682}
-  - component: {fileID: 2376540185838183709}
   - component: {fileID: 9199012674086072434}
   m_Layer: 9
   m_Name: Wraith_Purple_Range
@@ -501,28 +500,6 @@ MonoBehaviour:
   tagPenalties: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   graphMask:
     value: -1
---- !u!114 &2376540185838183709
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2376540185838183684}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5453c8ff27c403c449640655dd65009e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Target: {fileID: 0}
-  ActivateDistance: 1600
-  ReachedDist: 8
-  PathUpdateTimer: 0.5
-  MoveDirDist: 0.5
-  NextPointDistance: 1.8
-  JumpNodeRequireDist: 0.8
-  InitialState: 3
-  FollowEnabled: 0
-  EnemyType: 1
 --- !u!114 &9199012674086072434
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -673,6 +650,8 @@ Transform:
   - {fileID: 2376540186000537620}
   - {fileID: 641244583}
   - {fileID: 2504143218575617419}
+  - {fileID: 7381046349592302188}
+  - {fileID: 2791769778652514534}
   m_Father: {fileID: 2376540185838183683}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -759,6 +738,22 @@ MonoBehaviour:
       m_NumColorKeys: 2
       m_NumAlphaKeys: 2
     HealthImage: {fileID: 0}
+  pathfinderData:
+    Target: {fileID: 0}
+    ActivateDistance: 0
+    ReachedDist: 0
+    PathUpdateTimer: 0
+    MoveDirDist: 0
+    currentWayPoint: 0
+    seeker: {fileID: 0}
+  characterAIData:
+    NextPointDistance: 0
+    JumpNodeRequireDist: 0
+    EnemyType: 0
+    InitialState: 0
+    AICurrentState: 0
+    FollowEnabled: 0
+    targetControl: {fileID: 0}
 --- !u!1 &2376540186980111417
 GameObject:
   m_ObjectHideFlags: 0
@@ -870,6 +865,61 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &2821167909979599633
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2791769778652514534}
+  - component: {fileID: 6364190516781870234}
+  m_Layer: 0
+  m_Name: CharacterAIPathfinder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2791769778652514534
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2821167909979599633}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2376540186575467951}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6364190516781870234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2821167909979599633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef892628eaf5a724ba3b24661380e6dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ActivateDistance: 64
+  ReachedDistance: 4
+  PathUpdateTimer: 0.5
+  MoveDirDistance: 0.5
+  pathfinderData:
+    Target: {fileID: 0}
+    ActivateDistance: 0
+    ReachedDist: 0
+    PathUpdateTimer: 0
+    MoveDirDist: 0
+    currentWayPoint: 0
+    seeker: {fileID: 0}
 --- !u!1 &2963435486902626711
 GameObject:
   m_ObjectHideFlags: 0
@@ -1063,6 +1113,62 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &5710944638374275835
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7381046349592302188}
+  - component: {fileID: 7014319546959787297}
+  m_Layer: 0
+  m_Name: CharacterAI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7381046349592302188
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5710944638374275835}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2376540186575467951}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7014319546959787297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5710944638374275835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3665b75f83ddaa4a9424b91904f8e53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NextPointDistance: 1.8
+  JumpNodeRequireDist: 0.8
+  InitialState: 3
+  FollowEnabled: 0
+  EnemyType: 1
+  characterAIData:
+    NextPointDistance: 0
+    JumpNodeRequireDist: 0
+    EnemyType: 0
+    InitialState: 0
+    AICurrentState: 0
+    FollowEnabled: 0
+    targetControl: {fileID: 0}
 --- !u!1 &6044677193721092942
 GameObject:
   m_ObjectHideFlags: 0

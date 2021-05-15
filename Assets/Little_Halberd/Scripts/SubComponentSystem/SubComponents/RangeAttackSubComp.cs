@@ -53,7 +53,7 @@ namespace LittleHalberd
             {
                 control.transform.rotation = Quaternion.Euler(0f, 0f, 0f);
             }
-            Debug.DrawRay((Vector2)this.transform.position, dir, Color.red);
+            //Debug.DrawRay((Vector2)this.transform.position, dir, Color.red);
         }
         private void ProcessRangeAttack()
         {

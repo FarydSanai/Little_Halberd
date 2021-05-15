@@ -6,8 +6,6 @@ namespace LittleHalberd
 {
     public class CharacterAttack : SubComponent
     {
-        public AttackData attackData;
-
         public float AttackRange = 0.5f;
         public float AttackDamage = 30;
         public float AttackResetTime = 0f;
@@ -15,6 +13,7 @@ namespace LittleHalberd
         public Transform AttackPoint;
         public LayerMask EnemyLayers;
 
+        public AttackData attackData;
         private void Start()
         {
             attackData = new AttackData
@@ -72,16 +71,20 @@ namespace LittleHalberd
             {
                 DamageData data = enemyColliders[0].GetComponent<CharacterControl>().DAMAGE_DATA;
 
-                data.TakeDamage(attackData.AttackDamage);
+                if (data.CurrentHP > 0f)
+                {
+                    data.TakeDamage(attackData.AttackDamage);
 
-                if (control.transform.right.x > 0f)
-                {
-                    data.AttackerIsLeft = true;
+                    if (control.transform.right.x > 0f)
+                    {
+                        data.AttackerIsLeft = true;
+                    }
+                    else
+                    {
+                        data.AttackerIsRight = true;
+                    }
                 }
-                else
-                {
-                    data.AttackerIsRight = true;
-                }
+                return;
             }
         }
         private void OnDrawGizmosSelected()

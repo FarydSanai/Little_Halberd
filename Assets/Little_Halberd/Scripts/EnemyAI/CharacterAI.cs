@@ -54,6 +54,15 @@ namespace LittleHalberd
             subComponentProcessor.characterAIData = characterAIData;
             subComponentProcessor.ArrSubComponents[(int)SubComponentType.CHARACTER_AI] = this;
         }
+        public override void OnUpdate()
+        {
+            //throw new System.NotImplementedException();
+        }
+
+        public override void OnFixedUpdate()
+        {
+            characterAIData.ProcessAIBehaviour();
+        }
         private void MeleeMobBehaviour()
         {
             switch (characterAIData.AICurrentState)
@@ -101,7 +110,7 @@ namespace LittleHalberd
         private void RangeMobBehavoiur()
         {
             //temp
-            StopCoroutine(subComponentProcessor.pathfinderData.UpdatePathRoutine);
+            //StopCoroutine(subComponentProcessor.pathfinderData.UpdatePathRoutine);
 
             switch (characterAIData.AICurrentState)
             {
@@ -164,8 +173,6 @@ namespace LittleHalberd
             {
                 return;
             }
-
-            //IsGrounded = control.GROUND_DATA.IsGrounded();
             control.Attack = false;
 
             //Set direction
@@ -260,15 +267,6 @@ namespace LittleHalberd
             {
                 control.Attack = false;
             }
-        }
-        public override void OnUpdate()
-        {
-            //throw new System.NotImplementedException();
-        }
-
-        public override void OnFixedUpdate()
-        {
-            characterAIData.ProcessAIBehaviour();
         }
     }
 }

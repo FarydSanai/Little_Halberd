@@ -140,7 +140,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.2, y: 3.32}
+  m_Size: {x: 2, y: 3.32}
   m_EdgeRadius: 0
 --- !u!50 &3671905788504750680
 Rigidbody2D:
@@ -346,6 +346,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b46f6bb259b6d8647a9edb30182a283f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AttackRange: 0.5
+  AttackDamage: 30
+  AttackResetTime: 0
+  AttackPoint: {fileID: 3671905788331622310}
+  EnemyLayers:
+    serializedVersion: 2
+    m_Bits: 512
   attackData:
     AttackDamage: 0
     AttackRange: 0
@@ -355,13 +362,6 @@ MonoBehaviour:
     EnemyLayers:
       serializedVersion: 2
       m_Bits: 0
-  AttackRange: 0.5
-  AttackDamage: 30
-  AttackResetTime: 0
-  AttackPoint: {fileID: 3671905788331622310}
-  EnemyLayers:
-    serializedVersion: 2
-    m_Bits: 512
 --- !u!1 &3671905789172940615
 GameObject:
   m_ObjectHideFlags: 0
@@ -491,6 +491,14 @@ MonoBehaviour:
     MoveDirDist: 0
     currentWayPoint: 0
     seeker: {fileID: 0}
+  characterAIData:
+    NextPointDistance: 0
+    JumpNodeRequireDist: 0
+    EnemyType: 0
+    InitialState: 0
+    AICurrentState: 0
+    FollowEnabled: 0
+    targetControl: {fileID: 0}
 --- !u!1 &3671905789491773694
 GameObject:
   m_ObjectHideFlags: 0
