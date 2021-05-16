@@ -1354,6 +1354,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b46f6bb259b6d8647a9edb30182a283f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AttackRange: 1
+  AttackDamage: 30
+  AttackResetTime: 0.5
+  AttackPoint: {fileID: 7747230667718093678}
+  EnemyLayers:
+    serializedVersion: 2
+    m_Bits: 1024
   attackData:
     AttackDamage: 0
     AttackRange: 0
@@ -1363,13 +1370,6 @@ MonoBehaviour:
     EnemyLayers:
       serializedVersion: 2
       m_Bits: 0
-  AttackRange: 1
-  AttackDamage: 30
-  AttackResetTime: 0.5
-  AttackPoint: {fileID: 7747230667718093678}
-  EnemyLayers:
-    serializedVersion: 2
-    m_Bits: 1024
 --- !u!1 &7747230666547424027
 GameObject:
   m_ObjectHideFlags: 0
@@ -1520,7 +1520,7 @@ MonoBehaviour:
   Jump: 0
   Attack: 0
   RangeAttack: 0
-  CharacterMaxHP: 0
+  CharacterMaxHP: 100
   characterAnimator: {fileID: 3793680113807591694}
   boxCollider: {fileID: 0}
   subComponentProcessor: {fileID: 0}
@@ -1580,7 +1580,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e5dd03c1a0f3ec4b8057a8e813429a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Type: 10
+  Type: 8
 --- !u!1 &7747230666579689667
 GameObject:
   m_ObjectHideFlags: 0

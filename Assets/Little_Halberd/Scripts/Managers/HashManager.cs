@@ -24,9 +24,6 @@ namespace LittleHalberd
         public int[] ArrTransitionParams = new int[(int)TransitionParameter.COUNT];
         private void Awake()
         {
-            //Temp
-            Debug.Log(CustomLayers.Instance.name);
-
             //Parameters for animation transitions
             for (int i = 0; i < (int)TransitionParameter.COUNT; i++)
             {

@@ -31,16 +31,26 @@ namespace LittleHalberd
             };
 
             subComponentProcessor.pathfinderData = pathfinderData;
+            subComponentProcessor.ArrSubComponents[(int)SubComponentType.CHARACTER_AI_PATHFINDER] = this;
 
-            pathfinderData.UpdatePathRoutine = StartCoroutine(UpdatePath(PathUpdateTimer));
-
+            if (pathfinderData.UpdatePathRoutine == null)
+            {
+                pathfinderData.UpdatePathRoutine = StartCoroutine(UpdatePath(PathUpdateTimer));
+            }
         }
         public override void OnFixedUpdate()
         {            
         }
 
         public override void OnUpdate()
-        {     
+        {
+            if (control.DAMAGE_DATA.isDead)
+            {
+                if (pathfinderData.UpdatePathRoutine != null)
+                {
+                    StopCoroutine(pathfinderData.UpdatePathRoutine);
+                }
+            }
         }
         private IEnumerator UpdatePath(float updateDelay)
         {
@@ -53,8 +63,8 @@ namespace LittleHalberd
                                                     pathfinderData.Target.position, OnPathComplete);
                 }
                 yield return new WaitForSeconds(updateDelay);
-                
             }
+            
         }
         private void OnPathComplete(Path p)
         {

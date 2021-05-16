@@ -13,7 +13,5 @@
         public delegate void CharacterAction(float damage);
         public CharacterAction TakeDamage;
 
-        public delegate void CharacterStateAction(CharacterControl control);
-        public CharacterStateAction ProcessDeath;
     }
 }

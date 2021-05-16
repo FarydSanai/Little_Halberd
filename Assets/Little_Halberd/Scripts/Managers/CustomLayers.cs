@@ -20,10 +20,6 @@ namespace LittleHalberd
         private void Awake()
         {
             LayersDic = GetAllLAyers();
-            foreach (KeyValuePair<string, int> k in LayersDic)
-            {
-                Debug.Log(k.Key);
-            }
         }
 
         private Dictionary<string, int> GetAllLAyers()

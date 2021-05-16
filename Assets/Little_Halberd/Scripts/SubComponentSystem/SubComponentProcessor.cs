@@ -53,6 +53,7 @@ namespace LittleHalberd
             UpdateSubComponent(SubComponentType.CHARACTER_ATTACK);
             //UpdateSubComponent(SubComponentType.RANGE_ATTACK);
             UpdateSubComponent(SubComponentType.HEALTH_BAR);
+            UpdateSubComponent(SubComponentType.CHARACTER_AI_PATHFINDER);
         }
 
         private void FixedUpdateSubComponent(SubComponentType type)
