@@ -8,6 +8,10 @@ namespace LittleHalberd
     {
         [SerializeField] private GameObject ClosedBlock;
         [SerializeField] private bool ClosedFromStart;
+        private void OnEnable()
+        {
+            FoliageMeshHelper.EnableMeshForGrassPath(this);
+        }
         private void Start()
         {
             FoliageMeshHelper.EnableMeshForGrassPath(this);
@@ -20,15 +24,11 @@ namespace LittleHalberd
 
         private IEnumerator OnTriggerExit2D(Collider2D other)
         {
-            if (other.gameObject.layer == LayerMask.NameToLayer("Player"))
+            if (other.gameObject.layer == CustomLayers.Instance.GetLayer(LH_Layer.Player))
             {
-                yield return new WaitForSeconds(0.5f);
+                yield return new WaitForSeconds(0.3f);
                 ClosedBlock.SetActive(true);
             }
-        }
-        private void OnTriggerStay2D(Collider2D other)
-        {
-            other.gameObject.GetComponent<Rigidbody2D>().AddForce(Vector2.right * 500f);
         }
     }
 }

@@ -94,7 +94,6 @@ GameObject:
   - component: {fileID: 1834972322568866126}
   - component: {fileID: 4437968344490925783}
   - component: {fileID: -3727742098943339687}
-  - component: {fileID: 7725541638764311064}
   m_Layer: 0
   m_Name: Pumpkin_Bomb_1
   m_TagString: Untagged
@@ -179,9 +178,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f62ef573d26d67147aa0780652dabe68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ExplodeVFX: {fileID: 100004, guid: 7867af58a6ec48846ae807eb4022fbaa, type: 3}
+  ExplodeVFX: {fileID: 100004, guid: d6409c7967e80c0458f4e464c46658fa, type: 3}
   RepelVFX: {fileID: 0}
   ProjectileDamage: 100
+  Type: 15
 --- !u!50 &4437968344490925783
 Rigidbody2D:
   serializedVersion: 4
@@ -219,16 +219,3 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: -0.34}
   m_Size: {x: 4.5, y: 4}
   m_Direction: 1
---- !u!114 &7725541638764311064
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8223477992111047813}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e35dc290aeced884292529d497929907, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Type: 15

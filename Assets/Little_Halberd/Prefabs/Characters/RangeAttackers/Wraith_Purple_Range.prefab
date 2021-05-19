@@ -239,6 +239,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b46f6bb259b6d8647a9edb30182a283f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AttackRange: 0.5
+  AttackDamage: 30
+  AttackResetTime: 0.5
+  AttackPoint: {fileID: 2376540186980111416}
+  EnemyLayers:
+    serializedVersion: 2
+    m_Bits: 1024
   attackData:
     AttackDamage: 0
     AttackRange: 0
@@ -248,13 +255,6 @@ MonoBehaviour:
     EnemyLayers:
       serializedVersion: 2
       m_Bits: 0
-  AttackRange: 0.5
-  AttackDamage: 30
-  AttackResetTime: 0.5
-  AttackPoint: {fileID: 2376540186980111416}
-  EnemyLayers:
-    serializedVersion: 2
-    m_Bits: 1024
 --- !u!1 &2376540185810228301
 GameObject:
   m_ObjectHideFlags: 0
@@ -452,7 +452,7 @@ MonoBehaviour:
   Jump: 0
   Attack: 0
   RangeAttack: 0
-  CharacterMaxHP: 500
+  CharacterMaxHP: 300
   characterAnimator: {fileID: 7354658715851403602}
   boxCollider: {fileID: 0}
   subComponentProcessor: {fileID: 0}
@@ -908,7 +908,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef892628eaf5a724ba3b24661380e6dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ActivateDistance: 64
+  ActivateDistance: 1600
   ReachedDistance: 4
   PathUpdateTimer: 0.5
   MoveDirDistance: 0.5

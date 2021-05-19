@@ -10,14 +10,22 @@ namespace LittleHalberd
     {
         private float opacity;
         private SpriteRenderer[] sprites;
+        private bool IsPlayer;
         public override void OnEnter(CharacterState characterState, Animator animator, AnimatorStateInfo stateInfo)
         {
             characterState.control.CHARACTER_AI_DATA.FollowEnabled = false;
             sprites = characterState.control.gameObject.
                                 GetComponentsInChildren<SpriteRenderer>();
+
+            IsPlayer = characterState.control.gameObject.layer ==
+                       CustomLayers.Instance.GetLayer(LH_Layer.Player);
         }
         public override void UpdateAbility(CharacterState characterState, Animator animator, AnimatorStateInfo stateInfo)
         {
+            if (IsPlayer)
+            {
+                return;
+            }
             opacity = 1 - stateInfo.normalizedTime;
             if (opacity <= 0.01f)
             {
@@ -60,7 +68,7 @@ namespace LittleHalberd
             }
             else
             {
-                Destroy(obj);
+                obj.SetActive(false);
             }
         }
     }

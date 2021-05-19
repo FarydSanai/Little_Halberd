@@ -75,6 +75,9 @@ namespace LittleHalberd
                 {
                     data.TakeDamage(attackData.AttackDamage);
 
+                    GameObject hitVfx = PoolObjectLoader.Instance.GetObject(ObjectType.VFX_HIT);
+                    hitVfx.transform.position = attackData.AttackPoint.position;
+
                     if (control.transform.right.x > 0f)
                     {
                         data.AttackerIsLeft = true;

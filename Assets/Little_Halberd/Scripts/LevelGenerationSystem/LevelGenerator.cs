@@ -35,7 +35,7 @@ namespace LittleHalberd
                 SpawnLevelPart();
             }
 
-            if (levelPartList.Count >= MaxLevelPartsCount)
+            if (levelPartList.Count > MaxLevelPartsCount)
             {
                 PoolObjectLoader.Instance.DestroyObject(levelPartList[0].gameObject);
                 levelPartList.RemoveAt(0);
@@ -62,7 +62,7 @@ namespace LittleHalberd
                                                );
                 LevelPartCounter++;
 
-                lastEndPosition = levelPartTransform.Find("EndPoint").position + new Vector3(25f, 0f, 0f);
+                lastEndPosition = levelPartTransform.Find("EndPoint").position + new Vector3(50f, 0f, 0f);
 
                 levelPartList.Add(levelPartTransform);
             }

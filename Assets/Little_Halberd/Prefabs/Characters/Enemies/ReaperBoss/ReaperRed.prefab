@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ActivateDistance: 64
-  ReachedDistance: 4
+  ReachedDistance: 9
   PathUpdateTimer: 0.5
   MoveDirDistance: 0.5
   pathfinderData:
@@ -1468,7 +1468,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.45, y: 0.7}
+  m_Offset: {x: -0.35, y: -1.17}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1479,7 +1479,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4.35, y: 5.7}
+  m_Size: {x: 2, y: 2}
   m_EdgeRadius: 0
 --- !u!50 &7747230666578319959
 Rigidbody2D:
@@ -1520,7 +1520,7 @@ MonoBehaviour:
   Jump: 0
   Attack: 0
   RangeAttack: 0
-  CharacterMaxHP: 100
+  CharacterMaxHP: 1000
   characterAnimator: {fileID: 3793680113807591694}
   boxCollider: {fileID: 0}
   subComponentProcessor: {fileID: 0}
@@ -1537,9 +1537,9 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.3, y: -1.75}
-  m_Size: {x: 2.37, y: 1}
-  m_Direction: 1
+  m_Offset: {x: -0.4, y: 0.47}
+  m_Size: {x: 3.36, y: 5.4}
+  m_Direction: 0
 --- !u!114 &7747230666578319956
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1964,6 +1964,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SizeDelta.y
       value: 421.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 5314159982257969449, guid: ed3f493b27ec0f5438f59b24d588198e,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.02
       objectReference: {fileID: 0}
     - target: {fileID: 5314159982257969449, guid: ed3f493b27ec0f5438f59b24d588198e,
         type: 3}

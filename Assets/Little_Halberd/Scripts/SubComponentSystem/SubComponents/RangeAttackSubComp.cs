@@ -82,14 +82,24 @@ namespace LittleHalberd
         }
         private bool RangeAttackReset()
         {
-            if (RangeAttackData.TimeBtwAttacks <= 0f)
+            //if (RangeAttackData.TimeBtwAttacks <= 0f)
+            //{
+            //    RangeAttackData.TimeBtwAttacks = RangeAttackData.StartTimeBtwAttacks;
+            //    return true;
+            //}
+            //else
+            //{
+            //    RangeAttackData.TimeBtwAttacks -= Time.fixedDeltaTime;
+            //    return false;
+            //}
+
+            if (Time.time > RangeAttackData.TimeBtwAttacks)
             {
-                RangeAttackData.TimeBtwAttacks = RangeAttackData.StartTimeBtwAttacks;
+                RangeAttackData.TimeBtwAttacks = Time.time + RangeAttackData.StartTimeBtwAttacks;
                 return true;
             }
             else
             {
-                RangeAttackData.TimeBtwAttacks -= Time.fixedDeltaTime;
                 return false;
             }
         }

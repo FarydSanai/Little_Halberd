@@ -124,19 +124,22 @@ namespace LittleHalberd
                     break;
                 case AIState.ATTACK_PLAYER:
                     {
-                        if (!TargetInDistance())
+                        if (TargetInDistance())
                         {
-                            characterAIData.AICurrentState = AIState.IDLE_STATE;
-                        }
-                        if (control.RANGE_ATTACK_DATA.RangeAttackReset())
-                        {
-                            control.RangeAttack = true;
+                            if (control.RANGE_ATTACK_DATA.RangeAttackReset())
+                            {
+                                control.RangeAttack = true;
+                            }
+                            else
+                            {
+                                control.RangeAttack = false;
+                            }
+                            control.RANGE_ATTACK_DATA.AimTarget();
                         }
                         else
                         {
-                            control.RangeAttack = false;
+                            characterAIData.AICurrentState = AIState.IDLE_STATE;
                         }
-                        control.RANGE_ATTACK_DATA.AimTarget();
                     }
                     break;
                 default:

@@ -27,6 +27,9 @@ namespace LittleHalberd
 
         PUMPKIN_BOMB,
 
+        VFX_HIT,
+        VFX_EXPLODE_PUMPKIN,
+
     }
     public class PoolObjectLoader : MonoBehaviour
     {
@@ -38,7 +41,7 @@ namespace LittleHalberd
         public List<PoolObjectInfo> EnemyTypeInfo;
         [ColorSpacer(30, 3, 300, 252, 248, 0)]
 
-        public List<PoolObjectInfo> VFX_Type;
+        public List<PoolObjectInfo> VFX_TypeInfo;
         [ColorSpacer(30, 3, 300, 252, 0, 0)]
 
         [SerializeField]
@@ -62,7 +65,7 @@ namespace LittleHalberd
 
             PoolObjectsInfo.AddRange(EnemyTypeInfo);
             PoolObjectsInfo.AddRange(LevelPartsInfo);
-
+            PoolObjectsInfo.AddRange(VFX_TypeInfo);
 
             GameObject temp = new GameObject();
 

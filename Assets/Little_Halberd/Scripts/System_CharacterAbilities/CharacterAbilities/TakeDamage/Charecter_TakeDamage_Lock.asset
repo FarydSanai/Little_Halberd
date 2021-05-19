@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1916fe2b871eda242b48bdafbb61c412, type: 3}
   m_Name: Charecter_TakeDamage_Lock
   m_EditorClassIdentifier: 
-  TransitionTiming: 0.2
+  TransitionTiming: 0.1
