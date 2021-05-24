@@ -53,7 +53,7 @@ MonoBehaviour:
       type: 3}
     StartCount: 1
   - objectType: 3
-    objectPrefab: {fileID: 3443533680160968597, guid: db3f2740a27a3064a83eca3f5a137147,
+    objectPrefab: {fileID: 8701274348563879416, guid: 4a94d391029c3b94b9287b9274c17a75,
       type: 3}
     StartCount: 1
   - objectType: 4
@@ -84,6 +84,9 @@ MonoBehaviour:
   VFX_TypeInfo:
   - objectType: 17
     objectPrefab: {fileID: 100004, guid: d6409c7967e80c0458f4e464c46658fa, type: 3}
+    StartCount: 7
+  - objectType: 16
+    objectPrefab: {fileID: 100000, guid: 5b3070697e6048740a83f5d747c36b74, type: 3}
     StartCount: 10
   PoolObjectsInfo:
   - objectType: 0
@@ -93,4 +96,8 @@ MonoBehaviour:
   - objectType: 15
     objectPrefab: {fileID: 8223477992111047813, guid: 99b545da7d4ed9f459f9a1193a075709,
       type: 3}
-    StartCount: 7
+    StartCount: 10
+  - objectType: 18
+    objectPrefab: {fileID: 5528851531161502406, guid: 8265e9bfd61af7341ae602cac2b8f855,
+      type: 3}
+    StartCount: 5

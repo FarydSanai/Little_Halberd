@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 1834972322568866126}
   - component: {fileID: 4437968344490925783}
   - component: {fileID: -3727742098943339687}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Pumpkin_Bomb_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -178,9 +178,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f62ef573d26d67147aa0780652dabe68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ExplodeVFX: {fileID: 100004, guid: d6409c7967e80c0458f4e464c46658fa, type: 3}
-  RepelVFX: {fileID: 0}
+  ExplodeVFX: 17
+  RepelVFX: 0
   ProjectileDamage: 100
+  IsSpawnEnemy: 0
   Type: 15
 --- !u!50 &4437968344490925783
 Rigidbody2D:

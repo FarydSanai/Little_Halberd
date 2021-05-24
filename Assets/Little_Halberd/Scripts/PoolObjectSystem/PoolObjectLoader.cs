@@ -29,6 +29,8 @@ namespace LittleHalberd
 
         VFX_HIT,
         VFX_EXPLODE_PUMPKIN,
+        PUMPKIN_BOMB_SPAWN,
+        VFX_PUMPKIN_SPAWN,
 
     }
     public class PoolObjectLoader : MonoBehaviour

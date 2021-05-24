@@ -13,6 +13,5 @@ MonoBehaviour:
   m_Name: RangeAttack
   m_EditorClassIdentifier: 
   AngleInDegrees: 45
-  ProjectilePrefab: {fileID: 8223477992111047813, guid: 99b545da7d4ed9f459f9a1193a075709,
-    type: 3}
+  ProjectileType: 15
   StartTimeBtwAttacks: 2

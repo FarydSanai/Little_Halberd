@@ -15,8 +15,8 @@ namespace LittleHalberd
         [SerializeField] private float endPointStallTime = 3f;
         [SerializeField] private float midPointStallTime = 1f;
 
-        [Range(0.05f, 0f)]
-        [SerializeField] private float MoveSpeed = 0.01f;
+        [Range(5f, 0f)]
+        [SerializeField] private float MoveSpeed = 1f;
 
         [SerializeField] private bool LoopTrack = false;
         [SerializeField] private bool StopAtEndPointOnLoop = false;
@@ -42,15 +42,30 @@ namespace LittleHalberd
         }
         private void OnTriggerEnter2D(Collider2D other)
         {
+            if (other.transform.gameObject.layer == CustomLayers.Instance.GetLayer(LH_Layer.Projectile))
+            {
+                return;
+            }
             if (other.transform.GetComponent<CharacterControl>() ==
-                CharacterManager.Instance.GetPlayableCharacter())
+                CharacterManager.Instance.PlayableCharacter)
+            {
+                other.transform.parent = this.transform;
+            }
+            if (other.transform.gameObject.layer == CustomLayers.Instance.GetLayer(LH_Layer.Enemy))
             {
                 other.transform.parent = this.transform;
             }
         }
         private void OnTriggerExit2D(Collider2D other)
         {
-            other.transform.parent = null;
+            if (other.transform.gameObject.layer == CustomLayers.Instance.GetLayer(LH_Layer.Projectile))
+            {
+                return;
+            }
+            if (other.gameObject != null && other.transform.parent != null)
+            {
+                other.transform.parent = null;
+            }
         }
         private void InitMoveOptions()
         {
@@ -61,7 +76,7 @@ namespace LittleHalberd
 
             if (wayPoints.Count < 1)
             {
-                Debug.LogError("Set some points!");
+                //Debug.LogError("Set some points!");
                 this.enabled = false;
             }
 
@@ -77,7 +92,7 @@ namespace LittleHalberd
         {
             if (Vector3.SqrMagnitude(TargetPoint - this.transform.position) <= StoppingDistThres)
             {
-                dwellTimer += Time.deltaTime;
+                dwellTimer += Time.fixedDeltaTime;
                 bool trackContinue = false;
 
                 if (IsAtEndPoint())
@@ -113,7 +128,7 @@ namespace LittleHalberd
                 return;
             }
 
-            LerpValue += MoveSpeed;
+            LerpValue += (MoveSpeed / 100f);
             transform.position = Vector3.Lerp(StartPoint, TargetPoint, LerpValue);
         }
         private bool IsAtEndPoint()

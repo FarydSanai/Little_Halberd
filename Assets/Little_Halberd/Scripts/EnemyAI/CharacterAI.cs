@@ -16,6 +16,7 @@ namespace LittleHalberd
         CHASE_PLAYER,
         ATTACK_PLAYER,
         IDLE_STATE,
+        RANGE_ATTACK,
     }
     public class CharacterAI : SubComponent
     {
@@ -29,6 +30,7 @@ namespace LittleHalberd
         public bool FollowEnabled = true;
         [SerializeField]
         private EnemyType EnemyType = EnemyType.MELEE;
+        private bool BossRage;
 
         [Header("Patrol platform")]
         private IPatrolPlatform patrolPlatform;
@@ -109,9 +111,6 @@ namespace LittleHalberd
         }
         private void RangeMobBehavoiur()
         {
-            //temp
-            //StopCoroutine(subComponentProcessor.pathfinderData.UpdatePathRoutine);
-
             switch (characterAIData.AICurrentState)
             {
                 case AIState.IDLE_STATE:
@@ -146,6 +145,62 @@ namespace LittleHalberd
                     break;
             }
         }
+        private void BossMobBehaviour()
+        {
+            switch (characterAIData.AICurrentState)
+            {
+                case AIState.IDLE_STATE:
+                    {
+                        if (TargetInDistance() && FollowEnabled)
+                        {
+                            characterAIData.AICurrentState = AIState.CHASE_PLAYER;
+                        }
+                    }
+                    break;
+                case AIState.CHASE_PLAYER:
+                    {
+                        CheckBossRage(subComponentProcessor.damageData.CurrentHP);
+                        RangeAttackBoss();
+                        PathFollow();
+                        if (ReachedTarget())
+                        {
+                            characterAIData.AICurrentState = AIState.ATTACK_PLAYER;
+                        }
+                    }
+                    break;
+                case AIState.ATTACK_PLAYER:
+                    {
+                        CheckBossRage(subComponentProcessor.damageData.CurrentHP);
+                        AttackTarget();
+                        if (!ReachedTarget())
+                        {
+                            characterAIData.AICurrentState = AIState.CHASE_PLAYER;
+                        }
+                    }
+                    break;
+                //case AIState.RANGE_ATTACK:
+                //    {
+                //        RangeAttackBoss(control.characterAnimator.GetCurrentAnimatorStateInfo(0));
+                //        //SetNextState(AIState.CHASE_PLAYER, control.characterAnimator.GetCurrentAnimatorStateInfo(0));
+                //    }
+                //    break;
+                default:
+                    break;
+            }
+        }
+        private void RangeAttackBoss()
+        {
+            if (control.RANGE_ATTACK_DATA.RangeAttackReset())
+            {
+                control.RANGE_ATTACK_DATA.AimTarget();
+                control.RangeAttack = true;
+            }
+            else
+            {
+                control.RangeAttack = false;
+            }
+            
+        }
         private void InitAIBehaviour(EnemyType enemyType)
         {
             switch (enemyType)
@@ -161,6 +216,9 @@ namespace LittleHalberd
                     }
                     break;
                 case EnemyType.BOSS:
+                    {
+                        characterAIData.ProcessAIBehaviour = BossMobBehaviour;
+                    }
                     break;
                 default:
                     break;
@@ -209,6 +267,12 @@ namespace LittleHalberd
         }
         private void MoveToTarget(Vector2 dir)
         {
+            if (!control.Jump && !control.GROUND_DATA.IsGrounded())
+            {
+                control.MoveLeft = false;
+                control.MoveRight = false;
+                return;
+            }
             if (ReachedTarget())
             {
                 control.MoveLeft = false;
@@ -220,7 +284,7 @@ namespace LittleHalberd
                 control.MoveRight = true;
                 control.MoveLeft = false;
             }
-            else if (dir.x < (-control.PATHFINDER_DATA.MoveDirDist))
+            else if (dir.x < (control.PATHFINDER_DATA.MoveDirDist))
             {
                 control.MoveLeft = true;
                 control.MoveRight = false;
@@ -262,13 +326,23 @@ namespace LittleHalberd
         }
         private void AttackTarget()
         {       
-            if (!characterAIData.targetControl.DAMAGE_DATA.isDead)
+            if (!characterAIData.targetControl.DAMAGE_DATA.isDead && 
+                !control.DAMAGE_DATA.isDead)
             {
                 control.Attack = true;
             }
             else
             {
                 control.Attack = false;
+            }
+        }
+        private void CheckBossRage(float bossHP)
+        {
+            if (!BossRage && bossHP <= control.CharacterMaxHP / 2f)
+            {
+                BossRage = true;
+                Rage face = control.gameObject.GetComponentInChildren<Rage>();
+                face.GetComponent<SpriteRenderer>().color = new Color(255f, 0f, 0f);
             }
         }
     }

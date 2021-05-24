@@ -1,15 +1,14 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using Random = UnityEngine.Random;
 
 namespace LittleHalberd
 {
     public class Projectile : MonoBehaviour, IPooledObject
     {
-        [SerializeField] private GameObject ExplodeVFX;
-        [SerializeField] private GameObject RepelVFX;
+        [SerializeField] private ObjectType ExplodeVFX;
+        [SerializeField] private ObjectType RepelVFX;
         [SerializeField] private float ProjectileDamage = 100f;
+        [SerializeField] private bool IsSpawnEnemy;
         private int bitMask = (1 << 3) | (1 << 0);
 
         [SerializeField] private ObjectType Type;
@@ -20,9 +19,13 @@ namespace LittleHalberd
             if (other.gameObject.layer != bitMask)
             {
                 SetDamage(other);
-                //Instantiate(ExplodeVFX, this.transform.position, Quaternion.identity);
-                GameObject objVfx = PoolObjectLoader.Instance.GetObject(ObjectType.VFX_EXPLODE_PUMPKIN);
+                GameObject objVfx = PoolObjectLoader.Instance.GetObject(ExplodeVFX);
                 objVfx.transform.position = this.transform.position;
+
+                if (IsSpawnEnemy)
+                {
+                    SpawnEnemy();
+                }
 
                 PoolObjectLoader.Instance.DestroyObject(this.gameObject);
             }
@@ -44,6 +47,14 @@ namespace LittleHalberd
                 }
                 otherControl.DAMAGE_DATA.TakeDamage(ProjectileDamage);
             }
+        }
+        private void SpawnEnemy()
+        {
+            int rand = Random.Range(0, PoolObjectLoader.Instance.EnemyTypeInfo.Count);
+            //Debug.Log(rand);
+            GameObject enemy = PoolObjectLoader.Instance.GetObject(
+                                       PoolObjectLoader.Instance.EnemyTypeInfo[rand].objectType);
+            enemy.transform.position = this.transform.position + new Vector3(0f, 3f, 0f);
         }
     }
 }

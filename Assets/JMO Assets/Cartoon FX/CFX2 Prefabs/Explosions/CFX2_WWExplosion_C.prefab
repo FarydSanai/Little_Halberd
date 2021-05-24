@@ -69784,7 +69784,7 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 0.7355926, g: 0.30368727, b: 1.007353, a: 1}
+  m_Color: {r: 0.754717, g: 0.252759, b: 0.68862516, a: 1}
   m_Intensity: 3
   m_Range: 8
   m_SpotAngle: 30
@@ -83725,6 +83725,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OnlyDeactivate: 0
+  Type: 0
 --- !u!1 &1972699721817900
 GameObject:
   m_ObjectHideFlags: 0

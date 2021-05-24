@@ -9,7 +9,7 @@ namespace LittleHalberd
     {
         [Header("Data Settings")]
         public float AngleInDegrees;
-        public GameObject ProjectilePrefab;
+        public ObjectType ProjectileType;
         [Header("Time settings")]
         public float StartTimeBtwAttacks;
 
@@ -37,7 +37,7 @@ namespace LittleHalberd
             characterState.RANGE_ATTACK_DATA.Target = CharacterManager.Instance.PlayableCharacter.transform;
             characterState.RANGE_ATTACK_DATA.SpawnPoint = characterState.ATTACK_DATA.AttackPoint;
             characterState.RANGE_ATTACK_DATA.AngleInDegrees = AngleInDegrees;
-            characterState.RANGE_ATTACK_DATA.ProjectilePrefab = ProjectilePrefab;
+            characterState.RANGE_ATTACK_DATA.projectileType = ProjectileType;
             characterState.RANGE_ATTACK_DATA.StartTimeBtwAttacks = StartTimeBtwAttacks;
         }
     }

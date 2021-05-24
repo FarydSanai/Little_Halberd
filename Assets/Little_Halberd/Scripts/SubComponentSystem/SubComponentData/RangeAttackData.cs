@@ -11,7 +11,7 @@ namespace LittleHalberd
         public Transform Target;
         public Transform SpawnPoint;
 
-        public GameObject ProjectilePrefab;
+        public ObjectType projectileType;
 
         public float TimeBtwAttacks;
         public float StartTimeBtwAttacks;

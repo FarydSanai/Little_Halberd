@@ -19,7 +19,7 @@ namespace LittleHalberd
                 AngleInDegrees = 0f,
                 Target = null,
                 SpawnPoint = null,
-                ProjectilePrefab = null,
+                projectileType = ObjectType.PUMPKIN_BOMB,
                 AimTarget = AimTarget,
                 ProcessRangeAtatck = ProcessRangeAttack,
                 TimeBtwAttacks = 0f,
@@ -57,7 +57,7 @@ namespace LittleHalberd
         }
         private void ProcessRangeAttack()
         {
-            GameObject obj = PoolObjectLoader.Instance.GetObject(ObjectType.PUMPKIN_BOMB,
+            GameObject obj = PoolObjectLoader.Instance.GetObject(RangeAttackData.projectileType,
                                                                  RangeAttackData.SpawnPoint.position,
                                                                  Quaternion.identity);
 

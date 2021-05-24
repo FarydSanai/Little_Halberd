@@ -20,10 +20,6 @@ namespace LittleHalberd
             if (control == null)
             {
                 control = animator.transform.root.GetComponent<CharacterControl>();
-                //if (control == null)
-                //{
-                //    Debug.Break();
-                //}
                 control.InitCharacterStates(animator);
             }
 

@@ -12,9 +12,8 @@ namespace LittleHalberd
     }
     public class EnemySpawner : MonoBehaviour
     {
-        [SerializeField]
-        private List<PooledEnemy> SpawnEnemyTypes;
-
+        [SerializeField] private List<PooledEnemy> SpawnEnemyTypes;
+        [SerializeField] private float SpawnDelay;
         private Coroutine EnemySpawnRoutine;
         private void Start()
         {
@@ -33,7 +32,7 @@ namespace LittleHalberd
             {
                 for (int i = 0; i < enemy.Count; i++)
                 {
-                    yield return new WaitForSeconds(1.5f);
+                    yield return new WaitForSeconds(SpawnDelay);
 
                     SpawnEnemy(enemy.EnemyType);
                 }

@@ -552,7 +552,7 @@ MonoBehaviour:
   WayPointsParent: {fileID: 6461549439501551610}
   endPointStallTime: 0
   midPointStallTime: 0
-  MoveSpeed: 0.01
+  MoveSpeed: 1
   LoopTrack: 1
   StopAtEndPointOnLoop: 0
 --- !u!61 &7481351296445125266

@@ -8,6 +8,8 @@ namespace LittleHalberd
     {
         public MovingData movingData;
         public List<ContactPoint2D> contacts = new List<ContactPoint2D>();
+
+        private Coroutine CheckYPosRoutine;
         private void Start()
         {
             movingData = new MovingData
@@ -20,6 +22,15 @@ namespace LittleHalberd
 
             subComponentProcessor.movingData = movingData;
             subComponentProcessor.ArrSubComponents[(int)SubComponentType.CHARACTER_MOVEMENT] = this;
+
+            if (CheckYPosRoutine != null)
+            {
+                StopCoroutine(CheckYPosRoutine);
+            }
+            else
+            {
+                CheckYPosRoutine = StartCoroutine(_CheckYPos());
+            }
         }
         public override void OnFixedUpdate()
         {
@@ -77,19 +88,16 @@ namespace LittleHalberd
                 control.transform.rotation = Quaternion.Euler(0f, 0f, 0f);
             }
         }
-        //private bool CheckScreenLeftBound()
-        //{
-        //    if (CharacterManager.Instance.CharacterIsPlayable(control))
-        //    {
-        //        Vector3 pos = Camera.main.WorldToScreenPoint(control.transform.position);
-        //        //Debug.Log(pos);
-        //        if (pos.x <= 70f)
-        //        {
-        //            return false;
-        //        }
-        //        return true;
-        //    }
-        //    return true;
-        //}
+        private IEnumerator _CheckYPos()
+        {
+            while (true)
+            {
+                if (control.transform.position.y < -20f)
+                {
+                    control.gameObject.SetActive(false);
+                }
+                yield return new WaitForSeconds(5f);
+            }
+        }
     }
 }
