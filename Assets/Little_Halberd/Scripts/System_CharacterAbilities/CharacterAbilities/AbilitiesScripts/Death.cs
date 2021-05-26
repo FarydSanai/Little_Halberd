@@ -1,7 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Linq;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 namespace LittleHalberd
 {
@@ -23,12 +22,13 @@ namespace LittleHalberd
         public override void UpdateAbility(CharacterState characterState, Animator animator, AnimatorStateInfo stateInfo)
         {
             if (IsPlayer)
-            {
+            { 
                 return;
             }
             opacity = 1 - stateInfo.normalizedTime;
             if (opacity <= 0.01f)
             {
+                SpawnHealthPoints(characterState.control);
                 DestroyCharacter(characterState.control.gameObject);
                 return;
             }
@@ -69,6 +69,19 @@ namespace LittleHalberd
             else
             {
                 obj.SetActive(false);
+            }
+        }
+        private void SpawnHealthPoints(CharacterControl control)
+        {
+            int randPoints = Random.Range(1, 4);
+            for (int i = 0; i < randPoints; i++)
+            {
+                float randX = Random.Range(-2, 3);
+                float randY = Random.Range(10, 16);
+                GameObject healthPointObj = PoolObjectLoader.Instance.GetObject(ObjectType.HEALTH_POINT,
+                                                                                control.transform.position,
+                                                                                Quaternion.identity);
+                healthPointObj.GetComponent<Rigidbody2D>().velocity = new Vector2(randX, randY);
             }
         }
     }

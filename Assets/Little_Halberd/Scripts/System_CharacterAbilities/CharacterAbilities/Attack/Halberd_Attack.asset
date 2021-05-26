@@ -12,3 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3668d8c60bc9e1645aabf8d366166b1e, type: 3}
   m_Name: Halberd_Attack
   m_EditorClassIdentifier: 
+  ProjectileLayer:
+    serializedVersion: 2
+    m_Bits: 8192

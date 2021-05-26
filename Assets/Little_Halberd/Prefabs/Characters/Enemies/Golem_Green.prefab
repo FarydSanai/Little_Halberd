@@ -55,6 +55,7 @@ MonoBehaviour:
     InitialState: 0
     AICurrentState: 0
     FollowEnabled: 0
+    isRage: 0
     targetControl: {fileID: 0}
 --- !u!1 &1885108627
 GameObject:
@@ -248,6 +249,7 @@ MonoBehaviour:
     InitialState: 0
     AICurrentState: 0
     FollowEnabled: 0
+    isRage: 0
     targetControl: {fileID: 0}
 --- !u!1 &4740725343183506433
 GameObject:
@@ -673,7 +675,7 @@ Rigidbody2D:
   m_Material: {fileID: 6200000, guid: df7a4ffcdd819da469051c2f995c39bb, type: 2}
   m_Interpolate: 1
   m_SleepingMode: 1
-  m_CollisionDetection: 1
+  m_CollisionDetection: 0
   m_Constraints: 4
 --- !u!114 &4740725344789257713
 MonoBehaviour:

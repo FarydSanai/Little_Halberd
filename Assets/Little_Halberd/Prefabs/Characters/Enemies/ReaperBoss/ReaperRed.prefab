@@ -1362,6 +1362,7 @@ MonoBehaviour:
     InitialState: 0
     AICurrentState: 0
     FollowEnabled: 0
+    isRage: 0
     targetControl: {fileID: 0}
 --- !u!1 &7747230666048555619
 GameObject:
@@ -1407,7 +1408,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AttackRange: 1
-  AttackDamage: 30
+  AttackDamage: 50
   AttackResetTime: 0.5
   AttackPoint: {fileID: 7747230667718093678}
   EnemyLayers:
@@ -1920,6 +1921,7 @@ MonoBehaviour:
     InitialState: 0
     AICurrentState: 0
     FollowEnabled: 0
+    isRage: 0
     targetControl: {fileID: 0}
 --- !u!1 &7747230667718093679
 GameObject:
@@ -2066,7 +2068,7 @@ PrefabInstance:
     - target: {fileID: 5314159982257969449, guid: ed3f493b27ec0f5438f59b24d588198e,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 6.29
+      value: 4.54
       objectReference: {fileID: 0}
     - target: {fileID: 5314159982257969449, guid: ed3f493b27ec0f5438f59b24d588198e,
         type: 3}

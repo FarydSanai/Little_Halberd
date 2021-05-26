@@ -58,7 +58,8 @@ namespace LittleHalberd
         }
         private void OnTriggerExit2D(Collider2D other)
         {
-            if (other.transform.gameObject.layer == CustomLayers.Instance.GetLayer(LH_Layer.Projectile))
+            if (other.gameObject.layer == CustomLayers.Instance.GetLayer(LH_Layer.Projectile) ||
+                other.gameObject.layer == CustomLayers.Instance.GetLayer(LH_Layer.Enemy))
             {
                 return;
             }

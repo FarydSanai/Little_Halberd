@@ -16,7 +16,6 @@ namespace LittleHalberd
         CHASE_PLAYER,
         ATTACK_PLAYER,
         IDLE_STATE,
-        RANGE_ATTACK,
     }
     public class CharacterAI : SubComponent
     {
@@ -30,7 +29,6 @@ namespace LittleHalberd
         public bool FollowEnabled = true;
         [SerializeField]
         private EnemyType EnemyType = EnemyType.MELEE;
-        private bool BossRage;
 
         [Header("Patrol platform")]
         private IPatrolPlatform patrolPlatform;
@@ -47,6 +45,7 @@ namespace LittleHalberd
                 EnemyType = this.EnemyType,
                 AICurrentState = this.InitialState,
                 FollowEnabled = this.FollowEnabled,
+                isRage = false,
 
                 targetControl = CharacterManager.Instance.PlayableCharacter,
             };
@@ -178,12 +177,6 @@ namespace LittleHalberd
                         }
                     }
                     break;
-                //case AIState.RANGE_ATTACK:
-                //    {
-                //        RangeAttackBoss(control.characterAnimator.GetCurrentAnimatorStateInfo(0));
-                //        //SetNextState(AIState.CHASE_PLAYER, control.characterAnimator.GetCurrentAnimatorStateInfo(0));
-                //    }
-                //    break;
                 default:
                     break;
             }
@@ -338,9 +331,9 @@ namespace LittleHalberd
         }
         private void CheckBossRage(float bossHP)
         {
-            if (!BossRage && bossHP <= control.CharacterMaxHP / 2f)
+            if (!characterAIData.isRage && bossHP <= control.CharacterMaxHP / 2f)
             {
-                BossRage = true;
+                characterAIData.isRage = true;
                 Rage face = control.gameObject.GetComponentInChildren<Rage>();
                 face.GetComponent<SpriteRenderer>().color = new Color(255f, 0f, 0f);
             }

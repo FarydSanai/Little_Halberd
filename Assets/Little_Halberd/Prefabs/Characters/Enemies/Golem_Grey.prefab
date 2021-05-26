@@ -110,6 +110,7 @@ MonoBehaviour:
     InitialState: 0
     AICurrentState: 0
     FollowEnabled: 0
+    isRage: 0
     targetControl: {fileID: 0}
 --- !u!1 &6132226062209525898
 GameObject:
@@ -330,7 +331,7 @@ MonoBehaviour:
     AngleInDegrees: 0
     Target: {fileID: 0}
     SpawnPoint: {fileID: 0}
-    ProjectilePrefab: {fileID: 0}
+    projectileType: 0
     TimeBtwAttacks: 0
     StartTimeBtwAttacks: 0
   healthBarData:
@@ -380,6 +381,7 @@ MonoBehaviour:
     InitialState: 0
     AICurrentState: 0
     FollowEnabled: 0
+    isRage: 0
     targetControl: {fileID: 0}
 --- !u!1 &6132226062868498501
 GameObject:
@@ -614,7 +616,7 @@ Rigidbody2D:
   m_Material: {fileID: 6200000, guid: df7a4ffcdd819da469051c2f995c39bb, type: 2}
   m_Interpolate: 1
   m_SleepingMode: 1
-  m_CollisionDetection: 1
+  m_CollisionDetection: 0
   m_Constraints: 4
 --- !u!114 &6132226063349356981
 MonoBehaviour:
@@ -784,6 +786,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b46f6bb259b6d8647a9edb30182a283f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AttackRange: 0.5
+  AttackDamage: 30
+  AttackResetTime: 0.5
+  AttackPoint: {fileID: 6132226062209525899}
+  EnemyLayers:
+    serializedVersion: 2
+    m_Bits: 1024
   attackData:
     AttackDamage: 0
     AttackRange: 0
@@ -793,13 +802,6 @@ MonoBehaviour:
     EnemyLayers:
       serializedVersion: 2
       m_Bits: 0
-  AttackRange: 0.5
-  AttackDamage: 30
-  AttackResetTime: 0.5
-  AttackPoint: {fileID: 6132226062209525899}
-  EnemyLayers:
-    serializedVersion: 2
-    m_Bits: 1024
 --- !u!1001 &2517358499624218801
 PrefabInstance:
   m_ObjectHideFlags: 0

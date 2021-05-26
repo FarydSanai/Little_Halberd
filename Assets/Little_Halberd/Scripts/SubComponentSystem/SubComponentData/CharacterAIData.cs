@@ -14,6 +14,7 @@ namespace LittleHalberd
         public AIState InitialState;
         public AIState AICurrentState;
         public bool FollowEnabled;
+        public bool isRage;
 
         public CharacterControl targetControl;
 

@@ -12,6 +12,7 @@ namespace LittleHalberd
         public DamageData DAMAGE_DATA => control.subComponentProcessor.damageData;
         public AttackData ATTACK_DATA => control.subComponentProcessor.attackData;
         public RangeAttackData RANGE_ATTACK_DATA => control.subComponentProcessor.rangeAttackData;
+        public CharacterAIData AI_DATA => control.subComponentProcessor.characterAIData;
 
         [Space(3f)]
         public CharacterAbility[] CharacterAbilityArr;

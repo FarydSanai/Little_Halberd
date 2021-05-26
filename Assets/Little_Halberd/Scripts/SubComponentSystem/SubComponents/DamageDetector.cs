@@ -7,7 +7,6 @@ namespace LittleHalberd
     public class DamageDetector : SubComponent
     {
         public DamageData damageData;
-        private Coroutine DeathRoutine;
 
         private void Start()
         {
@@ -33,10 +32,10 @@ namespace LittleHalberd
         {
             //throw new System.NotImplementedException();
         }
-        public void TakeDamage(float damage)
+        private void TakeDamage(float damage)
         {
             damageData.CurrentHP -= damage;
-            subComponentProcessor.healthBarData.ChangeHealthBar(damage);
+            subComponentProcessor.healthBarData.ChangeHealthBar(-damage);
             control.characterAnimator.SetTrigger(HashManager.Instance.ArrTransitionParams[(int)TransitionParameter.Damaged]);
 
             if(damageData.CurrentHP <= 0f)

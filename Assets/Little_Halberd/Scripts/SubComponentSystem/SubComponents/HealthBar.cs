@@ -38,7 +38,6 @@ namespace LittleHalberd
         {
             healthBarData.HealthImage.color = Gradient.Evaluate(
                                                             healthBarData.Slider.normalizedValue);
-            //throw new System.NotImplementedException();
         }
 
         public override void OnFixedUpdate()
@@ -47,7 +46,7 @@ namespace LittleHalberd
         }
         public void ChangeHealthBar(float health)
         {
-            healthBarData.Slider.value -= health;
+            healthBarData.Slider.value += health;
 
             healthBarData.HealthImage.color = healthBarData.Gradient.Evaluate(
                                                             healthBarData.Slider.normalizedValue);

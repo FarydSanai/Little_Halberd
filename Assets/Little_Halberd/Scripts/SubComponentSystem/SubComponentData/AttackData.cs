@@ -14,6 +14,7 @@ namespace LittleHalberd
         public bool AttackIsReset;
 
         public Transform AttackPoint;
+        public Transform RepelPoint;
         public LayerMask EnemyLayers;
 
         public delegate void CharacterAction();

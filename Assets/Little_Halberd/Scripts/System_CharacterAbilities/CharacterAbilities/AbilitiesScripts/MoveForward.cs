@@ -13,10 +13,8 @@ namespace LittleHalberd
         public bool UncontrolledMoving;
         public override void OnEnter(CharacterState characterState, Animator animator, AnimatorStateInfo stateInfo)
         {
-            characterState.MOVING_DATA.MovementSpeedGraph = SpeedGraph;
-            characterState.MOVING_DATA.UncontrolledMoving = UncontrolledMoving;
+            InitMovement(characterState);
 
-            characterState.MOVING_DATA.MovementSpeed = Speed;
             if (characterState.DAMAGE_DATA.isDamaging)
             {
                 SetDamageImpulse(characterState);
@@ -74,6 +72,22 @@ namespace LittleHalberd
         private void CheckRun(Animator animator, bool run)
         {
             animator.SetBool(HashManager.Instance.ArrTransitionParams[(int)TransitionParameter.Run], run);
+        }
+        private void InitMovement(CharacterState characterState)
+        {
+            characterState.MOVING_DATA.MovementSpeedGraph = SpeedGraph;
+            characterState.MOVING_DATA.UncontrolledMoving = UncontrolledMoving;
+            characterState.MOVING_DATA.MovementSpeed = Speed;
+            
+            if (characterState.control.gameObject.layer ==
+                CustomLayers.Instance.GetLayer(LH_Layer.Enemy))
+            {
+                if (characterState.AI_DATA.isRage)
+                {
+                    characterState.MOVING_DATA.MovementSpeed = Speed * 2f;
+                }
+
+            }
         }
     }
 }

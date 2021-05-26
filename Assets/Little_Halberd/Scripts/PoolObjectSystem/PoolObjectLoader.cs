@@ -31,7 +31,10 @@ namespace LittleHalberd
         VFX_EXPLODE_PUMPKIN,
         PUMPKIN_BOMB_SPAWN,
         VFX_PUMPKIN_SPAWN,
-
+        VFX_DEBRIS,
+        VFX_PICKUP_HEART,
+        HEALTH_POINT,
+        VFX_BOMB_REPEL,
     }
     public class PoolObjectLoader : MonoBehaviour
     {

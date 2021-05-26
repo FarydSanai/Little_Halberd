@@ -11,6 +11,7 @@ namespace LittleHalberd
         public float AttackResetTime = 0f;
 
         public Transform AttackPoint;
+        public Transform RepelPoint;
         public LayerMask EnemyLayers;
 
         public AttackData attackData;
@@ -18,10 +19,11 @@ namespace LittleHalberd
         {
             attackData = new AttackData
             {
-                AttackDamage = AttackDamage,
-                AttackRange = AttackRange,
-                AttackPoint = AttackPoint,
-                EnemyLayers = EnemyLayers,
+                AttackDamage = this.AttackDamage,
+                AttackRange = this.AttackRange,
+                AttackPoint = this.AttackPoint,
+                RepelPoint = this.RepelPoint,
+                EnemyLayers = this.EnemyLayers,
                 AttackIsReset = true,
                 AttackTimer = 0f,
                 Attack = Attack,
@@ -40,7 +42,7 @@ namespace LittleHalberd
         }
         private void ProcessAttack()
         {
-            if (control.Attack)
+            if (control.Attack && !subComponentProcessor.damageData.isDead)
             {
                 if (attackData.AttackIsReset)
                 {
@@ -97,6 +99,7 @@ namespace LittleHalberd
                 return;
             }
             Gizmos.DrawWireSphere(AttackPoint.position, AttackRange);
+            //Gizmos.DrawWireSphere(RepelPoint.position, 2f);
         }
     }
 }
