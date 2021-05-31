@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-using UnityEngine;
-using Pathfinding;
+﻿using UnityEngine;
 
 namespace LittleHalberd
 {
@@ -170,6 +168,7 @@ namespace LittleHalberd
                 case AIState.ATTACK_PLAYER:
                     {
                         CheckBossRage(subComponentProcessor.damageData.CurrentHP);
+                        RangeAttackBoss();
                         AttackTarget();
                         if (!ReachedTarget())
                         {
@@ -192,7 +191,6 @@ namespace LittleHalberd
             {
                 control.RangeAttack = false;
             }
-            
         }
         private void InitAIBehaviour(EnemyType enemyType)
         {

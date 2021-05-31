@@ -2605,7 +2605,7 @@ PrefabInstance:
     - target: {fileID: 7747230666578319952, guid: c89ae52fd64c713419a1dbb6520710f0,
         type: 3}
       propertyPath: CharacterMaxHP
-      value: 200
+      value: 3000
       objectReference: {fileID: 0}
     - target: {fileID: 7747230666578319954, guid: c89ae52fd64c713419a1dbb6520710f0,
         type: 3}

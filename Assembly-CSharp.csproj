@@ -86,6 +86,8 @@
     <Compile Include="Assets\JMO Assets\Cartoon FX\Scripts\CFX_LightIntensityFade.cs" />
     <Compile Include="Assets\Little_Halberd\Game_Components\Health_Points\HealthPoint.cs" />
     <Compile Include="Assets\Little_Halberd\Game_Components\Level_Dividing_Post\DividingPost.cs" />
+    <Compile Include="Assets\Little_Halberd\Game_Components\PauseMenu\PauseGameComponent.cs" />
+    <Compile Include="Assets\Little_Halberd\Game_Components\PauseMenu\PauseMenu.cs" />
     <Compile Include="Assets\Little_Halberd\Prefabs\AnimatedTrees\AnimatedTree.cs" />
     <Compile Include="Assets\Little_Halberd\Prefabs\Characters\Enemies\ReaperBoss\Rage.cs" />
     <Compile Include="Assets\Little_Halberd\Prefabs\GroundParts\SpriteChanger.cs" />

@@ -569,7 +569,7 @@ HingeJoint2D:
   serializedVersion: 4
   m_EnableCollision: 0
   m_ConnectedRigidBody: {fileID: 1637466199165195293}
-  m_BreakForce: 1000
+  m_BreakForce: 800
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: -2.6291199, y: 0.0031833649}
@@ -2335,7 +2335,7 @@ HingeJoint2D:
   serializedVersion: 4
   m_EnableCollision: 0
   m_ConnectedRigidBody: {fileID: 1637466200114474518}
-  m_BreakForce: Infinity
+  m_BreakForce: 800
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: -2.6233368, y: -0.008822441}
@@ -3217,6 +3217,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Golem_Grey
       objectReference: {fileID: 0}
+    - target: {fileID: 7732896540152696416, guid: 5128906b8151ac64aa658c37d0608def,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7732896540152696416, guid: 5128906b8151ac64aa658c37d0608def,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5128906b8151ac64aa658c37d0608def, type: 3}
 --- !u!4 &6784732358817145677 stripped
@@ -3297,6 +3307,16 @@ PrefabInstance:
       propertyPath: InitialState
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 7703893005561422927, guid: 4ad2fd7ebea6d9a4aa35ec242d2b48ab,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7703893005561422927, guid: 4ad2fd7ebea6d9a4aa35ec242d2b48ab,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ad2fd7ebea6d9a4aa35ec242d2b48ab, type: 3}
 --- !u!4 &407262066743944579 stripped
@@ -3376,6 +3396,16 @@ PrefabInstance:
         type: 3}
       propertyPath: InitialState
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7703893005561422927, guid: 4ad2fd7ebea6d9a4aa35ec242d2b48ab,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7703893005561422927, guid: 4ad2fd7ebea6d9a4aa35ec242d2b48ab,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ad2fd7ebea6d9a4aa35ec242d2b48ab, type: 3}
@@ -3627,6 +3657,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5545084878113820436}
     m_Modifications:
+    - target: {fileID: 2636498038300203399, guid: 70b5251227cbe9043bae373dc62a846c,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636498038300203399, guid: 70b5251227cbe9043bae373dc62a846c,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5552336273663124258, guid: 70b5251227cbe9043bae373dc62a846c,
         type: 3}
       propertyPath: m_RootOrder
@@ -3856,6 +3896,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Golem_Grey
+      objectReference: {fileID: 0}
+    - target: {fileID: 7732896540152696416, guid: 5128906b8151ac64aa658c37d0608def,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7732896540152696416, guid: 5128906b8151ac64aa658c37d0608def,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5128906b8151ac64aa658c37d0608def, type: 3}

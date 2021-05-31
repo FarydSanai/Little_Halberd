@@ -22,6 +22,11 @@ namespace LittleHalberd
 
             VirtualInputManager.Instance.Attack =
                 Input.GetKeyDown(VirtualInputManager.Instance.InputKeysDic[InputKeyType.KEY_ATTACK]);
+
+            if (Input.GetKeyDown(VirtualInputManager.Instance.InputKeysDic[InputKeyType.KEY_GAME_PAUSE]))
+            {
+                PauseGameComponent.Instance.SetGamePause();
+            }
         }
     }
 }

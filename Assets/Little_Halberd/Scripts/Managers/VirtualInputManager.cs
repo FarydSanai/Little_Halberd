@@ -11,6 +11,8 @@ namespace LittleHalberd
         KEY_RUN,
         KEY_JUMP,
         KEY_ATTACK,
+
+        KEY_GAME_PAUSE,
     }
     public class VirtualInputManager : Singleton<VirtualInputManager>
     {
@@ -29,6 +31,8 @@ namespace LittleHalberd
             InputKeysDic.Add(InputKeyType.KEY_RUN,          KeyCode.LeftShift);
             InputKeysDic.Add(InputKeyType.KEY_JUMP,         KeyCode.Space);
             InputKeysDic.Add(InputKeyType.KEY_ATTACK,       KeyCode.Return);
+
+            InputKeysDic.Add(InputKeyType.KEY_GAME_PAUSE,   KeyCode.Escape);
 
             GameObject obj = Instantiate(Resources.Load("PlayerInput", typeof(GameObject))) as GameObject;
         }

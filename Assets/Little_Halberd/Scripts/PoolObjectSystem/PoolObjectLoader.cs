@@ -41,13 +41,13 @@ namespace LittleHalberd
         public static PoolObjectLoader Instance;
 
         public List<PoolObjectInfo> LevelPartsInfo;
-        [ColorSpacer(30, 3, 300, 252, 0, 185)]
+        //[ColorSpacer(30, 3, 300, 252, 0, 185)]
 
         public List<PoolObjectInfo> EnemyTypeInfo;
-        [ColorSpacer(30, 3, 300, 252, 248, 0)]
+        //[ColorSpacer(30, 3, 300, 252, 248, 0)]
 
         public List<PoolObjectInfo> VFX_TypeInfo;
-        [ColorSpacer(30, 3, 300, 252, 0, 0)]
+        //[ColorSpacer(30, 3, 300, 252, 0, 0)]
 
         [SerializeField]
         private List<PoolObjectInfo> PoolObjectsInfo;
@@ -67,7 +67,6 @@ namespace LittleHalberd
         private void InitPool()
         {
             PoolsDic = new Dictionary<ObjectType, Pool>();
-
             PoolObjectsInfo.AddRange(EnemyTypeInfo);
             PoolObjectsInfo.AddRange(LevelPartsInfo);
             PoolObjectsInfo.AddRange(VFX_TypeInfo);

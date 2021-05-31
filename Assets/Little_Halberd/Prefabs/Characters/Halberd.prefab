@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1045240123
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1045240124}
+  m_Layer: 0
+  m_Name: RepelPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1045240124
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1045240123}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.71, y: 1.01, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 3671905788504750681}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3671905787834227323
 GameObject:
   m_ObjectHideFlags: 0
@@ -113,6 +143,7 @@ Transform:
   - {fileID: 3671905788626208457}
   - {fileID: 3671905789172940614}
   - {fileID: 3671905788331622310}
+  - {fileID: 1045240124}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -159,7 +190,7 @@ Rigidbody2D:
   m_AngularDrag: 0.05
   m_GravityScale: 6
   m_Material: {fileID: 6200000, guid: df7a4ffcdd819da469051c2f995c39bb, type: 2}
-  m_Interpolate: 1
+  m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
@@ -181,7 +212,7 @@ MonoBehaviour:
   Jump: 0
   Attack: 0
   RangeAttack: 0
-  CharacterMaxHP: 800
+  CharacterMaxHP: 2500
   characterAnimator: {fileID: 3671905788626208459}
   boxCollider: {fileID: 0}
   subComponentProcessor: {fileID: 0}
@@ -347,9 +378,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AttackRange: 0.5
-  AttackDamage: 30
+  AttackDamage: 50
   AttackResetTime: 0
   AttackPoint: {fileID: 3671905788331622310}
+  RepelPoint: {fileID: 1045240124}
   EnemyLayers:
     serializedVersion: 2
     m_Bits: 512
@@ -359,6 +391,7 @@ MonoBehaviour:
     AttackTimer: 0
     AttackIsReset: 0
     AttackPoint: {fileID: 0}
+    RepelPoint: {fileID: 0}
     EnemyLayers:
       serializedVersion: 2
       m_Bits: 0
@@ -434,6 +467,7 @@ MonoBehaviour:
     AttackTimer: 0
     AttackIsReset: 0
     AttackPoint: {fileID: 0}
+    RepelPoint: {fileID: 0}
     EnemyLayers:
       serializedVersion: 2
       m_Bits: 0
@@ -448,7 +482,7 @@ MonoBehaviour:
     AngleInDegrees: 0
     Target: {fileID: 0}
     SpawnPoint: {fileID: 0}
-    ProjectilePrefab: {fileID: 0}
+    projectileType: 0
     TimeBtwAttacks: 0
     StartTimeBtwAttacks: 0
   healthBarData:
@@ -498,6 +532,7 @@ MonoBehaviour:
     InitialState: 0
     AICurrentState: 0
     FollowEnabled: 0
+    isRage: 0
     targetControl: {fileID: 0}
 --- !u!1 &3671905789491773694
 GameObject:
