@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Little_Halberd/Scenes/Level_0.unity
+    guid: d4078aa88a66fc04ea428ed3b81e423c
+  - enabled: 1
     path: Assets/Little_Halberd/Scenes/Level_1.unity
     guid: ca4873fd3cc1879469846365efd84ca2
   m_configObjects: {}

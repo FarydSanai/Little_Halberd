@@ -86,8 +86,9 @@
     <Compile Include="Assets\JMO Assets\Cartoon FX\Scripts\CFX_LightIntensityFade.cs" />
     <Compile Include="Assets\Little_Halberd\Game_Components\Health_Points\HealthPoint.cs" />
     <Compile Include="Assets\Little_Halberd\Game_Components\Level_Dividing_Post\DividingPost.cs" />
-    <Compile Include="Assets\Little_Halberd\Game_Components\PauseMenu\PauseGameComponent.cs" />
-    <Compile Include="Assets\Little_Halberd\Game_Components\PauseMenu\PauseMenu.cs" />
+    <Compile Include="Assets\Little_Halberd\Game_Components\Pause_Menu\PauseGameComponent.cs" />
+    <Compile Include="Assets\Little_Halberd\Game_Components\Pause_Menu\PauseMenu.cs" />
+    <Compile Include="Assets\Little_Halberd\Game_Components\Start_Menu\StartMenuButtons.cs" />
     <Compile Include="Assets\Little_Halberd\Prefabs\AnimatedTrees\AnimatedTree.cs" />
     <Compile Include="Assets\Little_Halberd\Prefabs\Characters\Enemies\ReaperBoss\Rage.cs" />
     <Compile Include="Assets\Little_Halberd\Prefabs\GroundParts\SpriteChanger.cs" />
@@ -150,13 +151,34 @@
     <Compile Include="Assets\Little_Halberd\Scripts\System_CharacterAbilities\CharacterAbilities\AbilitiesScripts\TakeDamage.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\System_CharacterAbilities\CharacterAbilities\AbilitiesScripts\TransitionIndexer.cs" />
     <Compile Include="Assets\Little_Halberd\Scripts\System_EnemySpawn\EnemySpawner.cs" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\JMO Assets\Cartoon FX\Shaders\CFX3 Multiply Color.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
     <None Include="Assets\JMO Assets\Cartoon FX\CartoonFX Free.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
     <None Include="Assets\JMO Assets\Cartoon FX Easy Editor\CartoonFX Easy Editor Readme.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
+    <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
+    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\Foliage2D\Docs\Log.txt" />
     <None Include="Assets\Foliage2D\Example\Scenes\Parallax.txt" />
     <None Include="Assets\JMO Assets\Cartoon FX\Shaders\CFXM_MobileParticleAdd_Alpha8.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\2D Tree Set Free\Documentation\Readme.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
+    <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Unity_Installs/2019.4.18f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
