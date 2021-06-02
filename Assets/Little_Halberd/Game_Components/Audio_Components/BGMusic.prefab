@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4493912378160050847}
   - component: {fileID: 4493912378160050844}
+  - component: {fileID: -6110210205816359470}
   m_Layer: 0
   m_Name: BGMusic
   m_TagString: Untagged
@@ -127,3 +128,17 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &-6110210205816359470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4493912378160050845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d6dcfc3328607440834cab79eb5edca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BossFightAudioClip: {fileID: 8300000, guid: b1fd9696bf4edef42aea025fa74e10b2, type: 3}
+  EndingAudioClip: {fileID: 8300000, guid: be993bb31983f3c48ad03dc0c52686c3, type: 3}

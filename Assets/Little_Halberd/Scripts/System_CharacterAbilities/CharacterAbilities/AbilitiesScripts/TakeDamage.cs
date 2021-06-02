@@ -10,6 +10,9 @@ namespace LittleHalberd
         public override void OnEnter(CharacterState characterState, Animator animator, AnimatorStateInfo stateInfo)
         {
             characterState.DAMAGE_DATA.isDamaging = true;
+            PoolObjectLoader.Instance.GetObject(ObjectType.SFX_IMPACT,
+                                                characterState.control.transform.position,
+                                                Quaternion.identity);
         }
         public override void UpdateAbility(CharacterState characterState, Animator animator, AnimatorStateInfo stateInfo)
         {

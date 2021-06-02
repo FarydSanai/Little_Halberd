@@ -21,7 +21,7 @@ namespace LittleHalberd
         GOLEM_WOOD,
         GOLEM_GREEN,
         MINOTAUR,
-        REAPER_GREEN,
+        REAPER_RED,
         WRAITH_BLACK,
         WRAITH_GREEN,
 
@@ -35,19 +35,28 @@ namespace LittleHalberd
         VFX_PICKUP_HEART,
         HEALTH_POINT,
         VFX_BOMB_REPEL,
+        VFX_DEATH_PURPLE,
+        VFX_DEATH_RED,
+        VFX_DEATH_GREEN,
+        VFX_DEATH_YELLOW,
+
+        SFX_IMPACT,
     }
     public class PoolObjectLoader : MonoBehaviour
     {
         public static PoolObjectLoader Instance;
 
         public List<PoolObjectInfo> LevelPartsInfo;
-        //[ColorSpacer(30, 3, 300, 252, 0, 185)]
+        [ColorSpacer(30, 3, 300, 252, 0, 185)]
 
         public List<PoolObjectInfo> EnemyTypeInfo;
-        //[ColorSpacer(30, 3, 300, 252, 248, 0)]
+        [ColorSpacer(30, 3, 300, 252, 248, 0)]
 
         public List<PoolObjectInfo> VFX_TypeInfo;
-        //[ColorSpacer(30, 3, 300, 252, 0, 0)]
+        [ColorSpacer(30, 3, 300, 252, 0, 0)]
+
+        public List<PoolObjectInfo> Sound_FX_Info;
+        [ColorSpacer(30, 3, 300, 0, 255, 70)]
 
         [SerializeField]
         private List<PoolObjectInfo> PoolObjectsInfo;
@@ -70,6 +79,7 @@ namespace LittleHalberd
             PoolObjectsInfo.AddRange(EnemyTypeInfo);
             PoolObjectsInfo.AddRange(LevelPartsInfo);
             PoolObjectsInfo.AddRange(VFX_TypeInfo);
+            PoolObjectsInfo.AddRange(Sound_FX_Info);
 
             GameObject temp = new GameObject();
 

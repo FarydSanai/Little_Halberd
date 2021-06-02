@@ -11,6 +11,7 @@ TagManager:
   - LVL_1_PT_7
   - FxTemporaire
   - LVL_1_PT_2
+  - LVL_2_PT_3
   layers:
   - Default
   - TransparentFX

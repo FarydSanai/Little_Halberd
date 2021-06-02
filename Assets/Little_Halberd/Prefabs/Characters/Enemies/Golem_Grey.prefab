@@ -317,6 +317,7 @@ MonoBehaviour:
     AttackTimer: 0
     AttackIsReset: 0
     AttackPoint: {fileID: 0}
+    RepelPoint: {fileID: 0}
     EnemyLayers:
       serializedVersion: 2
       m_Bits: 0
@@ -637,6 +638,7 @@ MonoBehaviour:
   Attack: 0
   RangeAttack: 0
   CharacterMaxHP: 500
+  DeathVFXType: 27
   characterAnimator: {fileID: 6132226062320782094}
   boxCollider: {fileID: 0}
   subComponentProcessor: {fileID: 0}
@@ -790,6 +792,7 @@ MonoBehaviour:
   AttackDamage: 30
   AttackResetTime: 0.5
   AttackPoint: {fileID: 6132226062209525899}
+  RepelPoint: {fileID: 0}
   EnemyLayers:
     serializedVersion: 2
     m_Bits: 1024
@@ -799,6 +802,7 @@ MonoBehaviour:
     AttackTimer: 0
     AttackIsReset: 0
     AttackPoint: {fileID: 0}
+    RepelPoint: {fileID: 0}
     EnemyLayers:
       serializedVersion: 2
       m_Bits: 0

@@ -84,11 +84,14 @@
     <Compile Include="Assets\JMO Assets\Cartoon FX\Scripts\CFX_AutoRotate.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX\Scripts\CFX_LightFlicker.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX\Scripts\CFX_LightIntensityFade.cs" />
+    <Compile Include="Assets\Little_Halberd\Game_Components\Audio_Components\BackgroundMusic.cs" />
+    <Compile Include="Assets\Little_Halberd\Game_Components\Audio_Components\MusicChangeTrigger.cs" />
     <Compile Include="Assets\Little_Halberd\Game_Components\Health_Points\HealthPoint.cs" />
     <Compile Include="Assets\Little_Halberd\Game_Components\Level_Dividing_Post\DividingPost.cs" />
     <Compile Include="Assets\Little_Halberd\Game_Components\Pause_Menu\PauseGameComponent.cs" />
     <Compile Include="Assets\Little_Halberd\Game_Components\Pause_Menu\PauseMenu.cs" />
-    <Compile Include="Assets\Little_Halberd\Game_Components\Start_Menu\StartMenuButtons.cs" />
+    <Compile Include="Assets\Little_Halberd\Game_Components\SFX_Components\SFX_PoolObj.cs" />
+    <Compile Include="Assets\Little_Halberd\Game_Components\Start_Menu\MenuWindowController.cs" />
     <Compile Include="Assets\Little_Halberd\Prefabs\AnimatedTrees\AnimatedTree.cs" />
     <Compile Include="Assets\Little_Halberd\Prefabs\Characters\Enemies\ReaperBoss\Rage.cs" />
     <Compile Include="Assets\Little_Halberd\Prefabs\GroundParts\SpriteChanger.cs" />

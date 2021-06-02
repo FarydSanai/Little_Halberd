@@ -13,6 +13,7 @@ namespace LittleHalberd
         public bool RangeAttack;
 
         public float CharacterMaxHP;
+        public ObjectType DeathVFXType = ObjectType.VFX_DEATH_RED;
 
         public Animator characterAnimator;
         public BoxCollider2D boxCollider;

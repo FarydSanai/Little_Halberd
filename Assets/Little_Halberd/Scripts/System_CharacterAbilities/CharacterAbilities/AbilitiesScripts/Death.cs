@@ -28,6 +28,10 @@ namespace LittleHalberd
             opacity = 1 - stateInfo.normalizedTime;
             if (opacity <= 0.01f)
             {
+                PoolObjectLoader.Instance.GetObject(characterState.control.DeathVFXType,
+                                                    characterState.control.transform.position,
+                                                    Quaternion.identity);
+
                 SpawnHealthPoints(characterState.control);
                 DestroyCharacter(characterState.control.gameObject);
                 return;
@@ -63,6 +67,10 @@ namespace LittleHalberd
                 }
                 else
                 {
+                    if (pooledObj.objectType == ObjectType.REAPER_RED)
+                    {
+                        BackgroundMusic.Instance.SetEndingAudioClip();
+                    }
                     Destroy(obj);
                 }
             }

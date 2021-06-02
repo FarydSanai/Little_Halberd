@@ -12,3 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d569e9afe5de1e840b5fd94c96b3ae3c, type: 3}
   m_Name: Character_TakeDamage
   m_EditorClassIdentifier: 
+  Sound: {fileID: 7225509727285873763, guid: 38e8274f17f4d364c80cf5f8df7dbb4e, type: 3}

@@ -1,6 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using Random = UnityEngine.Random;
 
 namespace LittleHalberd
 {
@@ -38,7 +37,9 @@ namespace LittleHalberd
             characterState.RANGE_ATTACK_DATA.SpawnPoint = characterState.ATTACK_DATA.AttackPoint;
             characterState.RANGE_ATTACK_DATA.AngleInDegrees = AngleInDegrees;
             characterState.RANGE_ATTACK_DATA.projectileType = ProjectileType;
-            characterState.RANGE_ATTACK_DATA.StartTimeBtwAttacks = StartTimeBtwAttacks;
+
+            float rand = Random.Range(StartTimeBtwAttacks, StartTimeBtwAttacks + 1f);
+            characterState.RANGE_ATTACK_DATA.StartTimeBtwAttacks = rand;
         }
     }
 }

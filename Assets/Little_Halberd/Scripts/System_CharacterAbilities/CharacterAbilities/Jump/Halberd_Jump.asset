@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   JumpForce: 30
   JumpCancel: 1
+  Sound: {fileID: 7225509727285873763, guid: 38e8274f17f4d364c80cf5f8df7dbb4e, type: 3}

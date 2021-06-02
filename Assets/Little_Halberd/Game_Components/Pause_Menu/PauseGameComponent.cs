@@ -6,7 +6,7 @@ namespace LittleHalberd
 {
     public class PauseGameComponent : MonoBehaviour
     {
-        [SerializeField] private PauseMenu Menu;
+        [SerializeField] private MenuWindowController Menu;
         private bool GameIsPaused;
 
         public static PauseGameComponent Instance;

@@ -62,6 +62,9 @@ namespace LittleHalberd
         {
             characterAIData.ProcessAIBehaviour();
         }
+
+        //Temp
+        //Must to create separate class for each state and for each behaviour(instead delegate)
         private void MeleeMobBehaviour()
         {
             switch (characterAIData.AICurrentState)
