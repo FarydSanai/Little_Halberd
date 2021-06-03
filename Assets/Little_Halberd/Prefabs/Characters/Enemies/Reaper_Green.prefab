@@ -159,6 +159,7 @@ MonoBehaviour:
   AttackDamage: 30
   AttackResetTime: 0.5
   AttackPoint: {fileID: 4835668749263859561}
+  RepelPoint: {fileID: 0}
   EnemyLayers:
     serializedVersion: 2
     m_Bits: 1024
@@ -168,6 +169,7 @@ MonoBehaviour:
     AttackTimer: 0
     AttackIsReset: 0
     AttackPoint: {fileID: 0}
+    RepelPoint: {fileID: 0}
     EnemyLayers:
       serializedVersion: 2
       m_Bits: 0
@@ -299,7 +301,7 @@ Rigidbody2D:
   m_AngularDrag: 0.05
   m_GravityScale: 6
   m_Material: {fileID: 6200000, guid: df7a4ffcdd819da469051c2f995c39bb, type: 2}
-  m_Interpolate: 1
+  m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
@@ -322,6 +324,7 @@ MonoBehaviour:
   Attack: 0
   RangeAttack: 0
   CharacterMaxHP: 1000
+  DeathVFXType: 0
   characterAnimator: {fileID: 4835668749278612716}
   boxCollider: {fileID: 0}
   subComponentProcessor: {fileID: 0}
@@ -604,6 +607,7 @@ MonoBehaviour:
     AttackTimer: 0
     AttackIsReset: 0
     AttackPoint: {fileID: 0}
+    RepelPoint: {fileID: 0}
     EnemyLayers:
       serializedVersion: 2
       m_Bits: 0

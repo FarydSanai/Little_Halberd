@@ -41,6 +41,8 @@ namespace LittleHalberd
         VFX_DEATH_YELLOW,
 
         SFX_IMPACT,
+        SFX_JUMP,
+        SFX_PICKUP_HEAL,
     }
     public class PoolObjectLoader : MonoBehaviour
     {

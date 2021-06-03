@@ -34,21 +34,19 @@ namespace LittleHalberd
             {
                 SpawnLevelPart();
             }
-
             if (levelPartList.Count > MaxLevelPartsCount)
             {
                 PoolObjectLoader.Instance.DestroyObject(levelPartList[0].gameObject);
                 levelPartList.RemoveAt(0);
             }
         }
-
         IEnumerator _ScanGraphs()
         {
             while(true)
             {
                 AstarPath.active.Scan();
                 //Debug.Log("Scan graphs");
-                yield return new WaitForSeconds(3f);
+                yield return new WaitForSeconds(5f);
             }
         }
 

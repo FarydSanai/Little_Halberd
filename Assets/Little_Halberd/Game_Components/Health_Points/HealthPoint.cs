@@ -28,6 +28,7 @@ namespace LittleHalberd
                     PoolObjectLoader.Instance.GetObject(ObjectType.VFX_PICKUP_HEART,
                                                         this.transform.position + new Vector3(0f, 1f, 0f),
                                                         Quaternion.identity);
+                    PoolObjectLoader.Instance.GetObject(ObjectType.SFX_PICKUP_HEAL);
 
                     PoolObjectLoader.Instance.DestroyObject(this.gameObject);
                 }

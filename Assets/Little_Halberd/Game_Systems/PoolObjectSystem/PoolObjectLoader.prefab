@@ -76,47 +76,63 @@ MonoBehaviour:
   - objectType: 8
     objectPrefab: {fileID: 6132226063349356983, guid: 5128906b8151ac64aa658c37d0608def,
       type: 3}
-    StartCount: 5
+    StartCount: 1
   - objectType: 9
     objectPrefab: {fileID: 3969291107571400173, guid: 4ad2fd7ebea6d9a4aa35ec242d2b48ab,
       type: 3}
-    StartCount: 5
+    StartCount: 1
   - objectType: 10
     objectPrefab: {fileID: 4740725344789257715, guid: 90042e676da404a4b8fbe8e17d78cf1a,
       type: 3}
-    StartCount: 5
+    StartCount: 1
   - objectType: 11
     objectPrefab: {fileID: 5552336273663124261, guid: 70b5251227cbe9043bae373dc62a846c,
       type: 3}
-    StartCount: 5
+    StartCount: 1
   - objectType: 13
     objectPrefab: {fileID: 2376540185838183684, guid: 95d4b57d9c9cf3445a7cf1c033714b24,
       type: 3}
-    StartCount: 5
+    StartCount: 1
   VFX_TypeInfo:
   - objectType: 17
     objectPrefab: {fileID: 100004, guid: d6409c7967e80c0458f4e464c46658fa, type: 3}
     StartCount: 7
   - objectType: 16
     objectPrefab: {fileID: 100000, guid: 5b3070697e6048740a83f5d747c36b74, type: 3}
-    StartCount: 10
+    StartCount: 7
   - objectType: 19
     objectPrefab: {fileID: 1965343156803978, guid: 9f890266a99e2784cabca20e234e1ddf,
       type: 3}
-    StartCount: 3
+    StartCount: 2
   - objectType: 20
     objectPrefab: {fileID: 1462327970484030, guid: 2c6227134c3a1b0488899f6789788c97,
       type: 3}
     StartCount: 1
   - objectType: 21
     objectPrefab: {fileID: 100004, guid: 624fa0b3d9aac70488df7a632853c233, type: 3}
-    StartCount: 10
+    StartCount: 5
   - objectType: 23
     objectPrefab: {fileID: 1134129239631916, guid: 61fe82ba6d950e942af2499aaace9b7b,
       type: 3}
-    StartCount: 5
-  Sound_FX_Info:
+    StartCount: 3
   - objectType: 24
+    objectPrefab: {fileID: 1280141305896002, guid: 62362c5b451082b4288e72af39e4b43d,
+      type: 3}
+    StartCount: 1
+  - objectType: 25
+    objectPrefab: {fileID: 1280141305896002, guid: dda288ddb9ed6a340ace9bbcfc944e63,
+      type: 3}
+    StartCount: 1
+  - objectType: 26
+    objectPrefab: {fileID: 1280141305896002, guid: 11b5d77dc6c7bb543b231657b83d05b2,
+      type: 3}
+    StartCount: 1
+  - objectType: 27
+    objectPrefab: {fileID: 1280141305896002, guid: 62362c5b451082b4288e72af39e4b43d,
+      type: 3}
+    StartCount: 1
+  Sound_FX_Info:
+  - objectType: 28
     objectPrefab: {fileID: 7225509727285873763, guid: 38e8274f17f4d364c80cf5f8df7dbb4e,
       type: 3}
     StartCount: 10

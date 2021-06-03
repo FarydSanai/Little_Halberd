@@ -15,6 +15,8 @@ namespace LittleHalberd
 
             characterState.JUMP_DATA.JumpCancel = JumpCancel;
             characterState.JUMP_DATA.JumpForce = JumpForce;
+
+            PoolObjectLoader.Instance.GetObject(ObjectType.SFX_JUMP);
         }
         public override void UpdateAbility(CharacterState characterState, Animator animator, AnimatorStateInfo stateInfo)
         {

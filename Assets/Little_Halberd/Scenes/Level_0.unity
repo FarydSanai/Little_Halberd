@@ -791,6 +791,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 606cbfa399312ff41bb13453719ef115, type: 3}
+--- !u!1 &257023002 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1662892018429025134, guid: 805f7752d49acf944be8a280add78186,
+    type: 3}
+  m_PrefabInstance: {fileID: 1662892018284677778}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &263346348
 GameObject:
   m_ObjectHideFlags: 0
@@ -13952,6 +13958,12 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1949248028 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1662892018322170852, guid: 805f7752d49acf944be8a280add78186,
+    type: 3}
+  m_PrefabInstance: {fileID: 1662892018284677778}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1967712311
 GameObject:
   m_ObjectHideFlags: 0
@@ -24733,6 +24745,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1662892017540224759, guid: 805f7752d49acf944be8a280add78186,
+        type: 3}
+      propertyPath: MainMenuWindowObj
+      value: 
+      objectReference: {fileID: 1949248028}
+    - target: {fileID: 1662892017540224759, guid: 805f7752d49acf944be8a280add78186,
+        type: 3}
+      propertyPath: ControlKeysWindowObj
+      value: 
+      objectReference: {fileID: 257023002}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 805f7752d49acf944be8a280add78186, type: 3}
 --- !u!1 &1747168337978928376

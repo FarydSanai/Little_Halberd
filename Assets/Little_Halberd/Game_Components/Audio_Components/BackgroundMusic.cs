@@ -19,12 +19,14 @@ namespace LittleHalberd
         public void SetBossAudioClip()
         {
             audioSource.clip = BossFightAudioClip;
+            audioSource.volume = 1f;
             audioSource.enabled = false;
-            audioSource.enabled = true;
+            audioSource.enabled = true;      
         }
         public void SetEndingAudioClip()
         {
             audioSource.clip = EndingAudioClip;
+            audioSource.volume = 1f;
             audioSource.enabled = false;
             audioSource.enabled = true;
         }

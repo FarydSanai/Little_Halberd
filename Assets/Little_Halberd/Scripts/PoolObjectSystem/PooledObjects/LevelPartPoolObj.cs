@@ -18,12 +18,10 @@ namespace LittleHalberd
         {
             AstarPath.active.Scan();
 
-            //For dev only
             if (HasFoliagePath)
             {
                 FoliageMeshHelper.EnableMeshForGrassPath(this);
             }
-            //-----------
         }
     }
 }
