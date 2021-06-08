@@ -12,6 +12,9 @@ namespace LittleHalberd
         public bool Attack;
         public bool RangeAttack;
 
+        [Space(3f)]
+        public bool isSpawned;
+
         public float CharacterMaxHP;
         public ObjectType DeathVFXType = ObjectType.VFX_DEATH_RED;
 

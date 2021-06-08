@@ -123,7 +123,7 @@ namespace LittleHalberd
                     break;
                 case AIState.ATTACK_PLAYER:
                     {
-                        if (TargetInDistance())
+                        if (TargetInDistance() && !TargetIsDead(characterAIData.targetControl))
                         {
                             if (control.RANGE_ATTACK_DATA.RangeAttackReset())
                             {
@@ -185,6 +185,12 @@ namespace LittleHalberd
         }
         private void RangeAttackBoss()
         {
+            if (TargetIsDead(characterAIData.targetControl))
+            {
+                characterAIData.AICurrentState = AIState.IDLE_STATE;
+                control.RangeAttack = false;
+                return;
+            }
             if (control.RANGE_ATTACK_DATA.RangeAttackReset())
             {
                 control.RANGE_ATTACK_DATA.AimTarget();
@@ -338,6 +344,14 @@ namespace LittleHalberd
                 Rage face = control.gameObject.GetComponentInChildren<Rage>();
                 face.GetComponent<SpriteRenderer>().color = new Color(255f, 0f, 0f);
             }
+        }
+        private bool TargetIsDead(CharacterControl control)
+        {
+            if (control.DAMAGE_DATA.isDead)
+            {
+                return true;
+            }
+            return false;
         }
     }
 }

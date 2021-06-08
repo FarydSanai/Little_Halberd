@@ -247,7 +247,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.05}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -258,7 +258,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.9, y: 0.8}
+  m_Size: {x: 0.9, y: 0.6}
   m_EdgeRadius: 0
 --- !u!114 &4238902671220887101
 MonoBehaviour:
@@ -561,7 +561,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.05}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -572,7 +572,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.9, y: 0.8}
+  m_Size: {x: 0.9, y: 0.6}
   m_EdgeRadius: 0
 --- !u!114 &4365972233810929422
 MonoBehaviour:
@@ -2290,7 +2290,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 4300000, guid: f550a46698d286d48942d25e64e2eeeb, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 8248330747964763347, guid: ca0ef62f276f1234799ab8d355c5c70a,
         type: 3}
       propertyPath: m_Mesh
@@ -2305,7 +2305,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 4300000, guid: f550a46698d286d48942d25e64e2eeeb, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca0ef62f276f1234799ab8d355c5c70a, type: 3}
 --- !u!4 &8835162772648671632 stripped

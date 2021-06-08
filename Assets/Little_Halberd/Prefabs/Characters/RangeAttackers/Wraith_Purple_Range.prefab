@@ -51,6 +51,7 @@ MonoBehaviour:
     projectileType: 0
     TimeBtwAttacks: 0
     StartTimeBtwAttacks: 0
+    MaxEnemiesSpawn: 0
   GravityMultiplier: 1.4
 --- !u!1 &299370064215500667
 GameObject:
@@ -240,7 +241,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AttackRange: 0.5
-  AttackDamage: 30
+  AttackDamage: 35
   AttackResetTime: 0.5
   AttackPoint: {fileID: 2376540186980111416}
   RepelPoint: {fileID: 0}
@@ -362,7 +363,6 @@ GameObject:
   - component: {fileID: 2376540185838183680}
   - component: {fileID: 2376540185838183681}
   - component: {fileID: 2376540185838183686}
-  - component: {fileID: 2376540185838183687}
   - component: {fileID: 2376540185838183682}
   - component: {fileID: 9199012674086072434}
   m_Layer: 9
@@ -402,7 +402,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.17, y: 0.79}
+  m_Offset: {x: 0.06, y: 0.91}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -454,27 +454,12 @@ MonoBehaviour:
   Jump: 0
   Attack: 0
   RangeAttack: 0
-  CharacterMaxHP: 300
+  isSpawned: 0
+  CharacterMaxHP: 400
   DeathVFXType: 24
   characterAnimator: {fileID: 7354658715851403602}
   boxCollider: {fileID: 0}
   subComponentProcessor: {fileID: 0}
---- !u!70 &2376540185838183687
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2376540185838183684}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.18, y: -0.64}
-  m_Size: {x: 0.9, y: 0.5}
-  m_Direction: 1
 --- !u!114 &2376540185838183682
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -710,6 +695,7 @@ MonoBehaviour:
     projectileType: 0
     TimeBtwAttacks: 0
     StartTimeBtwAttacks: 0
+    MaxEnemiesSpawn: 0
   healthBarData:
     Slider: {fileID: 0}
     Gradient:

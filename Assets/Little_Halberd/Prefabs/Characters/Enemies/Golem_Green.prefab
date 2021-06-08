@@ -45,7 +45,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NextPointDistance: 1.8
   JumpNodeRequireDist: 0.8
-  InitialState: 3
+  InitialState: 0
   FollowEnabled: 1
   EnemyType: 0
   characterAIData:
@@ -203,6 +203,7 @@ MonoBehaviour:
     projectileType: 0
     TimeBtwAttacks: 0
     StartTimeBtwAttacks: 0
+    MaxEnemiesSpawn: 0
   healthBarData:
     Slider: {fileID: 0}
     Gradient:
@@ -397,7 +398,7 @@ SpriteRenderer:
   m_SortingOrder: 10
   m_Sprite: {fileID: 1941303590182417732, guid: 660923939d165414fb7687a01e3ca2d7,
     type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.995283, b: 0.995283, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -481,8 +482,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AttackRange: 0.5
-  AttackDamage: 30
-  AttackResetTime: 0.5
+  AttackDamage: 40
+  AttackResetTime: 0.6
   AttackPoint: {fileID: 4740725343783644367}
   RepelPoint: {fileID: 0}
   EnemyLayers:
@@ -698,6 +699,7 @@ MonoBehaviour:
   Jump: 0
   Attack: 0
   RangeAttack: 0
+  isSpawned: 0
   CharacterMaxHP: 500
   DeathVFXType: 26
   characterAnimator: {fileID: 4740725343727095626}

@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace LittleHalberd
 {
@@ -8,6 +6,14 @@ namespace LittleHalberd
     {
         [SerializeField] private MenuWindowController Menu;
         private bool GameIsPaused;
+        public bool GAME_IS_PAUSED
+        {
+            get
+            {
+                return GameIsPaused;
+            }
+        }
+        private bool GameIsEnd = false;
 
         public static PauseGameComponent Instance;
         private void Awake()
@@ -16,6 +22,8 @@ namespace LittleHalberd
         }
         public void SetGamePause()
         {
+            if (!GameIsEnd)
+            {
                 if (GameIsPaused)
                 {
                     ResumeGame();
@@ -23,7 +31,8 @@ namespace LittleHalberd
                 else
                 {
                     PauseGame();
-                } 
+                }
+            }
         }
         private void PauseGame()
         {
@@ -39,6 +48,17 @@ namespace LittleHalberd
             AudioListener.pause = false;
             Menu.gameObject.SetActive(false);
         }
-
+        public void SetTryAgainWindow()
+        {
+            Menu.SetMenuWindow(MenuWindowType.TryAgain);
+        }
+        public void SetEndingWindow()
+        {
+            Menu.SetMenuWindow(MenuWindowType.Ending);
+        }
+        public void SetEndGame(bool gameIsEnd)
+        {
+            GameIsEnd = gameIsEnd;
+        }
     }
 }

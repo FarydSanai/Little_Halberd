@@ -19,14 +19,14 @@ namespace LittleHalberd
             if (other.gameObject.layer != bitMask)
             {
                 SetDamage(other);
-                GameObject objVfx = PoolObjectLoader.Instance.GetObject(ExplodeVFX);
-                objVfx.transform.position = this.transform.position;
-
+                PoolObjectLoader.Instance.GetObject(ExplodeVFX,
+                                                    this.transform.position,
+                                                    Quaternion.identity);
                 if (IsSpawnEnemy)
                 {
                     SpawnEnemy();
                 }
-
+                PoolObjectLoader.Instance.GetObject(ObjectType.SFX_HIT_PROJECTILE);
                 PoolObjectLoader.Instance.DestroyObject(this.gameObject);
             }
         }
@@ -53,8 +53,13 @@ namespace LittleHalberd
             int rand = Random.Range(0, PoolObjectLoader.Instance.EnemyTypeInfo.Count);
             //Debug.Log(rand);
             GameObject enemy = PoolObjectLoader.Instance.GetObject(
-                                       PoolObjectLoader.Instance.EnemyTypeInfo[rand].objectType);
-            enemy.transform.position = this.transform.position + new Vector3(0f, 3f, 0f);
+                                       PoolObjectLoader.Instance.EnemyTypeInfo[rand].objectType,
+                                       this.transform.position + new Vector3(0f, 3f, 0f),
+                                       Quaternion.identity);
+            //enemy.transform.position = this.transform.position + new Vector3(0f, 3f, 0f);
+
+            enemy.GetComponent<CharacterControl>().isSpawned = true;
+            BossSpawnEnemiesCounter.Instance.CurrentEnemiesNumber++;
         }
     }
 }

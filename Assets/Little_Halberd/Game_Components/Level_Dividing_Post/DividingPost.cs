@@ -31,6 +31,7 @@ namespace LittleHalberd
                                                     ClosedBlock.transform.position - new Vector3(0f, 1f, 0f),
                                                     Quaternion.identity);
                 ClosedBlock.SetActive(true);
+                this.GetComponent<BoxCollider2D>().enabled = false;
             }
         }
     }
